@@ -1,0 +1,29 @@
+@import url('../style.css');
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    margin: 2% 200px 0 200px;
+}
+
+.about__text {
+    line-height: 1.5em;
+    text-align: justify;
+    margin: 2.25em;
+    font-size: 1.35rem;
+}
+
+.academics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3.75em 15% 25vh 15%;
+}
+
+.academics__blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}

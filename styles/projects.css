@@ -1,0 +1,50 @@
+@import url('../style.css');
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 8em 13em 5em 13em;
+    gap: 100px;
+}
+
+.project {
+    background-color: var(--color_block);
+    box-shadow: 0px 0px 2px 2px var(--color_shadow);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__description {
+    font-size: 1em;
+    line-height: 1.25em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project__stacks {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    padding-top: 0.5em;
+}
+
+.project__stacks__items {
+    font-size: 0.75em;
+    line-height: 0.75em;
+    padding-top: 0.5em;
+}

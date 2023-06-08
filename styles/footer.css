@@ -1,0 +1,27 @@
+@import url('../style.css');
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 3%;
+    color: var(--color_strong);
+}
+
+.footer__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    vertical-align: bottom;
+    line-height: 2.25rem;
+}
+
+.footer__item__link {
+    color: var(--color_strong);
+    text-decoration: none;
+}
+
+.footer__item__link:hover {
+    text-decoration: none;
+    color: #8D77BB;
+}

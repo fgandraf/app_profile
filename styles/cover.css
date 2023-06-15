@@ -5,8 +5,25 @@
     margin: 0 10% 10% 10%;
     gap: 5%;
     min-height: 100vh;
+    color: var(--color_strong);
+    font-weight: 400;
 }
 
-.cover img {
-    width: 80%;
+.cover h2{
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.about {
+    margin-top: 70px;
+    font-size: 1rem;
+    color: var(--color_normal)
+}
+
+.about p{
+    height: 1.75rem;
+}
+
+.dot {
+    font-size: 0.75rem;
 }

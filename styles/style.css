@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-@import url('styles/reset.css');
-@import url('styles/cover.css');
-@import url('styles/about.css');
-@import url('styles/footer.css');
-@import url('styles/projects.css');
+@import url('reset.css');
+@import url('cover.css');
+@import url('about.css');
+@import url('footer.css');
+@import url('projects.css');
 
 :root {
     --color_background: #0A0A0A;
@@ -34,33 +32,36 @@ body {
     text-decoration: none;
 }
 
+h1, h2, h3, h4 {
+    color: var(--color_strong);
+}
+
 h1 {
     font-size: 3.5em;
     font-weight: 700;
-    color: var(--color_strong);
     line-height: 6rem;
 }
 
 h2 {
     font-size: 1.25em;
-    color: var(--color_strong);
     font-weight: 700;
     line-height: 1.75rem;
 }
 
 h3 {
     font-size: 2.25em;
-    color: var(--color_strong);
     font-weight: 700;
-    padding-left: 120px;
 }
 
 h4 {
     font-size: 1.25em;
-    color: var(--color_strong);
 }
 
 p {
     line-height: 2rem;
     text-align: justify;
+}
+
+ul {
+    list-style: none;
 }

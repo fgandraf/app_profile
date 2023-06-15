@@ -1,6 +1,12 @@
 .cover {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 30vh;
+    margin: 0 10% 10% 10%;
+    gap: 5%;
+    min-height: 100vh;
+}
+
+.cover img {
+    width: 80%;
 }

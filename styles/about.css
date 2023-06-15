@@ -1,23 +1,29 @@
 .about {
+    margin: 10%;
+    padding: 2%;
+    min-height: 85vh;
+}
+
+.about__main {
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 10rem;
     align-items: center;
-    margin: 2% 200px 0 200px;
+    padding: 5%;
 }
 
 .about__text {
     line-height: 1.5em;
     text-align: justify;
-    margin: 2.25em;
+    margin: 2.25em 0;
     font-size: 1.35rem;
 }
 
 .academics {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin: 3.75em 15% 25vh 15%;
+    gap: 20%;
 }
 
 .academics__blocks {

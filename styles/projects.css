@@ -1,6 +1,6 @@
 .projects {
-    margin: 10%;
-    padding: 2%;
+    margin: 3%;
+    padding: 3%;
     min-height: 85vh;
 }
 
@@ -8,9 +8,8 @@
     background-color: var(--color_block);
     box-shadow: 0px 0px 5px 1px var(--color_shadow);
     padding: 20px;
-    border-radius: 10px 35px 10px 35px;
-    margin: 5%;
-
+    border-radius: 15px 40px 15px 40px;
+    margin: 8% 5%;
 }
 
 .project__footer {

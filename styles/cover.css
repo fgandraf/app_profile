@@ -1,5 +1,6 @@
 .cover {
     margin: 5% 5%;
+    box-sizing: border-box;
 }
 
 .topleft {
@@ -26,15 +27,15 @@
 
 .title {
     font-size: 6.5rem;
-    line-height: 8rem;
+    line-height: 6.5rem;
     text-align: right;
 }
 
 .subtitle {
     line-height: 2rem;
     text-align: right;
-    color: var(--color_normal);
-    margin-right: 1rem;
+    color: var(--color_secondary);
+    margin-right: 0.25rem;
     ;
 }
 
@@ -55,6 +56,12 @@
 .bullet {
     font-family: 'Ubuntu Condensed';
     font-size: 0.8rem;
+}
+
+.right img {
+    border: 2px solid transparent;
+    border-radius: 50rem;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, var(--color_primary), var(--color_accent)) border-box;
 }
 
 .bottonright {

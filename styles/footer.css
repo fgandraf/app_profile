@@ -3,7 +3,7 @@ footer {
     justify-content: center;
     gap: 5%;
     padding: 2%;
-    color: var(--color_strong);
+    color: var(--color_primary);
     box-sizing: border-box;
     margin: 0 3%;
 }
@@ -17,7 +17,7 @@ footer {
 }
 
 .footer__item__link {
-    color: var(--color_strong);
+    color: var(--color_primary);
     text-decoration: none;
 }
 

@@ -3,6 +3,7 @@
     margin-top: 10%;
     padding: 3%;
     min-height: 85vh;
+    box-sizing: border-box;
 }
 
 .project {

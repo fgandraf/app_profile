@@ -4,23 +4,31 @@
 @import url('projects.css');
 
 :root {
-    --color_background: linear-gradient(90deg, rgba(20, 20, 40, 100%), rgba(0, 0, 0) 40%);
     --color_block: #20202A;
-    --color_strong: #FFFFFF;
-    --color_normal: #787878;
-    --color_accent: #6969ca;
+    --color_primary: #FFFFFF;
+    --color_secondary: #787878;
+    /* --reference-color: hsl(240, 47%, 60%); */
+    --color-accent-h: 240;
+    --color-accent-s: 47%;
+    --color-accent-l: 60%;
+    
+    --color_accent: hsl(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l));
+    --color_backaccent: hsl(var(--color-accent-h), var(--color-accent-s), 15%);
+    --color_backneutral: #000000;
+    
+    --color_background: linear-gradient(90deg, var(--color_backaccent), var(--color_backneutral) 40%);
 }
 
 body {
     background: var(--color_background);
     font-family: 'Montserrat', sans-serif;
-    color: var(--color_normal);
+    color: var(--color_secondary);
     font-weight: 400;
     font-size: 1em;
 }
 
 .small {
-    color: var(--color_normal);
+    color: var(--color_secondary);
     font-size: 0.80rem;
     line-height: 1.2rem;
 }
@@ -50,11 +58,11 @@ h1,
 h2,
 h3,
 h4 {
-    color: var(--color_strong);
+    color: var(--color_primary);
 }
 
 p {
-    color: var(--color_normal);
+    color: var(--color_secondary);
     line-height: 2rem;
     text-align: justify;
 }

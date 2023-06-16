@@ -1,4 +1,4 @@
-.cover{
+.cover {
     margin: 5% 5%;
 }
 
@@ -6,14 +6,14 @@
     height: 20vh;
     width: 20%;
     border: 25px solid transparent;
-    border-color: #0A0A5f transparent transparent #0A0A5f;
+    border-color: var(--color_accent) transparent transparent var(--color_accent);
     border-top-left-radius: 15px;
 }
 
 .core {
     display: flex;
     justify-content: center;
-    gap:10%;
+    gap: 10%;
     margin-top: -3%;
 }
 
@@ -24,17 +24,18 @@
     height: 10rem;
 }
 
-.left h1 {
+.title {
     font-size: 6.5rem;
     line-height: 8rem;
     text-align: right;
 }
 
-.left h2{
+.subtitle {
     line-height: 2rem;
     text-align: right;
     color: var(--color_normal);
-    margin-right: 1rem;;
+    margin-right: 1rem;
+    ;
 }
 
 .topics {
@@ -42,7 +43,7 @@
     font-size: 1.2rem;
     border-style: solid;
     border-color: transparent;
-    border-left-color: #0A0A5f;
+    border-left-color: var(--color_accent);
     border-width: 8px;
     padding-left: 10px;
 }
@@ -51,16 +52,20 @@
     line-height: 2.5rem;
 }
 
-.container {
+.bullet {
+    font-family: 'Ubuntu Condensed';
+    font-size: 0.8rem;
+}
+
+.bottonright {
     display: flex;
     justify-content: right;
-}
-.bottonright {
+    margin-left: auto;
     margin-top: 0%;
     height: 20vh;
     width: 20%;
     border-style: solid;
-    border-color: transparent #0A0A5f #0A0A5f transparent;
+    border-color: transparent var(--color_accent) var(--color_accent)transparent;
     border-width: 25px;
     border-bottom-right-radius: 15px;
 }

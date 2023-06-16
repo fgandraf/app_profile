@@ -23,5 +23,5 @@ footer {
 
 .footer__item__link:hover {
     text-decoration: underline;
-    color: #8D77BB;
+    color: var(--color_accent);
 }

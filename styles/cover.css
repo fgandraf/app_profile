@@ -1,29 +1,66 @@
-.cover {
+.cover{
+    margin: 5% 5%;
+}
+
+.topleft {
+    height: 20vh;
+    width: 20%;
+    border: 25px solid transparent;
+    border-color: #0A0A5f transparent transparent #0A0A5f;
+    border-top-left-radius: 15px;
+}
+
+.core {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0 10% 10% 10%;
-    gap: 5%;
-    min-height: 100vh;
-    color: var(--color_strong);
-    font-weight: 400;
+    gap:10%;
+    margin-top: -3%;
 }
 
-.cover h2{
+.left {
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    width: 50%;
+    height: 10rem;
+}
+
+.left h1 {
+    font-size: 6.5rem;
+    line-height: 8rem;
     text-align: right;
-    margin-right: 2rem;
 }
 
-.about {
-    margin-top: 70px;
-    font-size: 1rem;
-    color: var(--color_normal)
+.left h2{
+    line-height: 2rem;
+    text-align: right;
+    color: var(--color_normal);
+    margin-right: 1rem;;
 }
 
-.about p{
-    height: 1.75rem;
+.topics {
+    margin: 15% 0 0 -10%;
+    font-size: 1.2rem;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #0A0A5f;
+    border-width: 8px;
+    padding-left: 10px;
 }
 
-.dot {
-    font-size: 0.75rem;
+.topics p {
+    line-height: 2.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: right;
+}
+.bottonright {
+    margin-top: 0%;
+    height: 20vh;
+    width: 20%;
+    border-style: solid;
+    border-color: transparent #0A0A5f #0A0A5f transparent;
+    border-width: 25px;
+    border-bottom-right-radius: 15px;
 }

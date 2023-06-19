@@ -1,30 +1,14 @@
 @import url('reset.css');
+@import url('variables.css');
 @import url('cover.css');
 @import url('footer.css');
 @import url('projects.css');
-
-:root {
-    --color_block: #20202A;
-    --color_primary: #FFFFFF;
-    --color_secondary: #787878;
-    /* --reference-color: hsl(240, 47%, 60%); */
-    --color-accent-h: 240;
-    --color-accent-s: 47%;
-    --color-accent-l: 60%;
-    
-    --color_accent: hsl(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l));
-    --color_backaccent: hsl(var(--color-accent-h), var(--color-accent-s), 15%);
-    --color_backneutral: #000000;
-    
-    --color_background: linear-gradient(90deg, var(--color_backaccent), var(--color_backneutral) 40%);
-}
 
 body {
     background: var(--color_background);
     font-family: 'Montserrat', sans-serif;
     color: var(--color_secondary);
     font-weight: 400;
-    font-size: 1em;
 }
 
 .small {
@@ -35,23 +19,23 @@ body {
 
 h1 {
     font-family: 'Artifika', serif;
-    font-size: 7rem;
+    font-size: 6rem;
     line-height: 6.5rem;
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-style: italic;
     line-height: 1.5rem;
 }
 
 h3 {
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: 700;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 h1,
@@ -62,7 +46,6 @@ h4 {
 }
 
 p {
-    color: var(--color_secondary);
     line-height: 2rem;
     text-align: justify;
 }

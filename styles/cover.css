@@ -1,11 +1,19 @@
 .cover {
-    margin: 5% 5%;
+    display: flex;
+    padding: 10% 5%;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 98vh;
     box-sizing: border-box;
-    height: 95vh;
+}
+
+.top {
+    display: flex;
+    justify-content: start;
 }
 
 .topleft {
-    height: 10vw;
+    height: 8vw;
     width: 18vw;
     border: 0.3vw solid transparent;
     border-color: var(--color_accent) transparent transparent var(--color_accent);
@@ -65,10 +73,13 @@
     text-align: left;
 }
 
+.bottom{
+    display: flex;
+    justify-content: end;
+}
+
 .bottonright {
-    margin-top: -7%;
-    margin-left: 80%;
-    height: 12vw;
+    height: 8vw;
     width: 18vw;
     border-style: solid;
     border-color: transparent var(--color_accent) var(--color_accent)transparent;

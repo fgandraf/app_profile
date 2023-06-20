@@ -1,23 +1,26 @@
 .projects {
-    margin: 5%;
+    margin: 5% 5% 15vh 5%;
     margin-top: 10%;
     box-sizing: border-box;
 }
 
-.project h4, p, ul, img {
-    padding: 10px
-}
-
-.project ul {
-    padding-left: 20px;
+.projects h3{
+    margin-bottom: 10vh;
 }
 
 .project {
     background-color: var(--color_block);
     border: 2px solid var(--color_accent);;
-    /* box-shadow: 0px 0px 5px 2px var(--color_accent);  */
     border-radius: 15px 60px 15px 40px;
-    margin: 5% 0 10% 0;
+    margin-bottom: 10vh;
+}
+
+.project h4, p, ul, img {
+    padding: 10px;
+}
+
+.project ul {
+    padding-left: 20px;
 }
 
 .project__footer {
@@ -45,7 +48,7 @@
   /* this is the important part */
 .swiper .swiper-slide {
     width: auto;
-  }
+}
 
 .swiper img {
     height: 200px;
@@ -63,11 +66,17 @@
 .project__stacks {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.75rem;
     padding-top: 0.5rem;
+    white-space: nowrap;
 }
 
 .project__stacks__items {
     font-size: 0.75rem;
     line-height: 0.75rem;
+    color: var(--color_secondary);
+    padding: 4px 10px;
+    border-radius: 4px 12px 4px 12px;
+    border: 1px solid var(--color_secondary);
 }

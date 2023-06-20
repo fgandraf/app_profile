@@ -6,6 +6,7 @@
 
 body {
     background: var(--color_background);
+    background-repeat:no-repeat;
     font-family: 'Montserrat', sans-serif;
     color: var(--color_secondary);
     font-weight: 400;
@@ -20,11 +21,10 @@ body {
 h1 {
     font-family: 'Artifika', serif;
     font-size: 6rem;
-    line-height: 6.5rem;
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-style: italic;
     line-height: 1.5rem;
 }
@@ -46,7 +46,7 @@ h4 {
 }
 
 p {
-    line-height: 2rem;
+
     text-align: justify;
 }
 

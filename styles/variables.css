@@ -1,6 +1,6 @@
 :root {
-    --color_block: #20202A;
-    --color_primary: #FFFFFF;
+    --color_block: #202038;
+    --color_primary: #F0F0F0;
     --color_secondary: #787878;
     /* --reference-color: hsl(240, 47%, 60%); */
     --color-accent-h: 240;
@@ -8,7 +8,7 @@
     --color-accent-l: 60%;
     --color_backneutral: #000000;
 
-    
+
     --color_accent: hsl(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l));
     --color_backaccent: hsl(var(--color-accent-h), var(--color-accent-s), 15%);
     --color_background: linear-gradient(90deg, var(--color_backaccent), var(--color_backneutral) 40%);

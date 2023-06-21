@@ -63,15 +63,10 @@
     padding: 0 10px;
 }
 
-.topics i {
-    font-family: 'Ubuntu Condensed';
-    font-size: 0.8rem;
-}
-
-.topics p {
-    padding: 0.7rem;
-    line-height: 1rem;
-    text-align: left;
+.topics li {
+    padding: 0.5rem;
+    list-style: circle;
+    list-style-position: inside;
 }
 
 .bottom{

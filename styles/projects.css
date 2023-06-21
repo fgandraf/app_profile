@@ -76,3 +76,24 @@
     border-radius: 4px 12px 4px 12px;
     border: 1px solid var(--color_secondary);
 }
+
+@media screen and (max-width: 400px){
+    .card{
+        border-radius: 0;
+        border: 0;
+        border-top: 2px solid var(--color_accent);
+        border-bottom: 2px solid var(--color_accent);
+        margin: 5% -5% 15vh -5%;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+    .swiper img {
+        opacity: 80%;
+    }
+    .swiper img:hover {
+        opacity: 80%;
+        transform: none;
+        transition: none;
+    }
+}

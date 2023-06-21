@@ -36,6 +36,14 @@ footer {
     .footer__item__description {
         display: block;
     }
-
     transform: scale(1.7);
+}
+
+@media screen and (max-width: 400px){
+    .footer__item:hover {
+        .footer__item__description {
+            display: none;
+        }
+        transform: none;
+    }
 }

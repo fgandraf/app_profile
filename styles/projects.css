@@ -1,5 +1,5 @@
 .projects {
-    margin: 5% 5% 15vh 5%;
+    margin: 5% 5% 10vh 5%;
     margin-top: 10%;
     box-sizing: border-box;
 }
@@ -12,7 +12,7 @@
 }
 
 .card h4, p, ul, img {
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 .card ul {
@@ -77,14 +77,22 @@
     border: 1px solid var(--color_secondary);
 }
 
-@media screen and (max-width: 400px){
-    .card{
+.source{
+    color: var(--color_secondary);
+}
+
+.source:hover{
+    color: var(--color_primary);
+}
+
+@media screen and (max-width: 420px){
+    /* .card {
         border-radius: 0;
         border: 0;
         border-top: 2px solid var(--color_accent);
         border-bottom: 2px solid var(--color_accent);
         margin: 5% -5% 15vh -5%;
-    }
+    } */
     .swiper-button-prev, .swiper-button-next{
         display: none;
     }
@@ -95,5 +103,8 @@
         opacity: 80%;
         transform: none;
         transition: none;
+    }
+    .source:hover{
+        color: var(--color_secondary);
     }
 }

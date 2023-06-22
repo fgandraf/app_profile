@@ -1,0 +1,33 @@
+.resume{
+    height: 2rem;
+    margin: 0 0 20vh 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.download_button{
+    background-color: var(--color_accent);
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--color_primary);
+}
+
+.download_button:hover{
+    border: 2px solid var(--color_accent);
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color_accent);
+}
+
+@media screen and (max-width: 420px){
+    .download_button:hover{
+        border:none;
+        cursor: auto;
+        background-color: var(--color_accent);
+        color: var(--color_primary);
+    }
+}

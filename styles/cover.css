@@ -30,20 +30,6 @@
     gap: 5%;
 }
 
-.main h1 {
-    font-size: 7vw;
-    text-align: center;
-}
-
-.main h2 {
-    font-size: 1.25rem;
-    line-height: 2rem;
-    text-align: right;
-    color: var(--color_secondary);
-    margin-right: 0.25rem;
-    margin-bottom: 10%;
-}
-
 .main img {
     padding: 0;
     margin-bottom: 20%;

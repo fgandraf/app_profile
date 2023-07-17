@@ -71,7 +71,7 @@
 .card__stacks__items {
     font-size: 0.75rem;
     line-height: 0.75rem;
-    color: var(--color_secondary);
+    /* color: var(--color_secondary); */
     padding: 4px 10px;
     border-radius: 4px 12px 4px 12px;
     border: 1px solid var(--color_secondary);

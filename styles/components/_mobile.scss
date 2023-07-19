@@ -1,6 +1,6 @@
 @import '../abstract/variables';
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
 
     .swiper-button-prev,
     .swiper-button-next {
@@ -37,4 +37,21 @@
         background-color: $color_accent;
         color: $color_primary;
     }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+
+    h2{
+        font-size: 3.5vw;
+        text-align: center;
+        line-height: 3rem;
+    }
+
+    .topics{
+        font-size: 0.8rem;
+    }
+
+
 }

@@ -4,7 +4,7 @@ footer {
     display: grid;
     grid-template-columns: 10vh 10vh 10vh 10vh;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 0.9rem;
     color: $color_primary;
     background-color: $color_background--menu;
     position: fixed;
@@ -18,13 +18,13 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        line-height: 1.0rem;
+        line-height: 1rem;
         transition: 0.4s;
 
         .description {
             font-size: 0.6rem;
-            margin-top: -1rem;
-            margin-bottom: 0.0rem;
+            margin-top: -1.8rem;
+            margin-bottom: 0.8rem;
             display: none;
             color: $color_primary;
             text-decoration: none;

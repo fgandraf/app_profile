@@ -1,0 +1,40 @@
+@import '../abstract/variables';
+
+@media screen and (max-width: 420px) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
+    .swiper {
+        img {
+            opacity: 80%;
+        }
+
+        img:hover {
+            opacity: 80%;
+            transform: none;
+            transition: none;
+        }
+    }
+
+    .source:hover {
+        color: $color_secondary;
+    }
+
+    .footer__item:hover {
+        .footer__item__description {
+            display: none;
+        }
+
+        transform: none;
+    }
+
+    .download_button:hover {
+        border: none;
+        cursor: auto;
+        background-color: $color_accent;
+        color: $color_primary;
+    }
+}

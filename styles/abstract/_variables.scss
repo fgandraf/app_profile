@@ -1,0 +1,10 @@
+$color_block: #202038;
+$color_primary: #F0F0F0;
+$color_secondary: #787878;
+$color_accent: hsl(240, 47%, 60%);
+
+$color_backneutral: #000000;
+$color_backaccent: hsl(240, 47%, 15%);
+$color_background: linear-gradient(90deg, $color_backaccent, $color_backneutral 40%);
+
+$color_background--menu: hsl(240, 47%, 20%, 70%);

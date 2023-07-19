@@ -1,0 +1,87 @@
+@import '../abstract/variables';
+
+header {
+    display: flex;
+    padding: 10% 5%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 98vh;
+    box-sizing: border-box;
+
+    .top {
+        display: flex;
+        justify-content: start;
+
+        .left {
+            height: 8vw;
+            width: 18vw;
+            border: 0.3vw solid transparent;
+            border-color: $color_accent transparent transparent $color_accent;
+            border-top-left-radius: 15px;
+        }
+    }
+
+    .title {
+        margin-top: -2%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        justify-content: center;
+        min-width: min-content;
+        gap: 5%;
+
+        h1 {
+            font-family: 'Artifika', serif;
+            font-size: 7vw;
+            text-align: center;
+        }
+
+        h2 {
+            font-style: italic;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            text-align: right;
+            margin-right: 0.25rem;
+            margin-bottom: 10%;
+        }
+
+        img {
+            padding: 0;
+            margin-bottom: 20%;
+            width: 18vw;
+            min-width: 180px;
+            border: 2px solid transparent;
+            border-radius: 50rem;
+            background: linear-gradient(white, white) padding-box, linear-gradient(to right, $color_primary, $color_accent) border-box;
+        }
+    }
+
+    .topics {
+        margin: -5% 6% 0 5%;
+        border-style: solid;
+        border-color: transparent;
+        border-left-color: $color_accent;
+        border-width: 0.3vw;
+        padding: 0 10px;
+
+        li {
+            padding: 0.5rem;
+            list-style: circle;
+            list-style-position: inside;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: end;
+
+        .right {
+            height: 8vw;
+            width: 18vw;
+            border-style: solid;
+            border-color: transparent $color_accent $color_accent transparent;
+            border-width: 0.3vw;
+            border-bottom-right-radius: 15px;
+        }
+    }
+}

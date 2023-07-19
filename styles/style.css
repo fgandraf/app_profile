@@ -1,0 +1,329 @@
+body {
+  background: linear-gradient(90deg, hsl(240, 47%, 15%), #000000 40%);
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #F0F0F0;
+}
+body p {
+  text-align: justify;
+  color: #787878;
+}
+body ul {
+  list-style: none;
+  color: #787878;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  margin: 0 0.25rem;
+}
+
+header {
+  display: flex;
+  padding: 10% 5%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 98vh;
+  box-sizing: border-box;
+}
+header .top {
+  display: flex;
+  justify-content: start;
+}
+header .top .left {
+  height: 8vw;
+  width: 18vw;
+  border: 0.3vw solid transparent;
+  border-color: hsl(240, 47%, 60%) transparent transparent hsl(240, 47%, 60%);
+  border-top-left-radius: 15px;
+}
+header .title {
+  margin-top: -2%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: center;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  gap: 5%;
+}
+header .title h1 {
+  font-family: "Artifika", serif;
+  font-size: 7vw;
+  text-align: center;
+}
+header .title h2 {
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  text-align: right;
+  margin-right: 0.25rem;
+  margin-bottom: 10%;
+}
+header .title img {
+  padding: 0;
+  margin-bottom: 20%;
+  width: 18vw;
+  min-width: 180px;
+  border: 2px solid transparent;
+  border-radius: 50rem;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #F0F0F0, hsl(240, 47%, 60%)) border-box;
+}
+header .topics {
+  margin: -5% 6% 0 5%;
+  border-style: solid;
+  border-color: transparent;
+  border-left-color: hsl(240, 47%, 60%);
+  border-width: 0.3vw;
+  padding: 0 10px;
+}
+header .topics li {
+  padding: 0.5rem;
+  list-style: circle;
+  list-style-position: inside;
+}
+header .bottom {
+  display: flex;
+  justify-content: end;
+}
+header .bottom .right {
+  height: 8vw;
+  width: 18vw;
+  border-style: solid;
+  border-color: transparent hsl(240, 47%, 60%) hsl(240, 47%, 60%) transparent;
+  border-width: 0.3vw;
+  border-bottom-right-radius: 15px;
+}
+
+main {
+  margin: 5% 5% 10vh 5%;
+  margin-top: 10%;
+  box-sizing: border-box;
+}
+main h3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 10vh;
+}
+main .card {
+  background-color: #202038;
+  border: 1px solid hsl(240, 47%, 60%);
+  border-radius: 15px 40px 15px 40px;
+  margin-bottom: 10vh;
+}
+main .card h4 {
+  font-size: 1.25rem;
+}
+main .card h4,
+main .card p,
+main .card ul,
+main .card img {
+  padding: 10px 15px;
+}
+main .card ul {
+  padding-left: 20px;
+}
+main .card .description {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+main .card .swiper {
+  width: auto;
+}
+main .card .swiper img {
+  height: 200px;
+  border-radius: 0px;
+  opacity: 70%;
+  padding: 0.3rem 0.3rem 0.3rem 0;
+}
+main .card .swiper img:hover {
+  opacity: 100%;
+  transform: scale(1.04);
+  transition: 0.2s;
+}
+main .card .swiper .swiper-slide {
+  width: auto;
+  text-align: center;
+  font-size: 18px;
+  background: #202038;
+}
+main .card .footer {
+  display: flex;
+  justify-content: space-between;
+}
+main .card .footer .stacks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+  white-space: nowrap;
+}
+main .card .footer .stacks .items {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 4px 12px 4px 12px;
+  border: 1px solid #787878;
+}
+main .card .footer .source {
+  color: #787878;
+}
+main .card .footer .source:hover {
+  color: #F0F0F0;
+}
+main .resume {
+  height: 2rem;
+  margin: 0 0 20vh 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+main .resume .download_button {
+  background-color: hsl(240, 47%, 60%);
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #F0F0F0;
+  text-decoration: none;
+}
+main .resume .download_button:hover {
+  border: 2px solid hsl(240, 47%, 60%);
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(240, 47%, 60%);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 10vh 10vh 10vh 10vh;
+  justify-content: center;
+  padding: 0.5rem;
+  color: #F0F0F0;
+  background-color: hsla(240, 47%, 20%, 0.7);
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 2;
+  transition: 1.8s;
+}
+footer .item {
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1rem;
+  transition: 0.4s;
+}
+footer .item .description {
+  font-size: 0.6rem;
+  margin-top: -1rem;
+  margin-bottom: 0rem;
+  display: none;
+  color: #F0F0F0;
+  text-decoration: none;
+  transition: 0.4s;
+  white-space: nowrap;
+}
+footer .item:hover {
+  transform: scale(1.7);
+}
+footer .item:hover .description {
+  display: block;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 5%;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+  /* Modal Content (Image) */
+  /* Add Animation - Zoom in the Modal */
+  /* The Close Button */
+}
+.modal .modal-content {
+  margin: auto;
+  display: block;
+  max-width: 75vw;
+  max-height: 75vh;
+  border-radius: 10px;
+}
+.modal .modal-content,
+.modal #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.modal .close:hover,
+.modal .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper img {
+    opacity: 80%;
+  }
+  .swiper img:hover {
+    opacity: 80%;
+    transform: none;
+    transition: none;
+  }
+  .source:hover {
+    color: #787878;
+  }
+  .footer__item:hover {
+    transform: none;
+  }
+  .footer__item:hover .footer__item__description {
+    display: none;
+  }
+  .download_button:hover {
+    border: none;
+    cursor: auto;
+    background-color: hsl(240, 47%, 60%);
+    color: #F0F0F0;
+  }
+}/*# sourceMappingURL=style.css.map */

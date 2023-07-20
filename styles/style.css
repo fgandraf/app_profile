@@ -19,21 +19,6 @@ body ul {
   margin: 0 0.25rem;
 }
 
-h1 {
-  font-family: "Artifika", serif;
-  font-size: 6vw;
-  text-align: center;
-}
-
-h2 {
-  font-style: italic;
-  font-size: 1.2vw;
-  line-height: 2rem;
-  text-align: right;
-  margin-right: 0.25rem;
-  margin-bottom: 10%;
-}
-
 header {
   display: flex;
   padding: 10% 5%;
@@ -71,6 +56,19 @@ header .title img {
   border: 2px solid transparent;
   border-radius: 50rem;
   background: linear-gradient(white, white) padding-box, linear-gradient(to right, #F0F0F0, hsl(240, 47%, 60%)) border-box;
+}
+header .title h1 {
+  font-family: "Artifika", serif;
+  font-size: 6vw;
+  text-align: center;
+}
+header .title h2 {
+  font-style: italic;
+  font-size: 1.2vw;
+  line-height: 2rem;
+  text-align: right;
+  margin-right: 0.25rem;
+  margin-bottom: 10%;
 }
 header .topics {
   margin: -5% 6% 0 5%;
@@ -301,42 +299,55 @@ footer .item:hover .description {
 }
 
 @media screen and (max-width: 600px) {
-  .swiper-button-prev,
-  .swiper-button-next {
+  header {
+    padding-top: 1%;
+  }
+  header .topics {
+    font-size: 0.8rem;
+  }
+  header .title h1 {
+    font-size: 10vw;
+  }
+  header .title h2 {
+    font-size: 3.5vw;
+    text-align: center;
+    line-height: 3rem;
+  }
+  main .card .description {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  main .card .footer .source:hover {
+    color: #787878;
+  }
+  main .card .footer .stacks .items {
+    font-size: 0.5rem;
+  }
+  main .card .swiper-button-prev, main .card .swiper-button-next {
     display: none;
   }
-  .swiper img {
+  main .card .swiper .swiper-wrapper img {
     opacity: 80%;
   }
-  .swiper img:hover {
+  main .card .swiper .swiper-wrapper img:hover {
     opacity: 80%;
     transform: none;
     transition: none;
   }
-  .source:hover {
-    color: #787878;
-  }
-  .footer__item:hover {
-    transform: none;
-  }
-  .footer__item:hover .footer__item__description {
-    display: none;
-  }
-  .download_button:hover {
+  main .resume .download_button:hover {
     border: none;
     cursor: auto;
     background-color: hsl(240, 47%, 60%);
     color: #F0F0F0;
   }
-  h1 {
-    font-size: 10vw;
-  }
-  h2 {
-    font-size: 3.5vw;
+  main h3 {
+    font-size: 8vw;
     text-align: center;
-    line-height: 3rem;
   }
-  .topics {
-    font-size: 0.8rem;
+  footer .item:hover {
+    transform: none;
+  }
+  footer .item:hover .description {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

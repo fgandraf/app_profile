@@ -2,56 +2,89 @@
 
 @media screen and (max-width: 600px) {
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: none;
+
+    header{
+        .topics{
+            font-size: 0.8rem;
+        }
+        padding-top: 1%;
+
+        .title{
+            h1 {
+                font-size: 10vw;
+            }
+            h2{
+                font-size: 3.5vw;
+                text-align: center;
+                line-height: 3rem;
+            }
+        }
     }
 
-    .swiper {
-        img {
-            opacity: 80%;
+    main{
+        .card{
+            .description {
+                font-size: 0.8rem;
+                text-align: justify;
+            }
+
+
+            .footer{
+                .source:hover {
+                    color: $color_secondary;
+                }
+
+                .stacks .items{
+                    font-size: 0.5rem;
+                }
+            }
+
+
+            .swiper-button-prev, .swiper-button-next {
+                display: none;
+            }
+
+
+            .swiper {
+                .swiper-wrapper{
+                    img {
+                        opacity: 80%;
+                    }
+            
+                    img:hover {
+                        opacity: 80%;
+                        transform: none;
+                        transition: none;
+                    }
+                }
+            }
+
+            
         }
 
-        img:hover {
-            opacity: 80%;
+        .resume{
+            .download_button:hover {
+                border: none;
+                cursor: auto;
+                background-color: $color_accent;
+                color: $color_primary;
+            }
+        }
+
+        h3{
+            font-size: 8vw;
+            text-align: center;
+        }
+    }
+    
+
+    footer {
+        .item:hover {
+            .description {
+                display: none;
+            }
+    
             transform: none;
-            transition: none;
         }
-    }
-
-    .source:hover {
-        color: $color_secondary;
-    }
-
-    .footer__item:hover {
-        .footer__item__description {
-            display: none;
-        }
-
-        transform: none;
-    }
-
-    .download_button:hover {
-        border: none;
-        cursor: auto;
-        background-color: $color_accent;
-        color: $color_primary;
-    }
-
-    h1 {
-        font-size: 10vw;
-    }
-
-
-    h2{
-        font-size: 3.5vw;
-        text-align: center;
-        line-height: 3rem;
-    }
-
-    .topics{
-        font-size: 0.8rem;
-    }
-
-
+    } 
 }

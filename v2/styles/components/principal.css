@@ -25,6 +25,10 @@
     border-left: solid 2px transparent;
 }
 
+#Principal{
+    padding-left: 2vw;
+}
+
 
 @media screen and (max-width: 500px) {
     #titulo{

@@ -14,20 +14,25 @@
     opacity: 85%;
 }
 
-._menu__item{
+.menu__item{
     display: grid;
-    grid-template-columns: 40% 150%;
+    grid-template-columns: 30px auto;
+    text-wrap: nowrap;
     gap: 1rem;
-    margin-right: -5.5rem;
 }
 
+.menu__description{
+    font-size: 0.8rem;
+}
 
-._menu__description{ display: none; }
+.menu__icone{ transition: 0.2s;}
+
+.menu__description{ display: none; }
 
 
-._menu__item:hover{
-    ._menu__description{ display: block; }
-    ._menu__icone{ transform: scale(1.4); }
+.menu__item:hover{
+    .menu__description{ display: block; }
+    .menu__icone{ transform: scale(1.4); }
 }
 
 
@@ -40,17 +45,17 @@
         width: 100vw;
         height: 3vh;
     }
-    ._menu__description{
+    .menu__description{
         display: none;
     }
 
-    ._menu__item{
+    .menu__item{
         display: flex;
         margin: 0 0 2rem 0;
     }
 
-    ._menu__item:hover{
-        ._menu__description{ display: none; }
-        ._menu__icone{ transform: none;}
+    .menu__item:hover{
+        .menu__description{ display: none; }
+        .menu__icone{ transform: none;}
     }
 }

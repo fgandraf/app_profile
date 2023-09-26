@@ -1,7 +1,7 @@
-@import url(./_components/menu.css);
-@import url(./_components/principal.css);
-@import url(./_components/projetos.css);
-@import url(./_components/rodape.css);
+@import url(./components/menu.css);
+@import url(./components/principal.css);
+@import url(./components/projetos.css);
+@import url(./components/rodape.css);
 
 
 

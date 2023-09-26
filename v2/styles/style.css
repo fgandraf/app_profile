@@ -1,13 +1,5 @@
-@import url(./components/menu.css);
-@import url(./components/principal.css);
-@import url(./components/projetos.css);
-@import url(./components/rodape.css);
-
-
 
 :root{ --color-background: #1a1a1a; }
-
-
 
 body { 
     background: var(--color-background);

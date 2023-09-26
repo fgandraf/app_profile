@@ -41,13 +41,14 @@
 
     #subtitulo{
         font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     #topicos{
         align-self: center;
         margin-top: 2rem;
         font-size: 0.7rem;
-        width: 85vw;
+        width: 80vw;
     }
 
     #Principal{

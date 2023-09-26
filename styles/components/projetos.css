@@ -25,6 +25,7 @@
     transform: scale(1.02);
     
     ._card__cover{
+        clip-path: none;
     opacity: 100%;
     filter: saturate(100%);
     }

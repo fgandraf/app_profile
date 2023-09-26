@@ -25,6 +25,10 @@
     border-left: solid 2px transparent;
 }
 
+#saiba_mais{
+    color: #6969c9;
+}
+
 #Principal{
     padding-left: 2vw;
 }
@@ -43,6 +47,7 @@
         align-self: center;
         margin-top: 2rem;
         font-size: 0.7rem;
+        width: 85vw;
     }
 
     #Principal{

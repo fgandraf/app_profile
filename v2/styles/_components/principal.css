@@ -1,0 +1,57 @@
+#top_left, #bottom_right{
+    background: linear-gradient(var(--color-background), var(--color-background)) padding-box, linear-gradient(to left, hsl(254, 65%, 90%), #9780e4) border-box;
+}
+
+#top_left { 
+    border-left: solid 2px transparent;
+    border-top: solid 2px transparent;
+}
+
+#bottom_right { 
+    border-right: solid 2px transparent;
+    border-bottom: solid 2px transparent;
+}
+
+#titulo { font-family: "Artifika", serif; }
+
+#foto { 
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, white, #9780e4) border-box; 
+    border: 1.5px solid transparent;
+}
+
+#topicos { 
+    color: #939393; 
+    background: linear-gradient(var(--color-background), var(--color-background)) padding-box, linear-gradient(to bottom, hsl(254, 65%, 90%), #9780e4) border-box;
+    border-left: solid 2px transparent;
+}
+
+
+@media screen and (max-width: 500px) {
+    #titulo{
+        font-size: 2.5rem;
+    }
+
+    #subtitulo{
+        font-size: 1rem;
+    }
+
+    #topicos{
+        align-self: center;
+        margin-top: 2rem;
+        font-size: 0.7rem;
+    }
+
+    #Principal{
+        width: 90vw;
+        padding-left: 0;
+    }
+
+    #top_left{
+        width: 25vw;
+        height: 6vh;
+    }
+    #bottom_right{
+        width: 25vw;
+        height: 6vh;
+    }
+}

@@ -26,50 +26,45 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="flex flex-col justify-center gap-[20vh] mt-[15vh] __hide__scroll__bar">
+<body>
 
-    <nav id="menu" class="flex flex-col justify-center gap-16 pl-[0.5rem] fixed w-[1.5vw] h-[100vh] bottom-0 z-20">
-        <div class="item grid grid-cols-[40%,150%] gap-4 -mr-[5.5rem]">
+
+    <nav id="menu">
+        <div class="_menu__item grid grid-cols-[40%,150%] gap-4 -mr-[5.5rem]">
             <a href="mailto: fgandraf@gmail.com" target="_blank">
-                <img src="assets/email.svg" class="__item__icone w-7 transition duration-300">
+                <img src="assets/email.svg" class="_menu__icone w-7 transition duration-300">
             </a>
-            <span class="description text-sm hidden">fgandraf@gmail.com</span>
+            <span class="_menu__description text-sm">fgandraf@gmail.com</span>
         </div>
-        <div class="item grid grid-cols-[40%,150%] gap-4 -mr-[5.5rem]">
+        <div class="_menu__item grid grid-cols-[40%,150%] gap-4 -mr-[5.5rem]">
             <a href="tel:14998290103" target="_blank">
-                <img src="assets/phone.svg" class="__item__icone w-7 transition duration-300">
+                <img src="assets/phone.svg" class="_menu__icone w-7 transition duration-300">
             </a>
-            <span class="description text-sm hidden">(14) 99829-0103</span>
+            <span class="_menu__description text-sm">(14) 99829-0103</span>
         </div>
-        <div class="item grid grid-cols-[40%,150%] gap-4 -mr-[5.5rem]">
+        <div class="_menu__item grid grid-cols-[40%,150%] gap-4 -mr-[5.5rem]">
             <a href="https://www.github.com/fgandraf/" target="_blank">
-                <img src="assets/github.svg" class="__item__icone w-7 transition duration-300">
+                <img src="assets/github.svg" class="_menu__icone w-7 transition duration-300">
             </a>
-            <span class="description text-sm hidden">github.com/fgandraf</span>
+            <span class="_menu__description text-sm">github.com/fgandraf</span>
         </div>
-        <div class="item grid grid-cols-[40%,150%] gap-4 -mr-[5.5rem]">
+        <div class="_menu__item grid grid-cols-[40%,150%] gap-4 -mr-[5.5rem]">
             <a href="https://www.linkedin.com/in/fgandraf/" target="_blank">
-                <img src="assets/linkedin.svg" class="__item__icone w-7 transition duration-300">
+                <img src="assets/linkedin.svg" class="_menu__icone w-7 transition duration-300">
             </a>
-            <span class="description text-sm hidden">linkedin.com/in/fgandraf</span>
+            <span class="_menu__description text-sm">linkedin.com/in/fgandraf</span>
         </div>
     </nav>
 
 
 
-
-
-
-
-
-    <section id="Tela_Principal" class="self-center flex flex-col h-[75vh] w-[80vw] pl-[5vh]">
+    <section id="Principal" class="self-center flex flex-col h-[80vh] w-[80vw] pl-[5vh] mt-[10vh]">
         
-        <div id="top_left" class="rounded-tl-[2rem] w-[20vw] h-[15vh]"></div>
+        <div id="top_left" class="rounded-tl-[1rem] w-[20vw] h-[15vh] z-10"></div>
 
-
-        <div id="core" class="flex flex-col gap-[5%] w-[85%] h-[80%] -my-[5%] self-center justify-center">
+        <div id="core" class="flex flex-col gap-[5%] w-[85%] h-[80%] -my-[5%] self-center justify-center z-20">
             
-            <div id="titulo_container" class="flex gap-12 justify-center -mt-16">
+            <div id="titulo_container" class="flex gap-12 justify-center -mt-16 z-20">
                 <div id="tituloesub" class="flex self-center text-right">    
                     <div>
                         <h1 id="titulo" class="text-[5vw]">Felipe Gandra</h1>
@@ -77,16 +72,13 @@
                     </div>
                 </div>
                 <div id="foto_container" class="flex items-center justify-center h-full">
-                    <img id="foto" src="./assets/foto.png" class="w-[15vw] min-w-[150px] rounded-full mt-16 z-50">
+                    <img id="foto" src="./assets/foto.png" class="w-[15vw] min-w-[150px] rounded-full mt-24 z-20">
                 </div>
             </div>
             
-                
-                
-                
             <div class="flex flex-col">
                 <div id="topicos" class="text-[0.85rem] px-8 py-2 z-40 -mt-6">
-                    <ul class="list-disc flex flex-col gap-4">
+                    <ul class="list-disc flex flex-col gap-3">
                         <li>Arquiteto e Urbanista, estudante de Análise e Desenvolvimento de Sistemas.</li>
                         <li>Apaixonado por tecnologia e desenvolvimento de soluções baseadas em software.</li>
                         <li>Com experiência em linguagens de programação desde os anos de 1990.</li>
@@ -95,64 +87,25 @@
                 </div>
             </div>       
 
-
-            
         </div>
 
-
-
-
-
-
-        <div id="bottom_right" class="rounded-br-[2rem] self-end w-[20vw] h-[15vh] m-0"></div>
+        <div id="bottom_right" class="rounded-br-[1rem] self-end w-[20vw] h-[15vh] m-0 z-10"></div>
     </section>
 
 
 
-
-
-
-
-    <!-- <section name="Tela_Principal" class="self-center flex flex-col h-[70%h] w-[85%] pl-[5vh]">
-        
-        <div id="top_left" class="rounded-tl-[2rem] w-[20vw] h-[15vh]"></div>
-
-            <div id="core" class="grid grid-cols-[auto,30%] gap-[5%] w-[85%] h-[80%] -my-[3%] self-center justify-center">
-                
-                <div name="meio-esquerdo" class="flex flex-col self-center">    
-                    <h1 id="titulo" class="text-right text-[4rem]">Felipe Gandra</h1>
-                    <h2 id="subtitulo" class="text-right text-[1rem] italic -mt-4">Desenvolvedor de Software</h2>
-                    <div class="flex flex-col">
-                        <div id="topicos" class="text-[0.85rem] mt-[18%] px-8 py-2">
-                            <ul class="list-disc flex flex-col gap-4">
-                                <li>Arquiteto e Urbanista, estudante de Análise e Desenvolvimento de Sistemas.</li>
-                                <li>Apaixonado por tecnologia e desenvolvimento de soluções baseadas em software.</li>
-                                <li>Com experiência em linguagens de programação desde os anos de 1990.</li>
-                                <li>Em busca de transição integral de carreira para a área da tecnologia.</li>
-                            </ul>
-                        </div>
-                    </div>       
-                </div>
-                <div name="meio-direito" class="flex flex-col justify-center h-full">
-                    <img id="foto" src="./assets/foto.png" class="w-[280px] rounded-full min-w-[180px]">
-                </div>
-            </div>
-        <div id="bottom_right" class="rounded-br-[2rem] self-end w-[20vw] h-[15vh] m-0"></div>
-    </section> -->
-
-
-    <section id="projetos" class="self-center flex flex-col w-[80vw] pl-[5vh]">
+    <section id="Projetos" class="self-center flex flex-col w-[80vw] pl-[5vh]">
         <h3 class="text-[1.5rem] font-semibold my-14">: : PROJETOS : :</h3>
         
         <div id="projetos_container" class="flex gap-10 mx-4 flex-wrap justify-center">
 
-            <div href="#" name="card1" class="__card border-[1.5px] border-solid border-transparent min-w-[300px] flex flex-col items-center gap-[1rem] rounded-2xl duration-300 text-[#939393]">
-                <img src="./assets/screenshots/aex30.png" alt="" class="__card__cover">
+            <div href="#" class="_card">
+                <img src="./assets/screenshots/aex30.png" alt="" class="_card__cover">
                 <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="items rounded-full px-2 py-0 self-center">C#</li>
-                    <li class="items rounded-full px-2 py-0 self-center">.NET</li>
-                    <li class="items rounded-full px-2 py-0 self-center">Windows Forms</li>
-                    <li class="items rounded-full px-2 py-0 self-center">NPOI Library</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">C#</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">.NET</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">Windows Forms</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">NPOI Library</li>
                 </ul>
                 <h4 class="text-xl font-bold">Aex30 Windows App</h4>
                 <p class="text-xs px-6 text-justify h-[7rem]">Software assistente para automatizar o preenchimento dos relatórios de acompanhamento de evolução de obra fornecidos pela Caixa Econômica Federal aos arquitetos e engenheiros credenciados.</p>
@@ -164,13 +117,13 @@
                 </div>
             </div>
 
-            <div href="#" name="card2" class="__card border-[1.5px] border-solid border-transparent min-w-[300px] flex flex-col items-center gap-[1rem] rounded-2xl duration-300 text-[#939393]">
-                <img src="./assets/screenshots/fluxus.png" alt="" class="__card__cover">
+            <div href="#" class="_card">
+                <img src="./assets/screenshots/fluxus.png" alt="" class="_card__cover">
                 <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="items rounded-full px-2 py-0 self-center">C#</li>
-                    <li class="items rounded-full px-2 py-0 self-center">.NET</li>
-                    <li class="items rounded-full px-2 py-0 self-center">Windows Forms</li>
-                    <li class="items rounded-full px-2 py-0 self-center">iTextSharp</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">C#</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">.NET</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">Windows Forms</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">iTextSharp</li>
                 </ul>
                 <h4 class="text-xl font-bold">Fluxus Windows App</h4>
                 <p class="text-xs px-6 text-justify h-[7rem]">Software para gestão de Ordens de Serviços emitidas pela Caixa Econômica Federal aos arquitetos e engenheiros credenciadas em edital público.</p>
@@ -182,14 +135,14 @@
                 </div>
             </div>
             
-            <div href="#" name="card3" class="__card border-[1.5px] border-solid border-transparent min-w-[300px] flex flex-col items-center gap-[1rem] rounded-2xl duration-300 text-[#939393]">
-                <img src="./assets/screenshots/fluxusapi.png" alt="" class="__card__cover">
+            <div href="#" class="_card">
+                <img src="./assets/screenshots/fluxusapi.png" alt="" class="_card__cover">
                 <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="items rounded-full px-2 py-0 self-center">C#</li>
-                    <li class="items rounded-full px-2 py-0 self-center">.NET</li>
-                    <li class="items rounded-full px-2 py-0 self-center">MySQL</li>
-                    <li class="items rounded-full px-2 py-0 self-center">Dapper</li>
-                    <li class="items rounded-full px-2 py-0 self-center">Swagger</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">C#</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">.NET</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">MySQL</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">Dapper</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">Swagger</li>
                 </ul>
                 <h4 class="text-xl font-bold">Fluxus Web API</h4>
                 <p class="text-xs px-6 h-[7rem] text-justify">API Rest desenvolvida para integrar as operações de manipulação e persistência de dados do software Fluxus (gestão de serviços de engenharia para credenciados de bancos públicos) com a base de dados em MySQL.</p>
@@ -201,13 +154,13 @@
                 </div>
             </div>
 
-            <div href="#" name="card4" class="__card border-[1.5px] border-solid border-transparent min-w-[300px] flex flex-col items-center gap-[1rem] rounded-2xl duration-300 text-[#939393]">
-                <img src="./assets/screenshots/alucar.png" alt="" class="__card__cover">
+            <div href="#" class="_card">
+                <img src="./assets/screenshots/alucar.png" alt="" class="_card__cover">
                 <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="items rounded-full px-2 py-0 self-center">Figma</li>
-                    <li class="items rounded-full px-2 py-0 self-center">HTML</li>
-                    <li class="items rounded-full px-2 py-0 self-center">CSS</li>
-                    <li class="items rounded-full px-2 py-0 self-center">Tailwind</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">Figma</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">HTML</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">CSS</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">Tailwind</li>
                 </ul>
                 <h4 class="text-xl font-bold">AluCar Mobile App</h4>
                 <p class="text-xs px-6 text-justify h-[7rem]">Protótipo e codificação das telas de um app mobile desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP para o challenge proporcionado junto à BRQ Digital Solutions e a plataforma EasyCarros.</p>
@@ -221,13 +174,13 @@
                  </div>
             </div>
 
-            <div href="#" name="card5" class="__card border-[1.5px] border-solid border-transparent min-w-[300px] flex flex-col items-center gap-[1rem] rounded-2xl duration-300 text-[#939393]">
-                <img src="./assets/screenshots/fintech.png" alt="" class="__card__cover">
+            <div href="#" class="_card">
+                <img src="./assets/screenshots/fintech.png" alt="" class="_card__cover">
                 <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="items rounded-full px-2 py-0 self-center">Figma</li>
-                    <li class="items rounded-full px-2 py-0 self-center">HTML</li>
-                    <li class="items rounded-full px-2 py-0 self-center">CSS</li>
-                    <li class="items rounded-full px-2 py-0 self-center">Tailwind</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">Figma</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">HTML</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">CSS</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">Tailwind</li>
                 </ul>
                 <h4 class="text-xl font-bold">Fintech Mobile App</h4>
                 <p class="text-xs px-6 text-justify h-[7rem]">Protótipo e codificação das telas de um app mobile de gestão de finanças pessoais desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP.</p>
@@ -243,13 +196,13 @@
                 </div>
             </div>
 
-            <div href="#" name="card6" class="__card border-[1.5px] border-solid border-transparent min-w-[300px] flex flex-col items-center gap-[1rem] rounded-2xl duration-300 text-[#939393]">
-                <img src="./assets/screenshots/profile.png" alt="" class="__card__cover">
+            <div href="#" class="_card">
+                <img src="./assets/screenshots/profile.png" alt="" class="_card__cover">
                 <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="items rounded-full px-2 py-0 self-center">Figma</li>
-                    <li class="items rounded-full px-2 py-0 self-center">HTML</li>
-                    <li class="items rounded-full px-2 py-0 self-center">CSS</li>
-                    <li class="items rounded-full px-2 py-0 self-center">Tailwind</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">Figma</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">HTML</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">CSS</li>
+                    <li class="_stack__item rounded-full px-2 py-0 self-center">Tailwind</li>
                 </ul>
                 <h4 class="text-xl font-bold">Profile Web Page</h4>
                 <p class="text-xs px-6 text-justify h-[7rem]">Web page criada para expor os trabalhos realizados na área desenvolvimento de software, bem como para ampliar as possibilidades de contatos por parte de clientes e recrutadores.</p>
@@ -268,10 +221,12 @@
     </section>
 
 
-    <section name="Curriculo" class="self-center flex flex-col px-[5vh] mb-24">
+
+    <section id="Rodape" class="self-center flex flex-col px-[5vh] mb-24">
         <a id="button" href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing" download
             class="flex py-1 bg-[#6969c9] justify-center text-sm border-2 border-solid border-transparent rounded-lg w-[16rem] self-center" target="_blank"><span class="material-symbols-outlined">download</span>Download Currículo</a>
     </section>
+
 
 </body>
 

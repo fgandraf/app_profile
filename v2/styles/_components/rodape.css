@@ -1,0 +1,11 @@
+#button:hover {
+    border: 2px solid hsl(240, 47%, 60%);
+    background-color: transparent;
+    color: hsl(240, 47%, 60%);
+}
+
+@media screen and (max-width: 500px) {
+    #Rodape{
+        padding-left: 0;
+    }
+}

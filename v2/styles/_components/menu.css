@@ -1,0 +1,40 @@
+#menu { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    background-color: hsl(0, 0%, 16%); 
+    color: white;
+    padding-left: 0.5rem;
+    position: fixed;
+    width: 1.5vw;
+    height: 100vh;
+    bottom: 0;
+    z-index: 20;
+}
+
+
+._menu__description{ display: none; }
+
+
+._menu__item:hover{
+    ._menu__description{ display: block; }
+    ._menu__icone{ transform: scale(1.4); }
+}
+
+
+@media screen and (max-width: 500px) {
+    #menu{
+        flex-direction: row;
+        width: 100vw;
+        height: 3vh;
+        gap: 6rem;
+        opacity: 85%;
+        padding-left: 0rem;
+    }
+
+    ._menu__item:hover{
+        ._menu__description{ display: none; }
+        ._menu__icone{ transform: none;}
+    }
+}

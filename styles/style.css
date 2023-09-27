@@ -7,7 +7,6 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 20vh;
 }
 
@@ -15,31 +14,4 @@ body::-webkit-scrollbar{
     display: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
-}
-
-
-
-
-@media screen and (max-width: 1000px) {
-
-    #titulo{
-        font-size: 8vw;
-    }
-
-    #subtitulo{
-        margin-top: 0rem;
-    }
-    #titulo_container{
-        margin-top: 0;
-        flex-direction: column;
-    }
-    #foto{
-        margin-top: -2rem;
-    }
-    #tituloesub{
-        text-align: center;
-    }
-    #core{
-        flex-direction: column;
-    }
 }

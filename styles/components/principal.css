@@ -1,19 +1,20 @@
 #top_left, #bottom_right{
-    background: linear-gradient(var(--color-background), var(--color-background)) padding-box, linear-gradient(to left, hsl(254, 65%, 90%), #9780e4) border-box;
+    /* background: linear-gradient(var(--color-background), var(--color-background)) padding-box, linear-gradient(to left, hsl(254, 65%, 90%), #9780e4) border-box; */
+   
     width: 20vw;
-    height: 15vh;
+    height: 12vh;
     z-index: 1;
 }
 
 #top_left { 
-    border-left: solid 3px transparent;
-    border-top: solid 3px transparent;
+    border-left: solid 2px #9780e4;
+    border-top: solid 2px #9780e4;
     border-top-left-radius: 1rem;
 }
 
 #bottom_right { 
-    border-right: solid 3px transparent;
-    border-bottom: solid 3px transparent;
+    border-right: solid 2px #9780e4;
+    border-bottom: solid 2px #9780e4;
     align-self: flex-end;
     border-bottom-right-radius: 1rem;
 }
@@ -26,7 +27,7 @@
 #subtitulo{
     font-size: 1.1rem;
     font-style: italic;
-    margin-top: -1rem;
+    font-weight: 400;
 }
 
 #foto__container{
@@ -34,6 +35,7 @@
     align-items: center;
     justify-content: center;
     z-index: 5;
+    margin-top: -1rem;
 }
 
 #foto { 
@@ -46,15 +48,16 @@
 
 #topicos { 
     color: #939393; 
-    background: linear-gradient(var(--color-background), var(--color-background)) padding-box, linear-gradient(to bottom, hsl(254, 65%, 90%), #9780e4) border-box;
-    border-left: solid 3px transparent;
-    width: 40vw;
+    /* background: linear-gradient(var(--color-background), var(--color-background)) padding-box, linear-gradient(to bottom, hsl(254, 65%, 90%), #9780e4) border-box; */
+    border-left: solid 2px #9780e4;
+    width: 45vw;
     margin-left: 5vw;
     display: flex;
     flex-direction: column;
     font-size: 1rem;
     padding: 0.5rem 2rem;
     z-index: 40;
+    line-height: 1.5rem;
 }
 
 #topico__item{
@@ -69,13 +72,12 @@
 }
 
 #section__principal{
-    padding-left: 2vw;
     display: flex;
     flex-direction: column;
     align-self: center;
-    height: 80vh;
+    justify-content: center;
+    height: 100vh;
     width: 80vw;
-    margin-top: 10vh;
 }
 
 #core{
@@ -84,7 +86,7 @@
     text-align: right;
     gap: 3rem;
     align-items: start;
-    margin-top: 7vh;
+    margin-top: 3vh;
 }
 
 
@@ -101,14 +103,15 @@
 
     #topicos{
         align-self: center;
-        margin-top: 2rem;
         font-size: 0.75rem;
-        width: 85vw;
+        width: 70vw;
+        margin: 2rem 0 0 0;
     }
 
     #section__principal{
         width: 90vw;
         padding-left: 0;
+        height: 95vh;
     }
 
     #top_left{
@@ -121,11 +124,13 @@
     }
 
     #core{
+        flex-direction: column;
         text-align: center;
         align-items: center;
     }
 
     #foto{
+        margin-top: -2rem;
         width: 200px;
     }
 }

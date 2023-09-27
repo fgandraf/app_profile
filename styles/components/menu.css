@@ -6,7 +6,7 @@
     background-color: hsl(0, 0%, 16%); 
     padding-left: 0.5rem;
     position: fixed;
-    width: 1.5vw;
+    width: 15px;
     height: 100vh;
     bottom: 0;
     z-index: 20;
@@ -15,18 +15,18 @@
 
 .menu__item{
     display: grid;
-    grid-template-columns: 30px auto;
+    grid-template-columns: 30px 150px;
     text-wrap: nowrap;
+    flex-wrap: nowrap;
     gap: 1rem;
 }
 
 .menu__description{
     font-size: 0.8rem;
+    display: none;
 }
 
 .menu__icone{ transition: 0.2s;}
-
-.menu__description{ display: none; }
 
 
 .menu__item:hover{

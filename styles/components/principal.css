@@ -1,36 +1,90 @@
 #top_left, #bottom_right{
     background: linear-gradient(var(--color-background), var(--color-background)) padding-box, linear-gradient(to left, hsl(254, 65%, 90%), #9780e4) border-box;
+    width: 20vw;
+    height: 15vh;
+    z-index: 1;
 }
 
 #top_left { 
-    border-left: solid 2px transparent;
-    border-top: solid 2px transparent;
+    border-left: solid 3px transparent;
+    border-top: solid 3px transparent;
+    border-top-left-radius: 1rem;
 }
 
 #bottom_right { 
-    border-right: solid 2px transparent;
-    border-bottom: solid 2px transparent;
+    border-right: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+    align-self: flex-end;
+    border-bottom-right-radius: 1rem;
 }
 
-#titulo { font-family: "Artifika", serif; }
+#titulo { 
+    font-family: "Artifika", serif; 
+    font-size: 5vw;
+}
+
+#subtitulo{
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: -1rem;
+}
+
+#foto__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
 
 #foto { 
     background: linear-gradient(white, white) padding-box, linear-gradient(to right, white, #9780e4) border-box; 
     border: 1.5px solid transparent;
+    min-width: 150px;
+    border-radius: 9999px;
+    z-index: 10;
 }
 
 #topicos { 
     color: #939393; 
     background: linear-gradient(var(--color-background), var(--color-background)) padding-box, linear-gradient(to bottom, hsl(254, 65%, 90%), #9780e4) border-box;
-    border-left: solid 2px transparent;
+    border-left: solid 3px transparent;
+    width: 40vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    z-index: 40;
+}
+
+#topico__item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: circle;
 }
 
 #saiba_mais{
     color: #6969c9;
 }
 
-#Principal{
+#section__principal{
     padding-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 80vh;
+    width: 80vw;
+    margin-top: 10vh;
+}
+
+#core{
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 7vh;
 }
 
 
@@ -42,16 +96,17 @@
     #subtitulo{
         font-size: 1rem;
         margin-bottom: 2rem;
+        margin-top: 0.2rem;
     }
 
     #topicos{
         align-self: center;
         margin-top: 2rem;
-        font-size: 0.7rem;
-        width: 80vw;
+        font-size: 0.75rem;
+        width: 85vw;
     }
 
-    #Principal{
+    #section__principal{
         width: 90vw;
         padding-left: 0;
     }
@@ -63,5 +118,14 @@
     #bottom_right{
         width: 25vw;
         height: 6vh;
+    }
+
+    #core{
+        text-align: center;
+        align-items: center;
+    }
+
+    #foto{
+        width: 200px;
     }
 }

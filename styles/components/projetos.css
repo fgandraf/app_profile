@@ -1,4 +1,4 @@
-._card{ 
+.card{ 
     max-width: 350px;
     display: flex;
     flex-direction: column;
@@ -11,60 +11,111 @@
     transition: 0.2s;
 }
 
-._card__cover{
+.card__cover{
     clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
     border-radius: 0.6rem 0.6rem 0 0;
     opacity: 50%;
 }
 
-._card:hover{
+.card:hover{
     box-shadow: 0px 0px 15px hsl(0, 0%, 25%);
     transform: scale(1.02);
     
-    ._card__cover{
+    .card__cover{
         clip-path: none;
     opacity: 100%;
     filter: saturate(100%);
     }
 }
 
-._stack__item {
+.stacks{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.65rem;
+    height: 2.5rem;
+    justify-content: center;
+}
+
+.stack__item {
     height: 1.2rem;
     border: 1px solid #8d8d8d;
+    text-wrap: nowrap;
+    padding: 0 0.5rem;
+    align-self: center;
+    border-radius: 9999px;
 }
 
-h4 { color: white; }
+.section__titulo{
+    margin: 4rem 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
 
-#Projetos{
+.projeto__nome { 
+    color: white; 
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.projeto__descricao{
+    text-align: justify;
+    height: 7rem;
+    font-size: 0.75rem;
+    padding: 0 1.5rem;
+}
+
+.card__repo{
+    display: flex;
+    height: 2.5rem;
+    gap: 1rem;
+}
+
+#section__projetos{
     padding-left: 2vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
-._card__repo{
+#projetos__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+    gap: 2.5rem;
+}
+
+.card__repo{
     color: #9780e4;
 }
 
 @media screen and (max-width: 500px) {
 
-    ._card{
-        max-width: 100%;
+    .card{
+        max-width: 300x;
     }
 
-    ._card:hover{
+    .card:hover{
         box-shadow:none;
         transform: none;
-        ._card__cover{
+        .card__cover{
             clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
         }
     }
         
-    ._card__cover{
+    .card__cover{
         
         opacity: 100%;
         filter: saturate(100%);
     }
 
-    #Projetos{
+    #section__projetos{
         padding-left: 0;
+    }
+
+    #projetos__container{
+        margin:0;
     }
 
 }

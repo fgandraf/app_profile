@@ -13,16 +13,21 @@
     font-size: 0.9rem;
 }
 
+#section__rodape{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 8rem;
+    align-items: center;
+    padding-left: 2vw;
+}
+
 #button:hover {
     background: hsl(240, 47%, 68%);
 }
 
-#Rodape{
-    padding-left: 2vw;
-}
-
 @media screen and (max-width: 500px) {
-    #Rodape{
+    #section__rodape{
         padding-left: 0;
     }
     #button:hover{

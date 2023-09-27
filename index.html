@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
     <!-- GOOGLE MATERIAL -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Artifika&family=Montserrat:wght@400;700&family=Ubuntu&family=Ubuntu+Condensed&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Artifika&family=Montserrat:wght@400;700&family=Ubuntu&family=Ubuntu+Condensed&display=swap">
 
     <!-- STYLES -->
     <link rel="stylesheet" href="styles/style.css">
@@ -48,7 +50,7 @@
         </div>
         <div class="menu__item">
             <a href="https://www.github.com/fgandraf/" target="_blank">
-                <img src="assets/github.svg"  class="menu__icone">
+                <img src="assets/github.svg" class="menu__icone">
             </a>
             <span class="menu__description">github.com/fgandraf</span>
         </div>
@@ -62,160 +64,163 @@
 
 
 
-    <section id="Principal" class="self-center flex flex-col h-[80vh] w-[80vw] mt-[10vh]">
-        
-        <div id="top_left" class="rounded-tl-[1rem] w-[20vw] h-[15vh] z-10"></div>
+    <section id="section__principal">
 
-        <div id="core" class="flex flex-col gap-[5%] w-[85%] h-[80%] -my-[5%] self-center justify-center z-20">
-            
-            <div id="titulo_container" class="flex gap-12 justify-center -mt-16 z-20">
-                <div id="tituloesub" class="flex self-center text-right">    
-                    <div>
-                        <h1 id="titulo" class="text-[5vw]">Felipe Gandra</h1>
-                        <h2 id="subtitulo" class="text-[1rem] italic -mt-4">Desenvolvedor de Software</h2>
-                    </div>
+        <div id="top_left"></div>
+
+        <div id="core">
+                <div>
+                    <h1 id="titulo">Felipe Gandra</h1>
+                    <h2 id="subtitulo">Desenvolvedor de Software</h2>
                 </div>
-                <div id="foto_container" class="flex items-center justify-center h-full">
-                    <img id="foto" src="./assets/foto.png" class="w-[15vw] min-w-[150px] rounded-full mt-24 z-20">
+                <div id="foto_container">
+                    <img id="foto" src="./assets/foto.png" width="250px">
                 </div>
             </div>
-            
-            <div class="flex flex-col">
-                <div id="topicos" class="text-[0.85rem] px-8 py-2 z-40 -mt-6">
-                    <ul class="list-disc flex flex-col gap-3">
-                        <li>Arquiteto Urbanista e estudante de Análise e Desenvolvimento de Sistemas;</li>
-                        <li>Nerd, apaixonado por tecnologia e insaciávelmente curioso;</li>
-                        <li>Com (alguma) experiência em linguagens de programação desde os anos de 1990.</li>
-                        <li id="saiba_mais" class="hidden"><a href="#">Saiba mais sobre mim.</a></li>
-                    </ul>
-                </div>
-            </div>       
-
+        </div>
+            <div id="topicos">
+                <ul id="topico__item">
+                    <li>Arquiteto Urbanista e estudante de Análise e Desenvolvimento de Sistemas;</li>
+                    <li>Nerd, apaixonado por tecnologia e insaciávelmente curioso;</li>
+                    <li>Com (alguma) experiência em linguagens de programação desde os anos de 1990.</li>
+                    <!-- <li id="saiba_mais"><a href="#">Saiba mais sobre mim.</a></li> -->
+                </ul>
+            </div>
         </div>
 
-        <div id="bottom_right" class="rounded-br-[1rem] self-end w-[20vw] h-[15vh] m-0 z-10"></div>
+        <div id="bottom_right"></div>
     </section>
 
 
 
-    <section id="Projetos" class="self-center flex flex-col w-[80vw]">
-        <h3 class="text-[1.5rem] font-semibold my-14">: : PROJETOS : :</h3>
-        
-        <div id="projetos_container" class="flex gap-10 mx-4 flex-wrap justify-center">
+    <section id="section__projetos">
+        <h3 class="section__titulo">: : PROJETOS : :</h3>
 
-            <div href="#" class="_card">
-                <img src="./assets/screenshots/aex30.png" alt="" class="_card__cover">
-                <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">C#</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">.NET</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">Windows Forms</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">NPOI Library</li>
+        <div id="projetos__container">
+
+            <div href="#" class="card">
+                <img src="./assets/screenshots/aex30.png" class="card__cover">
+                <ul class="stacks">
+                    <li class="stack__item">C#</li>
+                    <li class="stack__item">.NET</li>
+                    <li class="stack__item">Windows Forms</li>
+                    <li class="stack__item">NPOI Library</li>
                 </ul>
-                <h4 class="text-xl font-bold">Aex30 Windows App</h4>
-                <p class="text-xs px-6 text-justify h-[7rem]">Software assistente para automatizar o preenchimento dos relatórios de acompanhamento de evolução de obra fornecidos pela Caixa Econômica Federal aos arquitetos e engenheiros credenciados.</p>
-                <div class="_card__repo flex gap-4 h-[2.5rem]">
-                    <a href="https://github.com/fgandraf/app_aex30"
-                        target="_blank" title="Código-fonte"><span class="material-symbols-outlined">
+                <h4 class="projeto__nome">Aex30 Windows App</h4>
+                <p class="projeto__descricao">Software assistente para automatizar o preenchimento dos
+                    relatórios de acompanhamento de evolução de obra fornecidos pela Caixa Econômica Federal aos
+                    arquitetos e engenheiros credenciados.</p>
+                <div class="card__repo">
+                    <a href="https://github.com/fgandraf/app_aex30" target="_blank" title="Código-fonte"><span
+                            class="material-symbols-outlined">
                             code
                         </span></a>
                 </div>
             </div>
 
-            <div href="#" class="_card">
-                <img src="./assets/screenshots/fluxus.png" alt="" class="_card__cover">
-                <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">C#</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">.NET</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">Windows Forms</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">iTextSharp</li>
+            <div href="#" class="card">
+                <img src="./assets/screenshots/fluxus.png" class="card__cover">
+                <ul class="stacks">
+                    <li class="stack__item">C#</li>
+                    <li class="stack__item">.NET</li>
+                    <li class="stack__item">Windows Forms</li>
+                    <li class="stack__item">iTextSharp</li>
                 </ul>
-                <h4 class="text-xl font-bold">Fluxus Windows App</h4>
-                <p class="text-xs px-6 text-justify h-[7rem]">Software para gestão de Ordens de Serviços emitidas pela Caixa Econômica Federal aos arquitetos e engenheiros credenciadas em edital público.</p>
-                <div class="_card__repo flex gap-4 h-[2.5rem]">
-                    <a href="https://github.com/fgandraf/app_fluxus"
-                        target="_blank" title="Código-fonte"><span class="material-symbols-outlined">
-                            code
-                        </span></a>
-                </div>
-            </div>
-            
-            <div href="#" class="_card">
-                <img src="./assets/screenshots/fluxusapi.png" alt="" class="_card__cover">
-                <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">C#</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">.NET</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">MySQL</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">Dapper</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">Swagger</li>
-                </ul>
-                <h4 class="text-xl font-bold">Fluxus Web API</h4>
-                <p class="text-xs px-6 h-[7rem] text-justify">API Rest desenvolvida para integrar as operações de manipulação e persistência de dados do software Fluxus (gestão de serviços de engenharia para credenciados de bancos públicos) com a base de dados em MySQL.</p>
-                <div class="_card__repo flex gap-4 h-[2.5rem]">
-                    <a href="https://github.com/fgandraf/app_fluxus-api"
-                        target="_blank" title="Código-fonte"><span class="material-symbols-outlined">
+                <h4 class="projeto__nome">Fluxus Windows App</h4>
+                <p class="projeto__descricao">Software para gestão de Ordens de Serviços emitidas pela
+                    Caixa Econômica Federal aos arquitetos e engenheiros credenciadas em edital público.</p>
+                <div class="card__repo">
+                    <a href="https://github.com/fgandraf/app_fluxus" target="_blank" title="Código-fonte"><span
+                            class="material-symbols-outlined">
                             code
                         </span></a>
                 </div>
             </div>
 
-            <div href="#" class="_card">
-                <img src="./assets/screenshots/alucar.png" alt="" class="_card__cover">
-                <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">Figma</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">HTML</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">CSS</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">Tailwind</li>
+            <div href="#" class="card">
+                <img src="./assets/screenshots/fluxusapi.png" class="card__cover">
+                <ul class="stacks">
+                    <li class="stack__item">C#</li>
+                    <li class="stack__item">.NET</li>
+                    <li class="stack__item">MySQL</li>
+                    <li class="stack__item">Dapper</li>
+                    <li class="stack__item">Swagger</li>
                 </ul>
-                <h4 class="text-xl font-bold">AluCar Mobile App</h4>
-                <p class="text-xs px-6 text-justify h-[7rem]">Protótipo e codificação das telas de um app mobile desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP para o challenge proporcionado junto à BRQ Digital Solutions e a plataforma EasyCarros.</p>
-                <div class="_card__repo flex gap-4 h-[2.5rem]">
+                <h4 class="projeto__nome">Fluxus Web API</h4>
+                <p class="projeto__descricao">API Rest desenvolvida para integrar as operações de
+                    manipulação e persistência de dados do software Fluxus (gestão de serviços de engenharia para
+                    credenciados de bancos públicos) com a base de dados em MySQL.</p>
+                <div class="card__repo">
+                    <a href="https://github.com/fgandraf/app_fluxus-api" target="_blank" title="Código-fonte"><span
+                            class="material-symbols-outlined">
+                            code
+                        </span></a>
+                </div>
+            </div>
+
+            <div href="#" class="card">
+                <img src="./assets/screenshots/alucar.png" class="card__cover">
+                <ul class="stacks">
+                    <li class="stack__item">Figma</li>
+                    <li class="stack__item">HTML</li>
+                    <li class="stack__item">CSS</li>
+                    <li class="stack__item">Tailwind</li>
+                </ul>
+                <h4 class="projeto__nome">AluCar Mobile App</h4>
+                <p class="projeto__descricao">Protótipo e codificação das telas de um app mobile
+                    desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP para o challenge
+                    proporcionado junto à BRQ Digital Solutions e a plataforma EasyCarros.</p>
+                <div class="card__repo">
                     <a href="https://fgandraf.github.io/fiap_alucar/src" target="_blank" title="Publicação">
                         <span class="material-symbols-outlined">deployed_code</span>
                     </a>
                     <a href="https://github.com/fgandraf/fiap_alucar" target="_blank" title="Código-fonte">
                         <span class="material-symbols-outlined">code</span>
                     </a>
-                 </div>
+                </div>
             </div>
 
-            <div href="#" class="_card">
-                <img src="./assets/screenshots/fintech.png" alt="" class="_card__cover">
-                <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">Figma</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">HTML</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">CSS</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">Tailwind</li>
+            <div href="#" class="card">
+                <img src="./assets/screenshots/fintech.png" class="card__cover">
+                <ul class="stacks">
+                    <li class="stack__item">Figma</li>
+                    <li class="stack__item">HTML</li>
+                    <li class="stack__item">CSS</li>
+                    <li class="stack__item">Tailwind</li>
                 </ul>
-                <h4 class="text-xl font-bold">Fintech Mobile App</h4>
-                <p class="text-xs px-6 text-justify h-[7rem]">Protótipo e codificação das telas de um app mobile de gestão de finanças pessoais desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP.</p>
-                <div class="_card__repo flex gap-4 h-[2.5rem]">
-                    <a href="https://fgandraf.github.io/fiap_fintech/src"
-                        target="_blank" title="Publicação"><span class="material-symbols-outlined">
+                <h4 class="projeto__nome">Fintech Mobile App</h4>
+                <p class="projeto__descricao">Protótipo e codificação das telas de um app mobile de
+                    gestão de finanças pessoais desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da
+                    FIAP.</p>
+                <div class="card__repo">
+                    <a href="https://fgandraf.github.io/fiap_fintech/src" target="_blank" title="Publicação"><span
+                            class="material-symbols-outlined">
                             deployed_code
                         </span></a>
-                    <a href="https://github.com/fgandraf/fiap_fintech"
-                        target="_blank" title="Código-fonte"><span class="material-symbols-outlined">
+                    <a href="https://github.com/fgandraf/fiap_fintech" target="_blank" title="Código-fonte"><span
+                            class="material-symbols-outlined">
                             code
                         </span></a>
                 </div>
             </div>
 
-            <div href="#" class="_card">
-                <img src="./assets/screenshots/profile.png" alt="" class="_card__cover">
-                <ul class="flex gap-2 text-[0.65rem] h-[2.5rem] justify-center">
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">HTML</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">CSS</li>
-                    <li class="_stack__item rounded-full px-2 py-0 self-center">Tailwind</li>
+            <div href="#" class="card">
+                <img src="./assets/screenshots/profile.png" class="card__cover">
+                <ul class="stacks">
+                    <li class="stack__item">HTML</li>
+                    <li class="stack__item">CSS</li>
                 </ul>
-                <h4 class="text-xl font-bold">Profile Web Page</h4>
-                <p class="text-xs px-6 text-justify h-[7rem]">Web page criada para expor os trabalhos realizados na área desenvolvimento de software, bem como para ampliar as possibilidades de contatos por parte de clientes e recrutadores.</p>
-                <div class="_card__repo flex gap-4 h-[2.5rem]">
-                    <a href="https://fgandraf.github.io/app_profile"
-                        target="_blank" title="Publicação"><span class="material-symbols-outlined">
+                <h4 class="projeto__nome">Profile Web Page</h4>
+                <p class="projeto__descricao">Web page criada para expor os trabalhos realizados na área
+                    desenvolvimento de software, bem como para ampliar as possibilidades de contatos por parte de
+                    clientes e recrutadores.</p>
+                <div class="card__repo">
+                    <a href="https://fgandraf.github.io/app_profile" target="_blank" title="Publicação"><span
+                            class="material-symbols-outlined">
                             deployed_code
                         </span></a>
-                    <a href="https://github.com/fgandraf/app_profile"
-                        target="_blank" title="Código-fonte"><span class="material-symbols-outlined">
+                    <a href="https://github.com/fgandraf/app_profile" target="_blank" title="Código-fonte"><span
+                            class="material-symbols-outlined">
                             code
                         </span></a>
                 </div>
@@ -225,8 +230,9 @@
 
 
 
-    <section id="Rodape" class="self-center flex flex-col w-[80vw] mb-32">
-        <a id="button" href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing" download target="_blank">
+    <section id="section__rodape">
+        <a id="button" href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing"
+            download target="_blank">
             <span class="material-symbols-outlined">download</span><span>Download Currículo</span>
         </a>
     </section>

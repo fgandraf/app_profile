@@ -1,6 +1,4 @@
 #top_left, #bottom_right{
-    /* background: linear-gradient(var(--color-background), var(--color-background)) padding-box, linear-gradient(to left, hsl(254, 65%, 90%), #9780e4) border-box; */
-   
     width: 20vw;
     height: 12vh;
     z-index: 1;
@@ -17,7 +15,29 @@
     border-bottom: solid 2px #9780e4;
     align-self: flex-end;
     border-bottom-right-radius: 1rem;
+    display: flex;
+    justify-content: center;
 }
+
+#curriculo__container{
+    display: flex;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    align-items:flex-end;
+    gap: 1rem;
+}
+
+
+.curriculo_item{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #9780e4;
+}
+.curriculo_item:hover{
+    color: hsl(254, 65%, 90%);
+}
+
 
 #titulo { 
     font-family: "Artifika", serif; 
@@ -48,7 +68,6 @@
 
 #topicos { 
     color: #939393; 
-    /* background: linear-gradient(var(--color-background), var(--color-background)) padding-box, linear-gradient(to bottom, hsl(254, 65%, 90%), #9780e4) border-box; */
     border-left: solid 2px #9780e4;
     width: 45vw;
     margin-left: 5vw;
@@ -92,6 +111,7 @@
 
 @media screen and (max-width: 500px) {
     #titulo{
+        margin-top: -2rem;
         font-size: 2.5rem;
     }
 
@@ -112,6 +132,7 @@
         width: 90vw;
         padding-left: 0;
         height: 95vh;
+        margin-top: -1vh;
     }
 
     #top_left{
@@ -121,6 +142,19 @@
     #bottom_right{
         width: 25vw;
         height: 6vh;
+        margin-top: 4rem;
+    }
+
+    #curriculo__container{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: -1rem;
+        justify-content: center;
+    }
+
+    .curriculo_item:hover{
+        color: #9780e4;
     }
 
     #core{
@@ -133,4 +167,6 @@
         margin-top: -2rem;
         width: 200px;
     }
+
+
 }

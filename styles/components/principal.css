@@ -97,7 +97,12 @@
 }
 
 #saiba_mais{
-    color: #6969c9;
+    text-decoration: none;
+    color: #9780e4;
+}
+
+#saiba_mais:hover{
+    color: hsl(254, 65%, 90%);
 }
 
 #section__principal{
@@ -106,7 +111,8 @@
     align-self: center;
     justify-content: center;
     height: 100vh;
-    width: 80vw;
+    width: 80%;
+    margin: 0 auto
 }
 
 #core{

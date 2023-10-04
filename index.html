@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/components/menu.css">
     <link rel="stylesheet" href="styles/components/principal.css">
     <link rel="stylesheet" href="styles/components/projetos.css">
+    <link rel="stylesheet" href="styles/components/modal.css">
 
     <!-- GOOGLE MATERIAL -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -25,7 +26,6 @@
 </head>
 
 <body>
-
 
     <nav id="menu">
         <div class="menu__item">
@@ -55,7 +55,6 @@
     </nav>
 
 
-
     <section id="section__principal">
 
         <div id="top_left"></div>
@@ -75,10 +74,12 @@
                     <li>Arquiteto Urbanista e estudante de Análise e Desenvolvimento de Sistemas;</li>
                     <li>Nerd, apaixonado por tecnologia e insaciávelmente curioso;</li>
                     <li>Com (alguma) experiência em linguagens de programação desde os anos de 1990.</li>
-                    <!-- <li id="saiba_mais"><a href="#">Saiba mais sobre mim.</a></li> -->
+                    <li><a href="#" id="saiba_mais" onclick="openModal('./pages/about.html')">Saiba mais...</a></li>
                 </ul>
             </div>
         </div>
+
+       
 
         <div id="bottom_right">
 
@@ -99,8 +100,6 @@
 
         </div>
     </section>
-
-
 
     <section id="section__projetos">
         <h3 class="section__titulo">: : PROJETOS : :</h3>
@@ -217,6 +216,7 @@
                 <ul class="stacks">
                     <li class="stack__item">HTML</li>
                     <li class="stack__item">CSS</li>
+                    <li class="stack__item">Javascript</li>
                 </ul>
                 <h4 class="projeto__nome">Profile Web Page</h4>
                 <p class="projeto__descricao">Web page criada para expor os trabalhos realizados na área
@@ -236,7 +236,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="section_curriculo">
         <div id="curriculo__container__rodape">
             <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing"
             download target="_blank" class="curriculo_item">
@@ -252,7 +252,18 @@
         </div>
     </section>
 
+     <!-- Janela modal -->
+     <div id="myModal" class="modal">
+        <!-- Conteúdo da janela modal -->
+        <div class="modal-content">
+        <a href="#" class="close">X</a>
+        <div id="modalContent"></div>
+        </div>
+    </div>
 
+
+    <script src="./scripts/modal.js"></script>
 </body>
+
 
 </html>

@@ -77,11 +77,11 @@
 
 #section__projetos{
     padding-left: 2vw;
-    width: 80vw;
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin-bottom: 8rem;
+    width: 80%;
+    margin: 0 auto 8rem auto
 }
 
 #projetos__container{

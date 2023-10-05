@@ -26,7 +26,7 @@ h2{
 #formacao__section{
     background-color: #1c1c1c;
     padding: 4rem 4rem;
-    min-height: 85vh;
+    min-height: 50vh;
 }
 #graduacoes{
     font-size: 1.1rem;
@@ -81,9 +81,6 @@ h2{
     background-color: #252329;
     padding: 1rem;
     width: 25vw;
-}
-.curso__andamento{
-    opacity: 8%;
 }
 
 .curso__card h3{

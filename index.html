@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="styles/components/modal.css">
 
     <!-- GOOGLE MATERIAL -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Artifika&family=Montserrat:wght@400;700&family=Ubuntu&family=Ubuntu+Condensed&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Artifika&family=Montserrat:wght@400;700&family=Ubuntu&family=Ubuntu+Condensed&display=swap">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
@@ -60,38 +62,38 @@
         <div id="top_left"></div>
 
         <div id="core">
-                <div>
-                    <h1 id="titulo">Felipe Gandra</h1>
-                    <h2 id="subtitulo">Desenvolvedor de Software</h2>
-                </div>
-                <div id="foto__container">
-                    <img id="foto" src="./assets/foto.png" width="250px">
-                </div>
+            <div>
+                <h1 id="titulo">Felipe Gandra</h1>
+                <h2 id="subtitulo">Desenvolvedor de Software</h2>
+            </div>
+            <div id="foto__container">
+                <img id="foto" src="./assets/foto.png" width="250px">
             </div>
         </div>
-            <div id="topicos">
-                <ul id="topico__item">
-                    <li>Arquiteto Urbanista e estudante de Análise e Desenvolvimento de Sistemas;</li>
-                    <li>Nerd, apaixonado por tecnologia e insaciávelmente curioso;</li>
-                    <li>Com (alguma) experiência em linguagens de programação desde os anos de 1990.</li>
-                    <li><a href="#" id="saiba_mais" onclick="openModal('./pages/about.html')">Saiba mais...</a></li>
-                </ul>
-            </div>
+        </div>
+        <div id="topicos">
+            <ul id="topico__item">
+                <li>Arquiteto Urbanista e estudante de Análise e Desenvolvimento de Sistemas;</li>
+                <li>Nerd, apaixonado por tecnologia e insaciávelmente curioso;</li>
+                <li>Com (alguma) experiência em linguagens de programação desde os anos de 1990.</li>
+                <li><a href="#" id="saiba_mais" onclick="openModal('./pages/about.html')">Saiba mais...</a></li>
+            </ul>
+        </div>
         </div>
 
-       
+
 
         <div id="bottom_right">
 
             <div id="curriculo__container">
-                <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing"
-                download target="_blank" class="curriculo_item">
+                <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing" download
+                    target="_blank" class="curriculo_item">
                     <i class="material-symbols-outlined">download</i>
                     Currículo (pt-br)
                 </a>
 
-                <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing"
-                download target="_blank" class="curriculo_item">
+                <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing" download
+                    target="_blank" class="curriculo_item">
                     <i class="material-symbols-outlined">download</i>
                     Resume (en-us)
                 </a>
@@ -106,7 +108,8 @@
 
         <div id="projetos__container">
 
-            <div class="card">
+
+            <span id="aex30" class="card" onclick="openModal('./pages/aex30.html')">
                 <img src="./assets/screenshots/aex30.png" class="card__cover">
                 <ul class="stacks">
                     <li class="stack__item">C#</li>
@@ -118,15 +121,9 @@
                 <p class="projeto__descricao">Software assistente para automatizar o preenchimento dos
                     relatórios de acompanhamento de evolução de obra fornecidos pela Caixa Econômica Federal aos
                     arquitetos e engenheiros credenciados.</p>
-                <div class="card__repo">
-                    <a href="https://github.com/fgandraf/app_aex30" target="_blank" title="Código-fonte"><span
-                            class="material-symbols-outlined icone__repo">
-                            code
-                        </span></a>
-                </div>
-            </div>
+            </span>
 
-            <div class="card">
+            <span id="fluxus-app" class="card" onclick="openModal('./pages/fluxus-app.html')">
                 <img src="./assets/screenshots/fluxus.png" class="card__cover">
                 <ul class="stacks">
                     <li class="stack__item">C#</li>
@@ -137,36 +134,24 @@
                 <h4 class="projeto__nome">Fluxus Windows App</h4>
                 <p class="projeto__descricao">Software para gestão de Ordens de Serviços emitidas pela
                     Caixa Econômica Federal aos arquitetos e engenheiros credenciadas em edital público.</p>
-                <div class="card__repo">
-                    <a href="https://github.com/fgandraf/app_fluxus" target="_blank" title="Código-fonte"><span
-                            class="material-symbols-outlined icone__repo">
-                            code
-                        </span></a>
-                </div>
-            </div>
+            </span>
 
-            <div class="card">
+            <span id="fluxusapi" class="card" onclick="openModal('./pages/fluxus-api.html')">
                 <img src="./assets/screenshots/fluxusapi.png" class="card__cover">
                 <ul class="stacks">
                     <li class="stack__item">C#</li>
                     <li class="stack__item">.NET</li>
                     <li class="stack__item">MySQL</li>
                     <li class="stack__item">Dapper</li>
-                    <li class="stack__item">Swagger</li>
                 </ul>
                 <h4 class="projeto__nome">Fluxus Web API</h4>
                 <p class="projeto__descricao">API Rest desenvolvida para integrar as operações de
-                    manipulação e persistência de dados do software Fluxus (gestão de serviços de engenharia para
+                    manipulação e persistência de dados do software Fluxus (gestão de serviços de engenharia
+                    para
                     credenciados de bancos públicos) com a base de dados em MySQL.</p>
-                <div class="card__repo">
-                    <a href="https://github.com/fgandraf/app_fluxus-api" target="_blank" title="Código-fonte"><span
-                            class="material-symbols-outlined icone__repo">
-                            code
-                        </span></a>
-                </div>
-            </div>
+            </span>
 
-            <div class="card">
+            <span id="alucar" class="card" onclick="openModal('./pages/alucar.html')">
                 <img src="./assets/screenshots/alucar.png" class="card__cover">
                 <ul class="stacks">
                     <li class="stack__item">Figma</li>
@@ -176,42 +161,13 @@
                 </ul>
                 <h4 class="projeto__nome">AluCar Mobile App</h4>
                 <p class="projeto__descricao">Protótipo e codificação das telas de um app mobile
-                    desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP para o challenge
+                    desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP para o
+                    challenge
                     proporcionado junto à BRQ Digital Solutions e a plataforma EasyCarros.</p>
-                <div class="card__repo">
-                    <a href="https://fgandraf.github.io/fiap_alucar/src" target="_blank" title="Publicação">
-                        <span class="material-symbols-outlined icone__repo">deployed_code</span></a>
-                    <a href="https://github.com/fgandraf/fiap_alucar" target="_blank" title="Código-fonte">
-                        <span class="material-symbols-outlined icone__repo">code</span>
-                    </a>
-                </div>
-            </div>
+            </span>
 
-            <div class="card">
-                <img src="./assets/screenshots/fintech.png" class="card__cover">
-                <ul class="stacks">
-                    <li class="stack__item">Figma</li>
-                    <li class="stack__item">HTML</li>
-                    <li class="stack__item">CSS</li>
-                    <li class="stack__item">Tailwind</li>
-                </ul>
-                <h4 class="projeto__nome">Fintech Mobile App</h4>
-                <p class="projeto__descricao">Protótipo e codificação das telas de um app mobile de
-                    gestão de finanças pessoais desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da
-                    FIAP.</p>
-                <div class="card__repo">
-                    <a href="https://fgandraf.github.io/fiap_fintech/src" target="_blank" title="Publicação"><span
-                            class="material-symbols-outlined icone__repo">
-                            deployed_code
-                        </span></a>
-                    <a href="https://github.com/fgandraf/fiap_fintech" target="_blank" title="Código-fonte"><span
-                            class="material-symbols-outlined icone__repo">
-                            code
-                        </span></a>
-                </div>
-            </div>
 
-            <div class="card">
+            <span id="profile" class="card" onclick="openModal('./pages/profile.html')">
                 <img src="./assets/screenshots/profile.png" class="card__cover">
                 <ul class="stacks">
                     <li class="stack__item">HTML</li>
@@ -219,45 +175,49 @@
                     <li class="stack__item">Javascript</li>
                 </ul>
                 <h4 class="projeto__nome">Profile Web Page</h4>
-                <p class="projeto__descricao">Web page criada para expor os trabalhos realizados na área
-                    desenvolvimento de software, bem como para ampliar as possibilidades de contatos por parte de
+                <p class="projeto__descricao">Web page criada para expor os trabalhos realizados na
+                    área
+                    desenvolvimento de software, bem como para ampliar as possibilidades de contatos
+                    por parte de
                     clientes e recrutadores.</p>
-                <div class="card__repo">
-                    <a href="https://fgandraf.github.io/app_profile" target="_blank" title="Publicação"><span
-                            class="material-symbols-outlined icone__repo">
-                            deployed_code
-                        </span></a>
-                    <a href="https://github.com/fgandraf/app_profile" target="_blank" title="Código-fonte"><span
-                            class="material-symbols-outlined icone__repo">
-                            code
-                        </span></a>
-                </div>
-            </div>
+            </span>
+
+            <span id="promoresapi" class="card card__noeffects">
+                <img src=" ./assets/screenshots/under-construction.jpg" class="card__cover">
+                <ul class="stacks">
+                    <li class="stack__item">C#</li>
+                    <li class="stack__item">.NET</li>
+                    <li class="stack__item">SQLServer</li>
+                    <li class="stack__item">Entity Framework</li>
+                </ul>
+                <h4 class="projeto__nome">Promore Web API</h4>
+                <p class="projeto__descricao">Em desenvolvimento...</p>
+            </span>
         </div>
     </section>
 
     <section id="section_curriculo">
         <div id="curriculo__container__rodape">
-            <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing"
-            download target="_blank" class="curriculo_item">
+            <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing" download
+                target="_blank" class="curriculo_item">
                 <i class="material-symbols-outlined">download</i>
                 Currículo (pt-br)
             </a>
 
-            <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing"
-            download target="_blank" class="curriculo_item">
+            <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing" download
+                target="_blank" class="curriculo_item">
                 <i class="material-symbols-outlined">download</i>
                 Resume (en-us)
             </a>
         </div>
     </section>
 
-     <!-- Janela modal -->
-     <div id="myModal" class="modal">
+    <!-- Janela modal -->
+    <div id="myModal" class="modal">
         <!-- Conteúdo da janela modal -->
         <div class="modal-content">
-        <a href="#" class="close">X</a>
-        <div id="modalContent"></div>
+            <i class="close">X</i>
+            <div id="modalContent"></div>
         </div>
     </div>
 

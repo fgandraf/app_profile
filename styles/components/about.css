@@ -1,19 +1,19 @@
-body{
+body {
     background-color: #292929;
     color: #939393;
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-h2{
+h2 {
     font-family: 'Lobster Two', cursive;
     color: white;
     font-size: 3rem;
@@ -23,12 +23,17 @@ h2{
     line-height: 3.5rem;
 }
 
-#formacao__section{
+a {
+    text-decoration: none;
+}
+
+#formacao__section {
     background-color: #1c1c1c;
     padding: 4rem 4rem;
     min-height: 50vh;
 }
-#graduacoes{
+
+#graduacoes {
     font-size: 1.1rem;
     margin: 8rem 0 5rem 0;
     display: flex;
@@ -36,71 +41,86 @@ h2{
     align-self: center;
     justify-content: center;
 }
+
 .academics__blocks {
     display: flex;
     flex-direction: row;
     gap: 1em;
 }
-.academics__blocks h3{
+
+.academics__blocks h3 {
     font-size: 1rem;
     color: white;
 }
-.academics__blocks p{
+
+.academics__blocks p {
     font-size: 0.85rem;
     line-height: 0.7rem;
 }
-.academics__blocks img{
+
+.academics__blocks img {
     width: 35px;
     margin-top: 0.7rem;
 }
 
-
-
-
-
-
-#cursos__section{
+#cursos__section {
     background-color: #0B0B15;
+    font-family: "Inter", sans-serif;
     min-height: 100vh;
     padding: 6rem 4rem;
 }
 
-#cursos__container{
+#cursos__container {
     display: flex;
-    gap: 1.5rem;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 980px;
+    gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
 }
 
-.curso__card{
+.card {
     font-size: 0.6rem;
-    border-radius: 1rem;
+    border-radius: 0.7rem;
     display: flex;
     flex-direction: column;
-    background-color: #252329;
-    padding: 1rem;
+    background-color: #252329; /* APAGAR */
+    padding: 1.25rem 0.5rem;
     width: 25vw;
+    height: max-content;
+    background: linear-gradient(to bottom right, #051d3b, hsl(213, 84%, 3%)) padding-box, linear-gradient(to top right, hsl(210, 100%, 90%), hsl(210, 100%, 30%)) border-box;
+    border: 0.3px solid transparent;
 }
 
-.curso__card h3{
-    font-size: 1rem;
+.card .card__titulo {
+    font-size: 1.1rem;
+    text-align: center;
     color: white;
     margin: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
 }
-.curso__card h4{
-    font-size: 0.75rem;
+
+.card .card__subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 0.7rem;
     font-weight: 300;
     margin: 0;
+    color: #6bd1ff;
 }
 
-.curso__titulo i{
-    color: white;
-    font-size: 3rem;
+.card .card__subtitulo a{
+    color : #9881e4;
 }
 
-.curso__card ul{
+.card .card__subtitulo a:hover{
+    color: #6bd1ff;
+}
+
+.card .card__topicos {
     margin-top: 1.5rem;
     padding-left: 1rem;
     font-size: 0.75rem;
@@ -109,53 +129,58 @@ h2{
     margin-bottom: 0;
 }
 
-.curso__titulo{
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 2rem;
+.topico__incompleto{
+   list-style-type: "";
 }
 
-#apresentacao{
+.card .card__topicos a {
+    color: #939393;
+}
+
+.card .card__topicos a:hover {
+    color: hsl(254, 65%, 90%);
+}
+
+#apresentacao {
     background-color: #1c1c1c;
-    color:#acacac;
+    color: #acacac;
     text-align: justify;
     font-size: 1.25rem;
     line-height: 1.9rem;
     padding: 6rem 4rem;
 }
-#apresentacao p{
+
+#apresentacao p {
     margin: 2.2rem 0;
 }
 
-#apresentacao__mais{
+#apresentacao__mais {
     display: none;
 }
 
-#mais__informacoes{
+#mais__informacoes {
     color: #9780e4;
     font-size: 1rem;
 }
-#mais__informacoes:hover{
+
+#mais__informacoes:hover {
     color: hsl(254, 65%, 90%);
     cursor: pointer;
 }
 
 
-
-
-
 @media screen and (max-width: 500px) {
 
-    h2{
+    h2 {
         text-align: center;
     }
 
-    #formacao__section{
+    #formacao__section {
         padding: 6rem 2rem;
         min-height: 95vh;
     }
-    #graduacoes{
+
+    #graduacoes {
         flex-direction: column;
         gap: 6rem;
     }
@@ -165,30 +190,38 @@ h2{
         flex-direction: row;
         gap: 0.5em;
     }
-    .academics__blocks h3{
+
+    .academics__blocks h3 {
         font-size: 1rem;
         color: white;
     }
-    .academics__blocks p{
+
+    .academics__blocks p {
         font-size: 0.7rem;
         line-height: 0.5rem;
     }
-    .academics__blocks img{
+
+    .academics__blocks img {
         width: 30px;
         margin-top: 1.1rem;
     }
 
-    #cursos__section{
+    #cursos__section {
         padding: 6rem 1rem;
     }
 
-    .curso__card{
+    #cursos__container{
+        flex-direction: row;
+        max-height:max-content;
+    }
+
+    .card {
         display: flex;
         flex-direction: column;
         width: 75vw;
     }
 
-    #apresentacao{
+    #apresentacao {
         padding: 6rem 2rem;
     }
 }

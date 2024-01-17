@@ -25,17 +25,24 @@ h2 {
 
 a {
     text-decoration: none;
+    color: hsl(254, 65%, 90%);
+}
+
+a:hover {
+    color:  #9780e4;
 }
 
 #formacao__section {
     background-color: #1c1c1c;
     padding: 4rem 4rem;
-    min-height: 50vh;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #graduacoes {
     font-size: 1.1rem;
-    margin: 8rem 0 5rem 0;
     display: flex;
     gap: 8rem;
     align-self: center;
@@ -62,6 +69,65 @@ a {
     width: 35px;
     margin-top: 0.7rem;
 }
+
+
+
+#certificacao__section {
+    background-color: #000000;
+    padding: 4rem 4rem;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#certificacoes {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: center;
+    justify-content: center;
+}
+
+.certificate__stamp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-style: italic;
+    font-size: 0.7rem;
+    color: #a18a3f;
+}
+
+.certificate__blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.certificate__blocks h3 {
+    font-size: 1rem;
+    color: white;
+}
+
+.certificate__blocks p {
+    font-size: 0.85rem;
+    line-height: 0.7rem;
+}
+
+.certificate__blocks img {
+    width: 60px;
+    margin-top: 0.7rem;
+}
+
+
+
+
+
+
+
+
 
 #cursos__section {
     background-color: #0B0B15;
@@ -109,16 +175,16 @@ a {
     font-size: 0.7rem;
     font-weight: 300;
     margin: 0;
-    color: #6bd1ff;
+    color: #9780e4;
 }
 
-.card .card__subtitulo a{
-    color : #9881e4;
-}
 
-.card .card__subtitulo a:hover{
-    color: #6bd1ff;
-}
+
+
+
+
+
+
 
 .card .card__topicos {
     margin-top: 1.5rem;

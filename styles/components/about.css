@@ -98,12 +98,13 @@ a:hover {
     font-style: italic;
     font-size: 0.7rem;
     color: #a18a3f;
+    text-align: center;
 }
 
 .certificate__blocks {
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .certificate__blocks h3 {
@@ -279,6 +280,23 @@ a:hover {
     #cursos__container{
         flex-direction: row;
         max-height:max-content;
+    }
+
+    .certificate__blocks {
+        gap: 1rem;
+    }
+    
+    .certificate__blocks h3 {
+        font-size: 0.9rem;
+    }
+    
+    .certificate__blocks p {
+        line-height: 1rem;
+    }
+
+    .certificate__blocks img {
+        width: 50px;
+        margin-top: 0.7rem;
     }
 
     .card {

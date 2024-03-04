@@ -5,11 +5,30 @@
     align-items: center;
     gap: 1rem;
     border-radius: 1rem;
-    border: 2px solid transparent;
-    background: linear-gradient(#333333, #333333) padding-box, radial-gradient(circle at top, #8f8f8f, #8f8f8f) border-box;
+    border: 2px solid #8f8f8f;
+    background-color: #333333;
     color: #939393;
     transition: 0.1s;
     cursor: pointer;
+}
+
+.card__soon {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #8f8f8f;
+    background-color: #333333;
+    color: #939393;
+    transition: 0.1s;
+}
+
+.card__soon__cover {
+    border-radius: 0.7rem 0.7rem 0 0;
+    opacity: 60%;
+    width: 320px;
 }
 
 .card__cover {
@@ -81,12 +100,6 @@
     margin-bottom: 2rem;
 }
 
-/* .card__repo {
-    display: flex;
-    height: 2.5rem;
-    gap: 1rem;
-    color: #9780e4;
-} */
 
 #section__projetos {
     padding-left: 2vw;

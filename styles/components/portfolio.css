@@ -95,6 +95,25 @@ main {
     border: 1px solid white;
 }
 
+.stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    font-size: 0.65rem;
+    height: 1rem;
+    justify-content: center;
+}
+
+.stack__item {
+    border: 1px solid #F97F7F;
+    color: #F97F7F;
+    text-wrap: nowrap;
+    font-size: 0.7rem;
+    border-radius: 0 30px 0 30px;
+    align-self: center;
+    padding: 0.15rem 1.4rem;
+}
+
 .direita {
     padding: 3% 0;
 }

@@ -140,12 +140,14 @@ a:hover {
 #cursos__container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     max-height: 980px;
     gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
+    padding: 0 5rem;
 }
 
 .card {
@@ -155,7 +157,7 @@ a:hover {
     flex-direction: column;
     background-color: #252329; /* APAGAR */
     padding: 1.25rem 0.5rem;
-    width: 25vw;
+    width: 350px;
     height: max-content;
     background: linear-gradient(to bottom right, #051d3b, hsl(213, 84%, 3%)) padding-box, linear-gradient(to top right, hsl(210, 100%, 90%), hsl(210, 100%, 30%)) border-box;
     border: 0.3px solid transparent;

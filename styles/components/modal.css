@@ -33,7 +33,7 @@
 
 object {
     min-width: 1200px;
-    border: solid 1px #ffffff;
+    border: 1px solid #444444;
     width: 40vw;
     height: 60vh;
     border-radius: 1rem;

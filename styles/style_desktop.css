@@ -76,39 +76,46 @@ header{
     #section__principal{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        height: 80%;
+        justify-content: space-between;
+        height: 70%;
         width: 75%;
         position: fixed;
         z-index: 2;
 
-        #top_left, #bottom_right{
-            width: 20vw;
+    
+        #top_left { 
+            width: 30vw;
             height: 12vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-left: solid 4px var(--color-accent);
+            border-top: solid 4px var(--color-accent);
+            border-top-left-radius: 1rem;
         }
 
-        #top_left { 
-            border-left: solid 2px var(--color-accent);
-            border-top: solid 2px var(--color-accent);
-            border-top-left-radius: 1rem;
+        #bottom_right{
+            width: 30vw;
+            height: 12vh;
         }
 
         #core{
             display: flex;
-            justify-content: end;
+            justify-content: start;
             text-align: right;
             gap: 3rem;
-            margin-right: 5vw;
+            position: absolute;
+            top: 8%;
+            left: 5%;
 
             #titulo { 
                 font-family: "Artifika", serif; 
                 color: var(--color-text-emphasy);
-                font-size: 6.5vw;
-                margin-top: -4vh;
+                font-size: 6vw;
             }
             
             #subtitulo{
-                font-size: 1.7vw;
+                font-size: 1.2vw;
                 color: var(--color-text-emphasy);
                 font-style: italic;
                 font-weight: 400;
@@ -120,13 +127,14 @@ header{
             color: var(--color-text-normal);
             border-left: solid 2px #9780e4;
             width: 75vw;
-            margin-left: 5vw;
             display: flex;
             flex-direction: column;
-            font-size: 1.25vw;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            font-size: 1.15vw;
             padding: 0.5rem 2rem;
             line-height: 1.5rem;
-            margin-top: 12rem;
 
             #topico__item{
                 display: flex;
@@ -148,17 +156,20 @@ header{
         }
 
         #bottom_right { 
-            border-right: solid 2px var(--color-accent);
-            border-bottom: solid 2px var(--color-accent);
-            align-self: flex-end;
+            border-right: solid 4px var(--color-accent);
+            border-bottom: solid 4px var(--color-accent);
+            position: absolute;
+            right: 0;
+            bottom: 0;
             border-bottom-right-radius: 1rem;
             display: flex;
-            justify-content: center;
+            justify-content: right;
+            padding-right: 3vw;
 
             #curriculo__container{
                 display: flex;
                 font-size: 0.9vw;
-                padding-bottom: 1rem;
+                padding-bottom: 8%;
                 align-items:flex-end;
                 gap: 1.5vw;
 

@@ -32,6 +32,22 @@ a:hover {
     color:  #9780e4;
 }
 
+
+#foto__container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1rem;
+
+    #foto { 
+        background: linear-gradient(white, white) padding-box, linear-gradient(to right, white, var(--color-accent)) border-box; 
+        border: 1.5px solid transparent;
+        min-width: 10px;
+        width: 140px;
+        border-radius: 9999px;
+    }
+}
+
 #formacao__section {
     background-color: #1c1c1c;
     padding: 4rem 4rem;
@@ -72,141 +88,10 @@ a:hover {
 
 
 
-#certificacao__section {
-    background-color: #000000;
-    padding: 4rem 4rem;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#certificacoes {
-    font-size: 1.1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-self: center;
-    justify-content: center;
-}
-
-.certificate__stamp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    font-style: italic;
-    font-size: 0.7rem;
-    color: #a18a3f;
-    text-align: center;
-}
-
-.certificate__blocks {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-.certificate__blocks h3 {
-    font-size: 1rem;
-    color: white;
-}
-
-.certificate__blocks p {
-    font-size: 0.85rem;
-    line-height: 0.7rem;
-}
-
-.certificate__blocks img {
-    width: 60px;
-    margin-top: 0.7rem;
-}
 
 
 
 
-
-
-
-
-
-#cursos__section {
-    background-color: #0B0B15;
-    font-family: "Inter", sans-serif;
-    min-height: 100vh;
-    padding: 6rem 4rem;
-}
-
-#cursos__container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-height: 980px;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0;
-}
-
-.card {
-    font-size: 0.6rem;
-    border-radius: 0.7rem;
-    display: flex;
-    flex-direction: column;
-    background-color: #252329; /* APAGAR */
-    padding: 1.25rem 0.5rem;
-    width: 25vw;
-    height: max-content;
-    background: linear-gradient(to bottom right, #051d3b, hsl(213, 84%, 3%)) padding-box, linear-gradient(to top right, hsl(210, 100%, 90%), hsl(210, 100%, 30%)) border-box;
-    border: 0.3px solid transparent;
-}
-
-.card .card__titulo {
-    font-size: 1.1rem;
-    text-align: center;
-    color: white;
-    margin: 0;
-    margin-bottom: 0.6rem;
-}
-
-.card .card__subtitulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    font-size: 0.7rem;
-    font-weight: 300;
-    margin: 0;
-    color: #9780e4;
-}
-
-
-
-
-
-
-
-
-
-.card .card__topicos {
-    margin-top: 1.5rem;
-    padding-left: 1rem;
-    font-size: 0.75rem;
-    font-weight: 300;
-    line-height: 1.25rem;
-    margin-bottom: 0;
-}
-
-.topico__incompleto{
-   list-style-type: "";
-}
-
-.card .card__topicos a {
-    color: #939393;
-}
-
-.card .card__topicos a:hover {
-    color: hsl(254, 65%, 90%);
-}
 
 #apresentacao {
     background-color: #1c1c1c;

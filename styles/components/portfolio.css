@@ -1,10 +1,12 @@
+@import url("./modal.css");
+@import url("../root.css"); 
+
 body {
-    background-color: #292929;
-    color: #939393;
+    background-color: var(--color-background-primary);
+    color: var( --color-text-normal);
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
     font-size: 0.95rem;
     height: 100vh;
 }
@@ -33,7 +35,6 @@ h2 {
 }
 
 .data {
-    color: white;
     position: absolute;
     right: 3rem;
     bottom: 1rem;
@@ -69,6 +70,7 @@ main {
 
 .video__container img {
     border-radius: 0.7rem;
+    border: 1px solid var(--color-border);
 }
 
 .links__container {
@@ -93,6 +95,25 @@ main {
 .links__container .button:hover {
     background-color: hsl(254, 65%, 70%);
     border: 1px solid white;
+}
+
+.stacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    font-size: 0.65rem;
+    height: 1rem;
+    justify-content: center;
+}
+
+.stack__item {
+    border: 1px solid #F97F7F;
+    color: #F97F7F;
+    text-wrap: nowrap;
+    font-size: 0.7rem;
+    border-radius: 0 30px 0 30px;
+    align-self: center;
+    padding: 0.15rem 1.4rem;
 }
 
 .direita {

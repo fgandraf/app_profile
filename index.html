@@ -4,23 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Gandra - Desenvolvedor de Software</title>
+    <title>Felipe Gandra - Desenvolvedor de Sistemas</title>
 
     <!-- RESET CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/components/menu.css">
-    <link rel="stylesheet" href="styles/components/principal.css">
-    <link rel="stylesheet" href="styles/components/projetos.css">
+    <link rel="stylesheet" href="styles/style_desktop.css">
+    <link rel="stylesheet" href="styles/style_mobile.css">
     <link rel="stylesheet" href="styles/components/modal.css">
+
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
     <!-- GOOGLE MATERIAL -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Artifika&family=Montserrat:wght@400;700&family=Ubuntu&family=Ubuntu+Condensed&display=swap">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
@@ -29,7 +32,7 @@
 
 <body>
 
-    <nav id="menu">
+    <nav>
         <div class="menu__item">
             <a href="mailto: fgandraf@gmail.com" target="_blank">
                 <img src="assets/email.svg" class="menu__icone">
@@ -56,205 +59,292 @@
         </div>
     </nav>
 
-
-    <section id="section__principal">
-
-        <div id="top_left"></div>
-
-        <div id="core">
-            <div>
-                <h1 id="titulo">Felipe Gandra</h1>
-                <h2 id="subtitulo">Desenvolvedor de Software</h2>
+    <header>
+        <div id="section__principal">
+            
+            <div id="top_left"></div>
+            
+            <div id="core">
+                <div>
+                    <h1 id="titulo">Felipe Gandra</h1>
+                    <h2 id="subtitulo">Desenvolvedor de Sistemas</h2>
+                </div>
             </div>
-            <div id="foto__container">
-                <img id="foto" src="./assets/foto.png" width="250px">
-            </div>
-        </div>
-        </div>
-        <div id="topicos">
-            <ul id="topico__item">
-                <li>Arquiteto Urbanista e estudante de Análise e Desenvolvimento de Sistemas;</li>
-                <li>Apaixonado por tecnologia e insaciávelmente curioso;</li>
-                <li>Com (alguma) experiência em linguagens de programação desde os anos de 1990.</li>
-                <li><a href="#" id="saiba_mais" onclick="openModal('./pages/about.html')">Saiba mais...</a></li>
-            </ul>
-        </div>
-        </div>
-
-
-
-        <div id="bottom_right">
-
-            <div id="curriculo__container">
-                <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing" download
-                    target="_blank" class="curriculo_item">
-                    <i class="material-symbols-outlined">download</i>
-                    Currículo (pt-br)
-                </a>
-
-                <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing" download
-                    target="_blank" class="curriculo_item">
-                    <i class="material-symbols-outlined">download</i>
-                    Resume (en-us)
-                </a>
+            <div id="topicos">
+                <ul id="topico__item">
+                    <li>Estudante de Análise e Desenvolvimento de Sistemas, com formação em Arquitetura e Urbanismo;</li>
+                    <li>Apaixonado por tecnologia e insaciávelmente curioso;</li>
+                    <li>Com (alguma) experiência em linguagens de programação desde os anos de 1990.</li>
+                    <!-- <li><span id="saiba_mais" onclick="openModal('./pages/about.html', 'full')">Saiba mais...</span></li> -->
+                </ul>
             </div>
 
+            <div id="bottom_right">
 
+                <div id="curriculo__container">
+                    <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing" download
+                        target="_blank" class="curriculo_item">
+                        <i class="material-symbols-outlined">download</i>
+                        Currículo (pt-br)
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing" download
+                        target="_blank" class="curriculo_item">
+                        <i class="material-symbols-outlined">download</i>
+                        Resume (en-us)
+                    </a>
+                </div>
+
+            </div>
         </div>
-    </section>
+    </header>
 
-    <section id="section__projetos">
-        <h3 class="section__titulo">: : PROJETOS : :</h3>
+    <main>
+        <section id="section__tecnologias">
+            <h3 class="section__tecnologias__titulo">: : PRINCIPAIS TECNOLOGIAS : :</h3>
+            <div id="tecnologias__container">
+                
+                <span class="card__tecnologias">
+                    <i class="devicon-csharp-plain"></i>
+                    <p>C Sharp</p>
+                </span>
+                
 
-        <div id="projetos__container">
+                <span class="card__tecnologias">
+                    <i class="devicon-dot-net-plain"></i>
+                    <p>.NET</p>
+                </span>
 
-            <!-- <span id="androidapp" class="card__soon"">
-                <img src="./assets/screenshots/mobile-uc.png" class="card__soon__cover">
-                <ul class="stacks">
-                    <li class="stack__item">Kotlin</li>
-                    <li class="stack__item">Jetpack Compose</li>
-                    <li class="stack__item">Android</li>
+                <span class="card__tecnologias">
+                    <i class="devicon-kotlin-plain"></i>
+                    <p>Kotlin</p>
+                </span>
 
-                </ul>
-                <h4 class="projeto__nome">Android App</h4>
-                <p class="projeto__descricao">Em desenvolvimento...</p>
-            </span> -->
+                <span class="card__tecnologias">
+                    <i class="devicon-jetpackcompose-plain"></i>
+                    <p>Jetpack</p>
+                </span>
 
-            <span id="ethor" class="card" onclick="openModal('./pages/vagalivre.html')">
-                <img src="./assets/screenshots/vagalivre.png" class="card__cover">
-                <ul class="stacks">
-                    <li class="stack__item">Kotlin</li>
-                    <li class="stack__item">Jetpack Compose</li>
-                    <li class="stack__item">Google Maps SDK</li>
-                </ul>
-                <h4 class="projeto__nome">Vagalivre Android App</h4>
-                <p class="projeto__descricao">Uma solução ágil e conveniente para localizar
-                    espaços de estacionamento de veículos. O aplicativo
-                    fornece informações sobre estacionamentos próximos,
-                    valores e disponibilidade de vagas.</p>
-            </span>
+                <span class="card__tecnologias">
+                    <i class="devicon-html5-plain"></i>
+                    <p>HTML 5</p>
+                </span>
 
-            <span id="ethor" class="card" onclick="openModal('./pages/maar.html')">
-                <img src="./assets/screenshots/maar.png" class="card__cover">
-                <ul class="stacks">
-                    <li class="stack__item">HTML</li>
-                    <li class="stack__item">CSS</li>
-                    <li class="stack__item">Javascript</li>
-                    <li class="stack__item">Readymag</li>
-                </ul>
-                <h4 class="projeto__nome">MAAR Website</h4>
-                <p class="projeto__descricao">Mais informações em breve...</p>
-            </span>
+                <span class="card__tecnologias">
+                    <i class="devicon-css3-plain"></i>
+                    <p>CSS 3</p>
+                </span>
 
-            <span id="ethor" class="card" onclick="openModal('./pages/ethor.html')">
-                <img src="./assets/screenshots/ethor.png" class="card__cover">
-                <ul class="stacks">
-                    <li class="stack__item">Kotlin</li>
-                    <li class="stack__item">Jetpack Compose</li>
-                </ul>
-                <h4 class="projeto__nome">Ethor Android App</h4>
-                <p class="projeto__descricao">Aplicativo móvel desenvolvido para a plataforma Android, é um comparador de combustíveis que exibe na tela com qual está valendo mais a pena abastecer o veículo, a partir dos valores inseridos.</p>
-            </span>
+                <span class="card__tecnologias">
+                    <i class="devicon-javascript-plain"></i>
+                    <p>Javascript</p>
+                </span>
 
-            <span id="promoresapi" class="card" onclick="openModal('./pages/promore-api.html')">
-                <img src="./assets/screenshots/promore.png" class="card__cover">
-                <ul class="stacks">
-                    <li class="stack__item">C#</li>
-                    <li class="stack__item">.NET</li>
-                    <li class="stack__item">SQLServer</li>
-                    <li class="stack__item">Entity Framework</li>
-                </ul>
-                <h4 class="projeto__nome">Promore Web API</h4>
-                <p class="projeto__descricao">API Rest desenvolvida para integrar as operações de manipulação e persistência de
-                    dados do software Promore com a base de dados em Microsoft Sql Server.</p>
-            </span>
+                <span class="card__tecnologias">
+                    <i class="devicon-tailwindcss-original"></i>
+                    <p>Tailwind CSS</p>
+                </span>
 
-            <span id="alucar" class="card" onclick="openModal('./pages/alucar.html')">
-                <img src="./assets/screenshots/alucar.png" class="card__cover">
-                <ul class="stacks">
-                    <li class="stack__item">HTML</li>
-                    <li class="stack__item">CSS</li>
-                    <li class="stack__item">Tailwind</li>
-                </ul>
-                <h4 class="projeto__nome">AluCar Mobile App</h4>
-                <p class="projeto__descricao">Projeto desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP para o
-                    challenge
-                    proporcionado junto à BRQ Digital Solutions e a plataforma EasyCarros.</p>
-            </span>
+                <span class="card__tecnologias">
+                    <i class="devicon-mysql-original"></i>
+                    <p>MySQL</p>
+                </span>
 
-            <span id="profile" class="card" onclick="openModal('./pages/profile.html')">
-                <img src="./assets/screenshots/profile.png" class="card__cover">
-                <ul class="stacks">
-                    <li class="stack__item">HTML</li>
-                    <li class="stack__item">CSS</li>
-                    <li class="stack__item">Javascript</li>
-                </ul>
-                <h4 class="projeto__nome">Profile Web Page</h4>
-                <p class="projeto__descricao">Web page criada para expor os trabalhos realizados na
-                    área
-                    desenvolvimento de software.</p>
-            </span>
+                <span class="card__tecnologias">
+                    <i class="devicon-microsoftsqlserver-plain"></i>
+                    <p>SQL Server</p>
+                </span>
 
-            <span id="fluxusapi" class="card" onclick="openModal('./pages/fluxus-api.html')">
-                <img src="./assets/screenshots/fluxusapi.png" class="card__cover">
-                <ul class="stacks">
-                    <li class="stack__item">C#</li>
-                    <li class="stack__item">.NET</li>
-                    <li class="stack__item">MySQL</li>
-                    <li class="stack__item">Dapper</li>
-                </ul>
-                <h4 class="projeto__nome">Fluxus Web API</h4>
-                <p class="projeto__descricao">API Rest desenvolvida para integrar as operações de
-                    manipulação e persistência de dados do software Fluxus (gestão de serviços de engenharia
-                    para
-                    credenciados de bancos públicos) com a base de dados em MySQL.</p>
-            </span>
+            </div>
+        </section>
 
-            <span id="fluxus-app" class="card" onclick="openModal('./pages/fluxus-app.html')">
-                <img src="./assets/screenshots/fluxus.png" class="card__cover">
-                <ul class="stacks">
-                    <li class="stack__item">C#</li>
-                    <li class="stack__item">.NET</li>
-                    <li class="stack__item">Windows Forms</li>
-                    <li class="stack__item">iTextSharp</li>
-                </ul>
-                <h4 class="projeto__nome">Fluxus Windows App</h4>
-                <p class="projeto__descricao">Software para gestão de Ordens de Serviços emitidas pela
-                    Caixa Econômica Federal aos arquitetos e engenheiros credenciadas em edital público.</p>
-            </span>
+        <section id="section__certificacoes">
+            <h3 class="section__certificacoes__titulo">: : CERTIFICAÇÕES : :</h3>
+            <div id="certificacoes__container">
+                
+                <div class="card__certificacao">
+                    <div class="left">
+                        <img src="../assets/gold-certified.png">
+                        <p>Gold Certified</p>
+                    </div>
+                    <div class="right">
+                        <h3>Certificado de Qualificação Profissional em Análise e Design Web 2.0</h3>
+                        
+                        <p>Certificate in Web 2.0 Development and Design</p>
+                        <p>FIAP - Faculdade de Informática e Administração Paulista</p>
+                        <p>18 de dezembro de 2023</p>
+                        <span class="download"><a href="https://on1.fiap.com.br/updown/DocumentosAssinados/2b160339-d113-4d14-89e3-bd80da2ef8e9.pdf"
+                            target="_blank" class="material-symbols-outlined">download</a></span>
+                    </div>
+                </div>
 
-            <span id="aex30" class="card" onclick="openModal('./pages/aex30.html')">
-                <img src="./assets/screenshots/aex30.png" class="card__cover">
-                <ul class="stacks">
-                    <li class="stack__item">C#</li>
-                    <li class="stack__item">.NET</li>
-                    <li class="stack__item">Windows Forms</li>
-                    <li class="stack__item">NPOI Library</li>
-                </ul>
-                <h4 class="projeto__nome">Aex30 Windows App</h4>
-                <p class="projeto__descricao">Software assistente para automatizar o preenchimento dos
-                    relatórios de acompanhamento de evolução de obra fornecidos pela Caixa Econômica Federal aos
-                    arquitetos e engenheiros credenciados.</p>
-            </span>
+                <div class="card__certificacao">
+                    <div class="left">
+                        <img src="../assets/gold-certified.png">
+                        <p>Gold Certified</p>
+                    </div>
+                    <div class="right">
+                        <h3>Certificado de Qualificação Profissional em Análise de Sistemas e Prototipagem Web</h3>
+                        <p>Certificate in System Analysis and Web Prototyping</p>
+                        <p>FIAP - Faculdade de Informática e Administração Paulista</p>
+                        <p>03 de julho de 2023</p>
+                        <span class="download"><a href="https://on1.fiap.com.br/updown/DocumentosAssinados/fc9cc099-9099-429c-bcb3-15cc56ed1149.pdf"
+                            target="_blank" class="material-symbols-outlined">download</a></span>
+                    </div>
+                </div>
 
-        </div>
-    </section>
+            </div>
+            
+            <div class="card__demais__certificacoes">
+                <span id="todos_os_cursos" onclick="openModal('./pages/cursos.html')">Mais de 500 horas em cursos certificados de programação, banco de dados e áreas correlatas realizados através de diversas plataformas.</span>
+            </div>
+        </section>
 
-    <section id="section_curriculo">
-        <div id="curriculo__container__rodape">
+        <section id="section__projetos">
+            <h3 class="section__projetos__titulo">: : PROJETOS : :</h3>
+
+            <div id="projetos__container">
+
+                <span class="card" onclick="openModal('./pages/project/vagalivre.html')">
+                    <img src="./assets/screenshots/vagalivre.png" class="card__cover">
+                    <ul class="card__stacks">
+                        <li class="stack__item">Kotlin</li>
+                        <li class="stack__item">Jetpack Compose</li>
+                        <li class="stack__item">Google Maps SDK</li>
+                    </ul>
+                    <h4 class="projeto__nome">Vagalivre Android App</h4>
+                    <p class="projeto__descricao">Uma solução ágil e conveniente para localizar espaços de estacionamento de veículos. O aplicativo fornece informações sobre estacionamentos próximos, valores e disponibilidade de vagas.</p>
+                    <span class="last_update">Última atualização: março/2024</span>
+                </span>
+
+                <span class="card" onclick="openModal('./pages/project/maar.html')">
+                    <img src="./assets/screenshots/maar.png" class="card__cover">
+                    <ul class="card__stacks">
+                        <li class="stack__item">HTML</li>
+                        <li class="stack__item">CSS</li>
+                        <li class="stack__item">Javascript</li>
+                        <li class="stack__item">Readymag</li>
+                    </ul>
+                    <h4 class="projeto__nome">MAAR Website</h4>
+                    <p class="projeto__descricao">Mais informações em breve...</p>
+                    <span class="last_update">Última atualização: março/2024</span>
+                </span>
+
+                <span class="card" onclick="openModal('./pages/project/ethor.html')">
+                    <img src="./assets/screenshots/ethor.png" class="card__cover">
+                    <ul class="card__stacks">
+                        <li class="stack__item">Kotlin</li>
+                        <li class="stack__item">Jetpack Compose</li>
+                    </ul>
+                    <h4 class="projeto__nome">Ethor Android App</h4>
+                    <p class="projeto__descricao">Aplicativo móvel desenvolvido para a plataforma Android, é um comparador de combustíveis que exibe na tela com qual está valendo mais a pena abastecer o veículo, a partir dos valores inseridos.</p>
+                    <span class="last_update">Última atualização: março/2024</span>
+                </span>
+
+                <span class="card" onclick="openModal('./pages/project/promore-api.html')">
+                    <img src="./assets/screenshots/promore.png" class="card__cover">
+                    <ul class="card__stacks">
+                        <li class="stack__item">C#</li>
+                        <li class="stack__item">.NET</li>
+                        <li class="stack__item">SQLServer</li>
+                        <li class="stack__item">Entity Framework</li>
+                    </ul>
+                    <h4 class="projeto__nome">Promore Web API</h4>
+                    <p class="projeto__descricao">API Rest desenvolvida para integrar as operações de manipulação e persistência de
+                        dados do software Promore com a base de dados em Microsoft Sql Server.</p>
+                    <span class="last_update">Última atualização: fevereiro/2024</span>
+                </span>
+
+                <span class="card" onclick="openModal('./pages/project/alucar.html')">
+                    <img src="./assets/screenshots/alucar.png" class="card__cover">
+                    <ul class="card__stacks">
+                        <li class="stack__item">HTML</li>
+                        <li class="stack__item">CSS</li>
+                        <li class="stack__item">Tailwind</li>
+                    </ul>
+                    <h4 class="projeto__nome">AluCar Mobile App</h4>
+                    <p class="projeto__descricao">Projeto desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP para o
+                        challenge
+                        proporcionado junto à BRQ Digital Solutions e a plataforma EasyCarros.</p>
+                    <span class="last_update">Última atualização: setembro/2023</span>
+                </span>
+
+                <span class="card" onclick="openModal('./pages/project/profile.html')">
+                    <img src="./assets/screenshots/profile.png" class="card__cover">
+                    <ul class="card__stacks">
+                        <li class="stack__item">HTML</li>
+                        <li class="stack__item">CSS</li>
+                        <li class="stack__item">Javascript</li>
+                    </ul>
+                    <h4 class="projeto__nome">Profile Web Page</h4>
+                    <p class="projeto__descricao">Web page criada para expor os trabalhos realizados na
+                        área
+                        desenvolvimento de software.</p>
+                        <span class="last_update">Última atualização: janeiro/2024</span>
+                </span>
+
+                <span class="card" onclick="openModal('./pages/project/fluxus-api.html')">
+                    <img src="./assets/screenshots/fluxusapi.png" class="card__cover">
+                    <ul class="card__stacks">
+                        <li class="stack__item">C#</li>
+                        <li class="stack__item">.NET</li>
+                        <li class="stack__item">MySQL</li>
+                        <li class="stack__item">Dapper</li>
+                    </ul>
+                    <h4 class="projeto__nome">Fluxus Web API</h4>
+                    <p class="projeto__descricao">API Rest desenvolvida para integrar as operações de
+                        manipulação e persistência de dados do software Fluxus (gestão de serviços de engenharia
+                        para
+                        credenciados de bancos públicos) com a base de dados em MySQL.</p>
+                        <span class="last_update">Última atualização: janeiro/2024</span>
+                </span>
+
+                <span class="card" onclick="openModal('./pages/project/fluxus-app.html')">
+                    <img src="./assets/screenshots/fluxus.png" class="card__cover">
+                    <ul class="card__stacks">
+                        <li class="stack__item">C#</li>
+                        <li class="stack__item">.NET</li>
+                        <li class="stack__item">Windows Forms</li>
+                        <li class="stack__item">iTextSharp</li>
+                    </ul>
+                    <h4 class="projeto__nome">Fluxus Windows App</h4>
+                    <p class="projeto__descricao">Software para gestão de Ordens de Serviços emitidas pela
+                        Caixa Econômica Federal aos arquitetos e engenheiros credenciadas em edital público.</p>
+                        <span class="last_update">Última atualização: dezembro/2023</span>
+                </span>
+
+                <span class="card" onclick="openModal('./pages/project/aex30.html')">
+                    <img src="./assets/screenshots/aex30.png" class="card__cover">
+                    <ul class="card__stacks">
+                        <li class="stack__item">C#</li>
+                        <li class="stack__item">.NET</li>
+                        <li class="stack__item">Windows Forms</li>
+                        <li class="stack__item">NPOI Library</li>
+                    </ul>
+                    <h4 class="projeto__nome">Aex30 Windows App</h4>
+                    <p class="projeto__descricao">Software assistente para automatizar o preenchimento dos
+                        relatórios de acompanhamento de evolução de obra fornecidos pela Caixa Econômica Federal aos
+                        arquitetos e engenheiros credenciados.</p>
+                    <span class="last_update">Última atualização: abril/2023</span>
+                </span>
+
+            </div>
+        </section>
+
+        <section id="footer__curriculo">
             <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing" download
                 target="_blank" class="curriculo_item">
                 <i class="material-symbols-outlined">download</i>
                 Currículo (pt-br)
             </a>
-
+    
             <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing" download
                 target="_blank" class="curriculo_item">
                 <i class="material-symbols-outlined">download</i>
                 Resume (en-us)
             </a>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Janela modal -->
     <div id="myModal" class="modal">
@@ -264,7 +354,6 @@
             <div id="modalContent"></div>
         </div>
     </div>
-
 
     <script src="./scripts/modal.js"></script>
 </body>

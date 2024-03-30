@@ -1,0 +1,124 @@
+@import url("../root.css");
+
+body {
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0rem;
+    padding-bottom: 5rem;
+    line-height: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(254, 65%, 90%);
+}
+
+a:hover {
+    color:  #9780e4;
+}
+
+
+#cursos__section {
+    background-color: black;
+    color: #939393;
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+#cursos__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 980px;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 1rem 8vh 1rem;
+}
+
+.card {
+    font-size: 0.6rem;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background-secondary);/* APAGAR */
+    padding: 1.25rem 0.5rem;
+    width: 310px;
+    height: max-content;
+    border: 1px solid var(--color-border);
+}
+
+.card .card__titulo {
+    font-size: 1.1rem;
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-bottom: 0.6rem;
+}
+
+.card .card__subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin: 0;
+    color: #9780e4;
+}
+
+.card .card__topicos {
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+}
+
+.topico__incompleto{
+   list-style-type: "";
+}
+
+.card .card__topicos a {
+    color: #939393;
+}
+
+.card .card__topicos a:hover {
+    color: hsl(254, 65%, 90%);
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    #cursos__section {
+        padding: 1rem;
+    }
+
+    #cursos__container{
+        flex-direction: row;
+        max-height:max-content;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+}

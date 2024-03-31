@@ -36,13 +36,11 @@
 
         #section__principal{
             width: 95vw;
-            margin-top: -5vh;
             height: 80vh;
 
             #top_left{
                 position: absolute;
                 top: 0;
-                margin-top: 2vh;
                 width: 25vw;
                 height: 5vh;
             }
@@ -59,8 +57,7 @@
                 flex-direction: column;
                 text-align: center;
                 gap: 3rem;
-                margin-right: 0;
-                margin-top: 5rem;
+                margin-top: 3rem;
 
                 #titulo{
                     font-size: 2.8rem;
@@ -78,7 +75,7 @@
                 align-self: center;
                 font-size: 0.89rem;
                 width: 80%;
-                margin: 10vh 0 0 5vw;
+                margin: -8vh 0 0 -1rem;
                 
 
                 #topico__item{

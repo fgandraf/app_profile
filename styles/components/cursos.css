@@ -1,7 +1,7 @@
 @import url("../root.css");
 
 body {
-    background-color: #292929;
+    background-color: var(--color-background-secondary);
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -13,13 +13,13 @@ body::-webkit-scrollbar {
     scrollbar-width: none;
 }
 
-h2 {
+h3 {
     color: white;
-    font-size: 1.5rem;
-    font-weight: 700;
     margin: 0rem;
-    padding-bottom: 5rem;
-    line-height: 3.5rem;
+    text-align: center;
+    border-bottom: 2px white solid;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 
 a {
@@ -33,11 +33,10 @@ a:hover {
 
 
 #cursos__section {
-    background-color: black;
     color: #939393;
     font-family: "Inter", sans-serif;
     min-height: 100vh;
-    padding: 1rem;
+    padding: 4rem;
 }
 
 #cursos__container {
@@ -58,11 +57,27 @@ a:hover {
     border-radius: 0.7rem;
     display: flex;
     flex-direction: column;
-    background-color: var(--color-background-secondary);/* APAGAR */
     padding: 1.25rem 0.5rem;
     width: 310px;
     height: max-content;
-    border: 1px solid var(--color-border);
+    
+    background: 
+        linear-gradient(
+            140deg, 
+                var(--color-background-cards),
+                var(--color-background-cards)
+
+            ) padding-box, 
+        
+        linear-gradient(
+            140deg, 
+                var(--color-background-cards),
+                var(--color-background-cards),
+                var(--color-accent),
+                var(--color-background-primary),
+                var(--color-background-primary)
+            ) border-box; 
+    border: 0.5px solid transparent;
 }
 
 .card .card__titulo {
@@ -80,7 +95,7 @@ a:hover {
     font-size: 0.7rem;
     font-weight: 300;
     margin: 0;
-    color: #9780e4;
+    color: white;
 }
 
 .card .card__topicos {

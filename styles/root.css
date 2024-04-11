@@ -1,6 +1,8 @@
 :root {
     --color-background-primary: #000;
-    --color-background-secondary: #222;
+    --color-background-secondary: #0c0c0c;
+    --color-background-cards: #222;
+    --color-background-menu: hsl(254, 65%, 10%);
     --color-border: #444;
     --color-accent: #9780e4;
     --color-text-emphasy: #FFF;
@@ -9,4 +11,13 @@
     --color-link: #ddd5f6;
 
     font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: 600;
 }

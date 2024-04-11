@@ -1,7 +1,7 @@
 @import url("root.css");
 
 body {
-    background-color: var(--color-background-primary);
+    background: linear-gradient(140deg, black,  hsl(254, 65%, 30%));
 }
 
 body::-webkit-scrollbar {
@@ -32,7 +32,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 4rem;
-    background-color: var(--color-background-secondary);
+    background-color: var(--color-background-menu);
     padding-left: 0.5rem;
     position: fixed;
     width: 15px;
@@ -70,6 +70,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 15px;
     align-items: center;
     
     
@@ -86,12 +87,13 @@ header{
         #top_left { 
             width: 30vw;
             height: 12vh;
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
-            border-left: solid 4px var(--color-accent);
-            border-top: solid 4px var(--color-accent);
-            border-top-left-radius: 1rem;
+            border-top: 4px solid transparent;
+            border-left: 4px solid transparent;
+            border-image: radial-gradient(circle, white, var(--color-accent)) 1;
+
         }
 
         #bottom_right{
@@ -105,8 +107,8 @@ header{
             text-align: right;
             gap: 3rem;
             position: absolute;
-            top: 8%;
-            left: 5%;
+            top: 20%;
+            left: 8%;
 
             #titulo { 
                 font-family: "Artifika", serif; 
@@ -125,13 +127,14 @@ header{
 
         #topicos { 
             color: var(--color-text-normal);
-            border-left: solid 2px #9780e4;
+            border-left: 2px solid transparent;
+            border-image: linear-gradient(to bottom, white, var(--color-accent)) 1;
             width: 75vw;
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 50%;
-            left: 10%;
+            top: 55%;
+            left: 12%;
             font-size: 1.15vw;
             padding: 0.5rem 2rem;
             line-height: 1.5rem;
@@ -139,7 +142,7 @@ header{
             #topico__item{
                 display: flex;
                 flex-direction: column;
-                gap: 1.5rem;
+                gap: 1rem;
                 list-style: circle;
                 text-wrap: nowrap;
                 
@@ -156,12 +159,12 @@ header{
         }
 
         #bottom_right { 
-            border-right: solid 4px var(--color-accent);
-            border-bottom: solid 4px var(--color-accent);
+            border-bottom: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-image: radial-gradient(circle at bottom right, white, var(--color-accent)) 1;
             position: absolute;
             right: 0;
             bottom: 0;
-            border-bottom-right-radius: 1rem;
             display: flex;
             justify-content: right;
             padding-right: 3vw;
@@ -196,6 +199,167 @@ main{
     justify-content: center;
     align-items: center;
     
+    #section__tecnologias {
+        background-color: var(--color-background-primary);
+        padding: 5vh 0 5vh 15px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        z-index: 3;
+
+        .section__tecnologias__titulo {
+            margin: 4rem;
+            color: var(--color-text-emphasy);
+            text-align: right;
+            border-bottom: 2px white solid;
+            padding-bottom: 1rem;
+        }
+
+        #tecnologias__container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0;
+            gap: 2rem;
+            padding: 10vh 6vw;
+
+            .card__tecnologias {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                i{
+                    border-radius: 2rem 0rem 2rem 0rem;
+                    border-top: solid 1px var(--color-accent);
+                    background-color: var(--color-background-cards);
+                    padding: 1rem 1.5rem;
+                    font-size: 3rem;
+                    color: var(--color-text-emphasy)
+                }
+
+                p{
+                    font-size: 0.8rem;
+                    color: var(--color-text-normal)
+                }
+            }
+        }
+    }
+
+    #section__certificacoes {
+        background-color: var(--color-background-primary);
+        padding: 0 0 5vh 15px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        z-index: 3;
+
+        .section__certificacoes__titulo {
+            margin: 4rem;
+            color: var(--color-text-emphasy);
+            text-align: right;
+            border-bottom: 2px white solid;
+            padding-bottom: 1rem;
+        }
+
+        #certificacoes__container {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            padding: 10vh 6vw 2.5rem 6vw;
+
+            .card__certificacao{
+                max-width: 550px;
+                border-bottom: solid 1px var(--color-accent);
+                background-color: var(--color-background-cards);
+                border-radius: 20px;
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 50px 20px 10px 20px;
+                box-sizing: border-box;
+                justify-content: center;
+                gap: 1.5rem;
+
+                .left{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    align-items: center;
+
+                    p{
+                        font-size: 0.6rem;
+                        color: #a18a3f;
+                        font-style: italic;
+                    }
+                    img{
+                        width: 60px;
+                    }
+                }
+
+                .right{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    h3 {
+                        margin-bottom: 1.2rem;
+                        font-size: 1.1rem;
+                        color: var(--color-text-emphasy);
+                        line-height: 1.5rem;
+                    }
+                    
+                    a:hover{
+                        color: var(--color-link-hover);
+                    }
+                    
+                    p {
+                        font-size: 0.8rem;
+                        line-height: 1.3rem;
+                        color: var(--color-text-normal);
+                    }
+
+                    .download{
+                        text-align: right;
+                        
+                        a{
+                            color: var(--color-link);
+                            margin-top: 0.5rem;
+                            font-size: 2rem;
+                            cursor: pointer;
+                        }
+                        a:hover{
+                            color: var(--color-link-hover);
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .card__demais__certificacoes{
+            align-self: center;
+            border-bottom: solid 1px var(--color-accent);
+            background-color: var(--color-background-cards);
+            border-radius: 20px;
+            margin: 0 10vw 8vh 10vw;
+            display: flex;
+            padding: 2rem 1rem;
+
+            #todos_os_cursos{
+                font-size: 0.9rem;
+                line-height: 1.5rem;
+                text-align: center;
+                color: var(--color-link);
+                cursor: pointer;
+            }
+
+            #todos_os_cursos:hover{
+                color: var(--color-link-hover);
+            }
+        }
+    }
+
     #section__projetos {
         background-color: var(--color-background-primary);
         padding: 0 0 10vh 15px;
@@ -206,10 +370,11 @@ main{
         z-index: 3;
 
         .section__projetos__titulo {
-            margin: 2rem 0 4rem 4rem;
+            margin: 4rem;
             color: var(--color-text-emphasy);
-            font-weight: 600;
-            font-size: 1.5rem;
+            text-align: right;
+            border-bottom: 2px white solid;
+            padding-bottom: 1rem;
         }
 
         #projetos__container {
@@ -227,7 +392,7 @@ main{
                 gap: 1rem;
                 border-radius: 0.5rem;
                 border: 1px solid var(--color-border);
-                background-color: var(--color-background-secondary);
+                background-color: var(--color-background-cards);
                 color: #939393;
                 transition: 0.1s;
                 cursor: pointer;
@@ -295,165 +460,6 @@ main{
                 .projeto__nome{
                     color: var(--color-text-emphasy);
                 }
-            }
-        }
-    }
-
-    #section__tecnologias {
-        background-color: var(--color-background-primary);
-        padding: 0 0 5vh 15px;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        width: 100%;
-        z-index: 3;
-
-        .section__tecnologias__titulo {
-            margin: 2rem 0 4rem 4rem;
-            color: var(--color-text-emphasy);
-            font-weight: 600;
-            font-size: 1.5rem;
-        }
-
-        #tecnologias__container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 0;
-            gap: 2rem;
-            padding: 10vh 6vw;
-
-            .card__tecnologias {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-
-                i{
-                    border-radius: 2rem 0rem 2rem 0rem;
-                    border-top: solid 1px var(--color-accent);
-                    background-color: var(--color-background-secondary);
-                    padding: 1rem 1.5rem;
-                    font-size: 3rem;
-                    color: var(--color-text-emphasy)
-                }
-
-                p{
-                    font-size: 0.8rem;
-                    color: var(--color-text-normal)
-                }
-            }
-        }
-    }
-
-    #section__certificacoes {
-        background-color: var(--color-background-primary);
-        padding: 0 0 5vh 15px;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        width: 100%;
-        z-index: 3;
-
-        .section__certificacoes__titulo {
-            margin: 2rem 0 4rem 4rem;
-            color: var(--color-text-emphasy);
-            font-weight: 600;
-            font-size: 1.5rem;
-        }
-
-        #certificacoes__container {
-            display: flex;
-            justify-content: center;
-            gap: 2.5rem;
-            padding: 10vh 6vw 2.5rem 6vw;
-
-            .card__certificacao{
-                max-width: 550px;
-                border-bottom: solid 1px var(--color-accent);
-                background-color: var(--color-background-secondary);
-                border-radius: 20px;
-                display: grid;
-                grid-template-columns: auto auto;
-                padding: 50px 20px 10px 20px;
-                box-sizing: border-box;
-                justify-content: center;
-                gap: 1.5rem;
-
-                .left{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 0.5rem;
-                    align-items: center;
-
-                    p{
-                        font-size: 0.6rem;
-                        color: #a18a3f;
-                        font-style: italic;
-                    }
-                    img{
-                        width: 60px;
-                    }
-                }
-
-                .right{
-                    display: flex;
-                    flex-direction: column;
-                    
-                    h3 {
-                        margin-bottom: 1.2rem;
-                        font-size: 1.1rem;
-                        color: var(--color-text-emphasy);
-                        line-height: 1.5rem;
-                    }
-                    
-                    a:hover{
-                        color: var(--color-link-hover);
-                    }
-                    
-                    p {
-                        font-size: 0.8rem;
-                        line-height: 1.3rem;
-                        color: var(--color-text-normal);
-                    }
-
-                    .download{
-                        text-align: right;
-                        
-                        a{
-                            color: var(--color-link);
-                            margin-top: 0.5rem;
-                            font-size: 2rem;
-                            cursor: pointer;
-                        }
-                        a:hover{
-                            color: var(--color-link-hover);
-                        }
-                    }
-                }
-            }
-
-        }
-
-        .card__demais__certificacoes{
-            align-self: center;
-            border-bottom: solid 1px var(--color-accent);
-            background-color: var(--color-background-secondary);
-            border-radius: 20px;
-            margin: 0 10vw 8vh 10vw;
-            display: flex;
-            padding: 2rem 1rem;
-
-            #todos_os_cursos{
-                font-size: 0.9rem;
-                line-height: 1.5rem;
-                text-align: center;
-                color: var(--color-link);
-                cursor: pointer;
-            }
-
-            #todos_os_cursos:hover{
-                color: var(--color-link-hover);
             }
         }
     }

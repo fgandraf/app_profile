@@ -76,11 +76,19 @@ main{
 
 @media screen and (max-width: 500px) {
 
-    h2 {
-        text-align: center;
+    
+
+    main{
+        #apresentacao {
+            padding: 6rem 2rem;
+
+            h3 {
+                text-align: center;
+                font-size: 1.8rem;
+            }
+        }
+
     }
 
-    #apresentacao {
-        padding: 6rem 2rem;
-    }
+    
 }

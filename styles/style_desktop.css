@@ -1,7 +1,7 @@
 @import url("root.css");
 
 body {
-    background: linear-gradient(140deg, black,  hsl(254, 65%, 30%));
+    background: linear-gradient(130deg, black,  hsl(254, 65%, 30%));
 }
 
 body::-webkit-scrollbar {
@@ -96,10 +96,7 @@ header{
 
         }
 
-        #bottom_right{
-            width: 30vw;
-            height: 12vh;
-        }
+        
 
         #core{
             display: flex;
@@ -159,6 +156,8 @@ header{
         }
 
         #bottom_right { 
+            width: 30vw;
+            height: 12vh;
             border-bottom: 4px solid transparent;
             border-right: 4px solid transparent;
             border-image: radial-gradient(circle at bottom right, white, var(--color-accent)) 1;
@@ -201,7 +200,7 @@ main{
     
     #section__tecnologias {
         background-color: var(--color-background-primary);
-        padding: 5vh 0 5vh 15px;
+        padding: 5vh 15px 5vh 15px;
         display: flex;
         flex-direction: column;
         align-self: center;
@@ -249,7 +248,7 @@ main{
 
     #section__certificacoes {
         background-color: var(--color-background-primary);
-        padding: 0 0 5vh 15px;
+        padding: 5vh 15px 5vh 15px;
         display: flex;
         flex-direction: column;
         align-self: center;
@@ -362,7 +361,7 @@ main{
 
     #section__projetos {
         background-color: var(--color-background-primary);
-        padding: 0 0 10vh 15px;
+        padding: 0 15px 10vh 15px;
         display: flex;
         flex-direction: column;
         align-self: center;

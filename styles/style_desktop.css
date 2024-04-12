@@ -439,6 +439,10 @@ main{
                     margin-bottom: 2rem;
                 }
 
+                .citacao{
+                    font-style: italic;
+                }
+
                 .last_update{
                     font-size: 0.7rem;
                     text-align: right;

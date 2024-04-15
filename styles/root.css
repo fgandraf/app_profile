@@ -1,14 +1,23 @@
 :root {
-    --color-background-primary: #000;
-    --color-background-secondary: #0c0c0c;
-    --color-background-cards: #222;
-    --color-background-menu: hsl(254, 65%, 20%);
-    --color-border: #444;
-    --color-accent: #9780e4;
+    
+    --color-base: hsl(73, 65%, 70%);
+
+    --color-base-accent-H: 255;
+    --color-base-accent-S: 65%;
+    --color-base-accent-L: 70%;
+    --color-base-black-HS: 0, 0%;
+
+    --color-accent: hsl(var(--color-base-accent-H),var(--color-base-accent-S),var(--color-base-accent-L));
+    --color-background-menu: hsl(var(--color-base-accent-H),var(--color-base-accent-S), 15%);
+    --color-background-primary: hsl(var(--color-base-black-HS), 0%);
+    --color-background-secondary: hsl(var(--color-base-black-HS), 5%);
+    --color-background-cards: hsl(var(--color-base-black-HS), 13%);
+    --color-border: hsl(var(--color-base-black-HS), 27%);
+    
     --color-text-emphasy: #FFF;
-    --color-text-normal: #939393;
-    --color-link-hover: #9780e4;
-    --color-link: #ddd5f6;
+    --color-text-normal: hsl(var(--color-base-black-HS), 60%);
+    --color-link: hsl(var(--color-base-accent-H),var(--color-base-accent-S), 85%);
+    --color-link-hover: var(--color-accent);
 
     font-family: 'Montserrat', sans-serif;
 }

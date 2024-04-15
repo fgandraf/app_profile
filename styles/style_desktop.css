@@ -1,7 +1,7 @@
 @import url("root.css");
 
 body {
-    background: linear-gradient(130deg, black,  hsl(254, 65%, 30%));
+    background: linear-gradient(130deg, black,  hsl(var(--color-base-accent-H),var(--color-base-accent-S), 30%));
 }
 
 body::-webkit-scrollbar {
@@ -392,7 +392,7 @@ main{
                 border-radius: 0.5rem;
                 border: 1px solid var(--color-border);
                 background-color: var(--color-background-cards);
-                color: #939393;
+                color: var(--color-text-normal);
                 transition: 0.1s;
                 cursor: pointer;
 
@@ -411,7 +411,7 @@ main{
                     justify-content: center;
 
                     .stack__item {
-                        background-color: #7e7e7e;
+                        background-color: var(--color-text-normal);
                         color: #000;
                         text-wrap: nowrap;
                         border-radius: 0 30px 0 30px;
@@ -422,7 +422,7 @@ main{
                 }
 
                 .projeto__nome {
-                    color: #7e7e7e;
+                    color: var(--color-text-normal);
                     text-align: center;
                     font-size: 1.25rem;
                     font-weight: 700;
@@ -430,7 +430,7 @@ main{
                 }
                 
                 .projeto__descricao {
-                    color: #7e7e7e;
+                    color: var(--color-text-normal);
                     text-align: justify;
                     height: 5rem;
                     font-size: 0.85rem;

@@ -20,13 +20,18 @@ main{
         min-height: 100vh;
         padding: 4rem;
 
+        #foto__container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         h3 {
             color: white;
-            margin: 0rem;
+            margin: 1rem 0 4rem 0;
             text-align: center;
             border-bottom: 2px white solid;
             padding-bottom: 1rem;
-            margin-bottom: 4rem;
         }
 
         #cursos__container {

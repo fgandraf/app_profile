@@ -1,25 +1,15 @@
 @import url("root.css");
 
 body {
-    background: linear-gradient(130deg, black,  hsl(var(--color-base-accent-H),var(--color-base-accent-S), 30%));
+    background-image: url(../assets/bg.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
-}
-
-body::after {
-    content: "";
-    background-image: url(../assets/bg.jpg);
-    background-size: 100%;
-    position: fixed;
-    opacity: 15%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
 }
 
 a {
@@ -73,7 +63,6 @@ header{
     padding-left: 15px;
     align-items: center;
     
-    
     #section__principal{
         display: flex;
         flex-direction: column;
@@ -81,9 +70,7 @@ header{
         height: 70%;
         width: 75%;
         position: fixed;
-        z-index: 2;
-
-    
+        
         #top_left { 
             width: 30vw;
             height: 12vh;
@@ -199,13 +186,16 @@ main{
     align-items: center;
     
     #section__tecnologias {
+        border-top: 5px solid red;
         background-color: var(--color-background-primary);
         padding: 5vh 15px 5vh 15px;
         display: flex;
         flex-direction: column;
         align-self: center;
         width: 100%;
-        z-index: 3;
+        z-index: 1;
+        
+        
 
         .section__tecnologias__titulo {
             margin: 4rem;
@@ -253,7 +243,7 @@ main{
         flex-direction: column;
         align-self: center;
         width: 100%;
-        z-index: 3;
+        z-index: 2;
 
         .section__certificacoes__titulo {
             margin: 4rem;
@@ -360,13 +350,14 @@ main{
     }
 
     #section__projetos {
+        border-bottom: 5px solid red;
         background-color: var(--color-background-primary);
         padding: 0 15px 10vh 15px;
         display: flex;
         flex-direction: column;
         align-self: center;
         width: 100%;
-        z-index: 3;
+        z-index: 2;
 
         .section__projetos__titulo {
             margin: 4rem;
@@ -453,7 +444,7 @@ main{
             .card:hover {
                 transform: scale(1.15);
                 transition: 0.4s;
-                z-index: 2;
+                z-index: 3;
             
                 .card__cover {
                     clip-path: none;
@@ -470,4 +461,18 @@ main{
     #footer__curriculo{
         display: none;
     }
+
+    #contact{
+        display: flex;
+        z-index: 5;
+        background-image: url(../assets/bg.jpg);
+        background-size: 100%;
+        background-attachment:fixed;
+        width: 100vw;
+        height: 3vh;
+    }
 }
+
+
+
+

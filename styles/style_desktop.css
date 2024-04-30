@@ -375,6 +375,10 @@ main{
             gap: 1.5rem;
             padding-top: 5vh;
 
+            .card-container:hover{
+                z-index: 2;
+            }
+
             .card {
                 width: 360px;
                 display: flex;

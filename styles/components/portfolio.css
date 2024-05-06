@@ -72,7 +72,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 350px;
-    width: 490px;
+    width: 480px;
     border-radius: 20px;
     background-color: black;
     background-image: url(../../assets/loading.gif);
@@ -80,7 +80,7 @@ main {
     background-position: center;
     
     iframe{ 
-        width:500px;
+        width:480px;
         height:350px;
         border-radius: 20px;
     }

@@ -187,6 +187,9 @@ main{
     
     #section__tecnologias {
         border-top: 5px solid red;
+
+
+
         background-color: var(--color-background-primary);
         padding: 5vh 15px 5vh 15px;
         display: flex;

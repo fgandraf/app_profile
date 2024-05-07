@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         ethor: {
             img: "./assets/screenshots/ethor.png",
-            stacks: ["Kotlin", "Jetpack Compose"],
+            stacks: ["Kotlin", "Jetpack Compose", "Google AdMob"],
             name: "Ethor Android App",
             description: "Aplicativo móvel para Android que serve como um comparador de preços entre etanol e gasolina, ajudando os usuários a decidirem qual combustível é mais econômico para abastecer seus veículos.",
             lastUpdate: "abril/2024"

@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             stacks: ["HTML", "CSS", "Javascript"],
             name: "Profile Web Page",
             description: "Web page criada para expor os trabalhos realizados na área desenvolvimento de software.",
-            lastUpdate: "abril/2024"
+            lastUpdate: "maio/2024"
         },
         fluxusApi: {
             img: "./assets/screenshots/fluxusapi.png",

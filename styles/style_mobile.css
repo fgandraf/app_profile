@@ -50,23 +50,25 @@
                 border-left: 2px solid transparent;
             }
 
-            
-            
             #core{
                 flex-direction: column;
                 text-align: center;
-                width: 90%;
+                width: 100%;
                 margin: 0;
+                padding: 0;
                 gap: 3rem;
                 margin-top: -2rem;
 
 
                 #titulo{
+                    margin-left:-55px;
+                    text-align: center;
                     font-size: 2.7rem;
                     text-wrap: nowrap;
                 }
         
                 #subtitulo{
+                    margin-left:-55px;
                     font-size: 1.1rem;
                     margin-bottom: 1rem;
                     margin-top: 1rem;
@@ -77,7 +79,7 @@
             #topicos{
                 align-self: center;
                 font-size: 0.89rem;
-                width: 80%;
+                width: 75%;
                 top: 40%;
                 margin-left: -1.5rem;
                 border-left: 1px solid transparent;
@@ -96,6 +98,7 @@
             #bottom_right{
                 position: absolute;
                 bottom: 0;
+                right: 10px;
                 margin-bottom: 2vh;
                 width: 45vw;
                 height: 6vh;
@@ -120,6 +123,17 @@
             }
 
             #projetos__container{
+                .swiper {
+                    padding-top: 0;
+
+                    .swiper-wrapper{
+                        .swiper-slide {
+                            width: 360px;
+                            padding: 0 50px;
+                        }
+                    }
+
+                }
                 .card{ 
                     .card__cover { 
                         opacity: 80% 
@@ -194,6 +208,4 @@
             }
         }
     }
-    
-    
 }

@@ -14,26 +14,24 @@
     <link rel="stylesheet" href="styles/style_mobile.css">
     <link rel="stylesheet" href="styles/components/modal.css">
 
-
+    <!-- DEVICON -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
 
     <!-- GOOGLE MATERIAL -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Artifika&family=Montserrat:wght@400;700&family=Ubuntu&family=Ubuntu+Condensed&display=swap">
-
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="https://fonts.googleapis.com/css2?family=Artifika&family=Montserrat:wght@400;700&family=Ubuntu&family=Ubuntu+Condensed&display=swap"/>
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
 
+
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-
     <nav>
         <div class="menu__item">
             <a href="mailto: fgandraf@gmail.com" target="_blank">
@@ -211,16 +209,38 @@
 
             <div id="projetos__container">
 
-                <div id="ethor" class="card-container"></div>
-                <div id="profile" class="card-container"></div>
-                <div id="maar" class="card-container"></div>
-                <div id="vagalivre" class="card-container"></div>
-                <div id="promoreApi" class="card-container"></div>
-                <div id="alucar" class="card-container"></div>
-                <div id="fluxusApi" class="card-container"></div>
-                <div id="fluxusApp" class="card-container"></div>
-                <div id="aex30" class="card-container"></div>
-
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div id="ethor" class="card-container"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="profile" class="card-container"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="maar" class="card-container"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="vagalivre" class="card-container"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="promoreApi" class="card-container"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="alucar" class="card-container"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="fluxusApi" class="card-container"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="fluxusApp" class="card-container"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="aex30" class="card-container"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
 
@@ -253,8 +273,8 @@
 
     <script src="./scripts/portfolio.js"></script>
     <script src="./scripts/modal.js"></script>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
 </body>
-
-
 </html>

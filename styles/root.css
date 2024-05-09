@@ -19,6 +19,9 @@
     --color-link: hsl(var(--color-base-accent-H),var(--color-base-accent-S), 85%);
     --color-link-hover: var(--color-accent);
 
+    --swiper-pagination-bullet-inactive-color: white;
+    --swiper-pagination-color: var(var(--color-accent));
+
     font-family: 'Montserrat', sans-serif;
 }
 

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
             img: "./assets/screenshots/vagalivre.png",
             stacks: ["Kotlin", "Jetpack Compose", "Google Maps SDK"],
             name: "Vagalivre Android App",
-            description: "Uma solução ágil e conveniente para localizar espaços de estacionamento de veículos. O aplicativo fornece informações sobre estacionamentos próximos, valores e disponibilidade de vagas.",
+            description: "Aplicativo Android desenvolvido em Kotlin que fornece informações sobre estacionamentos próximos, valores e disponibilidade de vagas com integração com o Google Maps.",
             lastUpdate: "março/2024",
             tag: "MOBILE"
         },
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             img: "./assets/screenshots/ethor.png",
             stacks: ["Kotlin", "Jetpack Compose", "Google AdMob"],
             name: "Ethor Android App",
-            description: "Aplicativo móvel para Android que serve como um comparador de preços entre etanol e gasolina, ajudando os usuários a decidirem qual combustível é mais econômico para abastecer seus veículos.",
+            description: "Aplicativo móvel para Android comparador de preços entre etanol e gasolina, ajudando os usuários a decidirem qual combustível é mais econômico para abastecer seus veículos.",
             lastUpdate: "abril/2024",
             tag: "MOBILE"
         },
@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         profile: {
             img: "./assets/screenshots/profile.png",
-            stacks: ["HTML", "CSS", "Javascript"],
+            stacks: ["HTML", "CSS", "Javascript", "SwiperJS"],
             name: "Profile Web Page",
-            description: "Web page criada para expor os trabalhos realizados na área desenvolvimento de software.",
+            description: "Projeto web desenvolvido para expor os trabalhos de desenvolvimento de software utilizando HTML, CSS e JavaScript nativos para criar uma experiência rica e interativa.",
             lastUpdate: "maio/2024",
             tag: "FRONT-END"
         },
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             img: "./assets/screenshots/fluxusapi.png",
             stacks: ["C#", ".NET", "MySQL", "Dapper"],
             name: "Fluxus Web API",
-            description: "API Rest desenvolvida para integrar as operações de manipulação e persistência de dados do software Fluxus (gestão de serviços de engenharia para credenciados de bancos públicos) com a base de dados em MySQL.",
+            description: "API Rest desenvolvida para integrar as operações de manipulação e persistência de dados do software Fluxus com a base de dados em MySQL.",
             lastUpdate: "janeiro/2024",
             tag: "BACK-END"
         },
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
             img: "./assets/screenshots/aex30.png",
             stacks: ["C#", ".NET", "Windows Forms", "NPOI Library"],
             name: "Aex30 Windows App",
-            description: "Software assistente para automatizar o preenchimento dos relatórios de acompanhamento de evolução de obra fornecidos pela Caixa Econômica Federal aos arquitetos e engenheiros credenciados.",
+            description: "Software assistente para automatizar o preenchimento dos relatórios de acompanhamento de evolução de obra fornecidos pela Caixa Econômica Federal.",
             lastUpdate: "abril/2023",
             tag: "DESKTOP"
         }

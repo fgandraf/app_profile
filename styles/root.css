@@ -23,6 +23,7 @@
     --swiper-pagination-color: var(var(--color-accent));
 
     font-family: 'Montserrat', sans-serif;
+    background-color: black;
 }
 
 h2{

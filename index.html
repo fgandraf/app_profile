@@ -60,44 +60,49 @@
     </nav>
 
     <header>
-        <div id="section__principal">
 
-            <div id="top_left"></div>
+        <section id="header__content">
+            <div id="section__principal">
 
-            <div id="core">
-                <div>
-                    <h1 id="titulo">Felipe Gandra</h1>
-                    <h2 id="subtitulo">Desenvolvedor de Sistemas</h2>
+                <div id="top_left"></div>
+
+                <div id="core">
+                    <div>
+                        <h1 id="titulo">Felipe Gandra</h1>
+                        <h2 id="subtitulo">Desenvolvedor de Sistemas</h2>
+                    </div>
                 </div>
-            </div>
-            <div id="topicos">
-                <ul id="topico__item">
-                    <li>Estudante de Análise e Desenvolvimento de Sistemas, com formação em Arquitetura e Urbanismo;
-                    </li>
-                    <li>Apaixonado por tecnologia e insaciávelmente curioso;</li>
-                    <li>Com (alguma) experiência em linguagens de programação desde os anos de 1990.</li>
-                    <li><span id="saiba_mais" onclick="openModal('./pages/about.html')">Saiba mais...</span></li>
-                </ul>
-            </div>
-
-            <div id="bottom_right">
-
-                <div id="curriculo__container">
-                    <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing"
-                        download target="_blank" class="curriculo_item">
-                        <i class="material-symbols-outlined">download</i>
-                        Currículo (pt-br)
-                    </a>
-
-                    <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing"
-                        download target="_blank" class="curriculo_item">
-                        <i class="material-symbols-outlined">download</i>
-                        Resume (en-us)
-                    </a>
+                <div id="topicos">
+                    <ul id="topico__item">
+                        <li>Estudante de Análise e Desenvolvimento de Sistemas, com formação em Arquitetura e Urbanismo;
+                        </li>
+                        <li>Apaixonado por tecnologia e insaciávelmente curioso;</li>
+                        <li>Com (alguma) experiência em linguagens de programação desde os anos de 1990.</li>
+                        <li><span id="saiba_mais" onclick="openModal('./pages/about.html')">Saiba mais...</span></li>
+                    </ul>
                 </div>
 
+                <div id="bottom_right">
+
+                    <div id="curriculo__container">
+                        <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing"
+                            download target="_blank" class="curriculo_item">
+                            <i class="material-symbols-outlined">download</i>
+                            Currículo (pt-br)
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing"
+                            download target="_blank" class="curriculo_item">
+                            <i class="material-symbols-outlined">download</i>
+                            Resume (en-us)
+                        </a>
+                    </div>
+
+                </div>
             </div>
-        </div>
+        </section>
+
+
     </header>
 
     <main>
@@ -243,24 +248,90 @@
                 </div>
             </div>
         </section>
-
-        <section id="footer__curriculo">
-            <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing" download
-                target="_blank" class="curriculo_item">
-                <i class="material-symbols-outlined">download</i>
-                Currículo (pt-br)
-            </a>
-
-            <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing" download
-                target="_blank" class="curriculo_item">
-                <i class="material-symbols-outlined">download</i>
-                Resume (en-us)
-            </a>
-        </section>
-        <section id="contact">
-
-        </section>
     </main>
+
+    <footer>
+        <section id="footer__desktop">
+            <div class="footer__container">
+                <div class="footer__column">
+                    <h2>Currículo</h2>
+                    <ul>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing"
+                                download target="_blank">
+                                <i class="material-symbols-outlined">download</i>
+                                Português (pt-br)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing"
+                                download target="_blank">
+                                <i class="material-symbols-outlined">download</i>
+                                English (en-us)
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="footer__column">
+                    <h2>Links</h2>
+                    <ul>
+                        <li>
+                            <span class="open_modal_link" onclick="openModal('./pages/about.html')">→ Saiba mais</span>
+                        </li>
+                        <li>
+                            <span class="open_modal_link" onclick="openModal('./pages/cursos.html')">→ Cursos</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h2>Contato</h2>
+                    <ul>
+                        <li>
+                            <a href="mailto: fgandraf@gmail.com" target="_blank">
+                                <img src="assets/email.svg" class="menu__icone">
+                                <span class="menu__description">fgandraf@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:14998290103" target="_blank">
+                                <img src="assets/phone.svg" class="menu__icone">
+                                <span class="menu__description">(14) 99829-0103</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/fgandraf/" target="_blank">
+                                <img src="assets/github.svg" class="menu__icone">
+                                <span class="menu__description">github.com/fgandraf</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/fgandraf/" target="_blank">
+                                <img src="assets/linkedin.svg" class="menu__icone">
+                                <span class="menu__description">linkedin.com/in/fgandraf</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer__mobile">
+            <div class="footer__mobile__container">
+                <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing" download
+                    target="_blank" class="curriculo_item">
+                    <i class="material-symbols-outlined">download</i>
+                    Currículo (pt-br)
+                </a>
+                <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing" download
+                    target="_blank" class="curriculo_item">
+                    <i class="material-symbols-outlined">download</i>
+                    Resume (en-us)
+                </a>
+            </div>
+
+        </section>
+    </footer>
 
     <!-- Janela modal -->
     <div id="myModal" class="modal">
@@ -271,8 +342,11 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="./scripts/portfolio.js"></script>
     <script src="./scripts/modal.js"></script>
+    <script src="./scripts/scroll.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/swiper.js"></script>

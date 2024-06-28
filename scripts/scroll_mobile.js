@@ -2,33 +2,25 @@ $(function () {
     var isMobile = window.matchMedia("screen and (max-width: 500px)").matches;
 
     if (isMobile) {
-        jQuery("nav").addClass('display-flex');
-        jQuery("#footer__desktop").addClass('display-none');
-
-        var footerMobile = jQuery("#footer__mobile");
+        
         jQuery(window).scroll(function () {
             var scroll = jQuery(window).scrollTop();
-            var windowHeight = window.innerHeight;
 
-            if (scroll >= windowHeight) {
+            // Show mobile footer
+            var footerMobile = jQuery("#footer__mobile");
+            if (scroll >= window.innerHeight) 
                 footerMobile.addClass('display-flex');
-
-            } else {
+            else 
                 footerMobile.removeClass('display-flex');
-            }
-        });
+            
 
-        // For all platform
-        var header = jQuery("#section__principal");
-        jQuery(window).scroll(function () {
-            var scroll = jQuery(window).scrollTop();
-            var windowHeight = window.innerHeight;
-
-            if (scroll >= windowHeight) {
+            // Hide header when reach main
+            var header = jQuery("#section__principal");
+            if (scroll >= window.innerHeight)
                 header.addClass('display-none');
-            } else {
+            else
                 header.removeClass("display-none");
-            }
+
         });
         
     }

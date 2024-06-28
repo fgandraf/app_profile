@@ -19,7 +19,7 @@ $(function() {
                 footerDesktop.removeClass('display-flex');
             }
 
-            if (scroll >= windowHeight*2.3) {
+            if (scroll >= windowHeight*2.5) {
                 navMenu.addClass('display-none');
             } else {
                 navMenu.removeClass('display-none');

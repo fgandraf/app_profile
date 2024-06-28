@@ -3,8 +3,8 @@
 @media screen and (max-width: 500px) {
 
     body {
-        background-size: cover;
-        background-position: -100%;
+        background-size:auto;
+        background-position-x: 100%;
     }
 
     nav{
@@ -203,8 +203,6 @@
         }
 
         #footer__mobile{
-            backdrop-filter: blur(0px);
-            -webkit-backdrop-filter: blur(0px);
             display: none;
             justify-content: center;
             align-items: center;
@@ -225,7 +223,6 @@
                     display: flex;
                     align-items: center;
                     font-size: 0.9rem;
-                    
                 }
             }
         }

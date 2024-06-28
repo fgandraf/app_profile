@@ -64,7 +64,7 @@ main {
             width: 426px;
             border-radius: 20px;
             background-color: rgb(0, 0, 0);
-            background-image: url(../../assets/loading.gif);
+            background-image: url(../../images/loading.gif);
             background-repeat: no-repeat;
             background-position: center;
             overflow: hidden;
@@ -147,6 +147,16 @@ main {
             color: gray;
             text-align: center;
             font-style: italic;
+        }
+
+        .citation {
+            margin: 0 0.2rem;
+            border: 1px solid green;
+            border-radius: 0.4rem;
+            padding: 0.2rem 0.5rem;
+            color: green;
+            text-align: center;
+            font-weight: bold;
         }
 
         .data {

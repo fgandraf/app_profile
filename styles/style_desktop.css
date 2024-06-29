@@ -170,7 +170,7 @@ header {
 
                     #saiba_mais:hover {
                         cursor: pointer;
-                        color: var(--color-link-hover);
+                        color: var(--color-link-hover);                        
                     }
                 }
             }
@@ -223,10 +223,11 @@ main {
     justify-content: center;
     align-items: center;
     z-index: 20;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    background-color: var(--color-background-primary);
 
     #section__tecnologias {
-        border-top: 5px solid red;
-        background-color: var(--color-background-primary);
         padding: 5vh 15px 5vh 15px;
         display: flex;
         flex-direction: column;
@@ -274,7 +275,6 @@ main {
     }
 
     #section__certificacoes {
-        background-color: var(--color-background-primary);
         padding: 5vh 15px 5vh 15px;
         display: flex;
         flex-direction: column;
@@ -389,8 +389,6 @@ main {
     }
 
     #section__projetos {
-        border-bottom: 5px solid red;
-        background-color: var(--color-background-primary);
         padding: 0 15px 10vh 15px;
         display: flex;
         flex-direction: column;
@@ -537,7 +535,7 @@ footer {
         position: fixed;
         bottom: 0;
         display: none;
-        
+
         .footer__container {
             width: 100%;
             color: white;
@@ -545,7 +543,7 @@ footer {
             justify-content: center;
             gap: 10%;
             position: fixed;
-            
+
 
             .footer__column {
                 h2 {

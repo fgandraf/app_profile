@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
             stacks: ["C#", ".NET", "SQL Server", "Entity Framework"],
             name: "Promore Web API",
             description: "API Rest desenvolvida para integrar as operações de manipulação e persistência de dados do software Promore com a base de dados em Microsoft Sql Server.",
-            lastUpdate: "junho/2024",
+            lastUpdate: "julho/2024",
             tag: "BACK-END"
         },
         alucar: {

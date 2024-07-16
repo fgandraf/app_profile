@@ -376,12 +376,10 @@ main {
             justify-content: center;
             flex-wrap: wrap;
             margin: 0;
-            gap: 1.5rem;
-            padding-top: 5vh;
+            padding-top: 8vh;
 
             .swiper {
                 width: 100%;
-                padding-top: 15px;
                 padding-bottom: 120px;
 
                 .swiper-pagination-bullet {

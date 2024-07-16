@@ -101,12 +101,11 @@
             }
 
         }
-
-        
     }
 
     main{
         #section__projetos {
+            padding-bottom: 8vh;
 
             .section__projetos__titulo{
                 margin: 4rem 5vw 4rem 5vw;
@@ -116,11 +115,9 @@
 
             #projetos__container{
                 .swiper {
-                    padding-top: 0;
-                    padding-bottom: 0;
-
                     .swiper-pagination-bullet {
-                        display: none;
+                        width: 20px;
+                        height: 20px;
                     }
 
                     .swiper-wrapper{
@@ -129,7 +126,6 @@
                             padding: 0 50px;
                         }
                     }
-
                 }
                 .card{ 
                     .card__cover { 
@@ -150,6 +146,10 @@
                 margin: 2rem 5vw 4rem 5vw;
                 font-weight: 600;
                 font-size: 1.2rem;
+            }
+
+            #tecnologias__container {
+                padding: 10vh 8vw;
             }
         }
 
@@ -186,7 +186,7 @@
     }
 
     footer{
-        height: 20vh;
+        height: 30vh;
         width: 100vw;
 
         #footer__desktop{
@@ -203,7 +203,7 @@
             bottom: 0;
 
             .footer__mobile__container{
-                height: 25vh;
+                height: 35vh;
                 width: 100vw;
                 display: flex;
                 justify-content: space-evenly;

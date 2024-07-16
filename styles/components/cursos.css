@@ -31,7 +31,8 @@ main{
             margin: 1rem 0 4rem 0;
             text-align: center;
             border-bottom: 2px white solid;
-            padding-bottom: 1rem;
+            padding-bottom: 1.5rem;
+            font-size: 3rem;
         }
 
         #cursos__container {

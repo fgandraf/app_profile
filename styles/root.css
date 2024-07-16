@@ -19,18 +19,22 @@
     --color-link: hsl(var(--color-base-accent-H),var(--color-base-accent-S), 85%);
     --color-link-hover: var(--color-accent);
 
-    --swiper-pagination-bullet-inactive-color: white;
+    --swiper-pagination-bullet-inactive-color: var(--color-link);
     --swiper-pagination-color: var(var(--color-accent));
-
-    font-family: 'Montserrat', sans-serif;
-    background-color: black;
+    --swiper-pagination-bullet-horizontal-gap: 8px;
 }
 
-h2{
-    font-size: 4rem;
+::-webkit-scrollbar {
+    width: 5px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-h3{
-    font-size: 2.5rem;
-    font-weight: 600;
+::-webkit-scrollbar-track {
+    background: var(--color-background-menu);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    border-radius: 5px;
 }

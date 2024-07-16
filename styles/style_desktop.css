@@ -24,6 +24,7 @@ html{
     font-style: normal; 
     font-variation-settings: "slnt" 0;
     font-size: 1rem;
+    background-color: black;
 }
 
 a {
@@ -95,7 +96,6 @@ header {
         position: fixed;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -109,7 +109,7 @@ header {
             width: 75vw;
 
             #top_left {
-                width: 30vw;
+                width: 25vw;
                 height: 12vh;
                 position: absolute;
                 top: 0;
@@ -130,11 +130,11 @@ header {
                     font-family: "Artifika", serif;
                     font-weight: 400;
                     color: var(--color-text-emphasy);
-                    font-size: 7rem;
+                    font-size: 6vw;
                 }
 
                 #subtitulo {
-                    font-size: 1.5rem;
+                    font-size: 1.5vw;
                     color: var(--color-text-emphasy);
                     font-style: italic;
                     font-weight: 400;
@@ -149,9 +149,9 @@ header {
                 display: flex;
                 flex-direction: column;
                 margin-left: 12%;
-                font-size: 1.25rem;
-                padding: 0.5rem 2rem;
-                line-height: 1.5rem;
+                font-size: 1.1vw;
+                padding: 0.5rem 2vw;
+                line-height: 1.3vw;
 
                 #topico__item {
                     display: flex;
@@ -173,7 +173,7 @@ header {
             }
 
             #bottom_right {
-                width: 30vw;
+                width: 25vw;
                 height: 12vh;
                 border-bottom: 4px solid transparent;
                 border-right: 4px solid transparent;
@@ -181,29 +181,6 @@ header {
                 position: absolute;
                 right: 0;
                 bottom: 0;
-                display: flex;
-                justify-content: right;
-                padding-right: 3vw;
-
-                #curriculo__container {
-                    display: flex;
-                    font-size: 0.9vw;
-                    padding-bottom: 8%;
-                    align-items: flex-end;
-                    gap: 1.5vw;
-
-                    .curriculo_item {
-                        display: flex;
-                        gap: 0.3rem;
-                        align-items: center;
-                        text-decoration: none;
-                        color: var(--color-link);
-                    }
-
-                    .curriculo_item:hover {
-                        color: var(--color-link-hover);
-                    }
-                }
             }
         }
     }

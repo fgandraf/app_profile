@@ -3,8 +3,9 @@
 @media screen and (max-width: 500px) {
 
     body {
-        background-size:auto;
-        background-position-x: 100%;
+        background-size:auto 80%;
+        background-position-x: 53%;
+        background-position-y: 50%;
     }
 
     nav{
@@ -104,6 +105,36 @@
     }
 
     main{
+
+        #section__sobre{
+            padding-bottom: 8vh;
+
+            .section__sobre__titulo{
+                margin: 4rem 5vw 4rem 5vw;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+
+            #topicos{
+                align-self: center;
+                font-size: 0.9rem;
+                margin: 0;
+                line-height: 1.5rem;
+                padding: 0.5rem 3rem;
+
+                #topico__item{
+                    text-wrap: wrap;
+                    font-size: 01rem;
+                    text-align: justify;
+                    gap: 3vh;
+                }
+            }
+
+
+
+        }
+
+
         #section__projetos {
             padding-bottom: 8vh;
 

@@ -1,9 +1,9 @@
 @import url("root.css");
 
 body {
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/bg.png);
     background-size: 120%;
-    background-position-x: 100%;
+    background-position-x: 60%;
     background-attachment: fixed;
     overflow-x: hidden;
 }
@@ -85,6 +85,11 @@ nav {
     }
 }
 
+.blur{
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
 header {
     width: 100vw;
     height: 100vh;
@@ -94,8 +99,6 @@ header {
         height: 100%;
         width: 100%;
         position: fixed;
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -117,59 +120,6 @@ header {
                 border-top: 4px solid transparent;
                 border-left: 4px solid transparent;
                 border-image: radial-gradient(circle, white, var(--color-accent)) 1;
-            }
-
-
-            #core {
-                display: flex;
-                justify-content: start;
-                text-align: right;
-                margin-left: 8%;
-
-                #titulo {
-                    font-family: "Artifika", serif;
-                    font-weight: 400;
-                    color: var(--color-text-emphasy);
-                    font-size: 6vw;
-                }
-
-                #subtitulo {
-                    font-size: 1.5vw;
-                    color: var(--color-text-emphasy);
-                    font-style: italic;
-                    font-weight: 400;
-                }
-            }
-
-            #topicos {
-                border-left: 2px solid transparent;
-                border-image: linear-gradient(to bottom, white, var(--color-accent)) 1;
-                box-sizing: border-box;
-                width: 88%;
-                display: flex;
-                flex-direction: column;
-                margin-left: 12%;
-                font-size: 1.1vw;
-                padding: 0.5rem 2vw;
-                line-height: 1.3vw;
-
-                #topico__item {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 1rem;
-                    list-style: circle;
-                    text-wrap: nowrap;
-
-                    #saiba_mais {
-                        text-decoration: none;
-                        color: var(--color-link);
-                    }
-
-                    #saiba_mais:hover {
-                        cursor: pointer;
-                        color: var(--color-link-hover);                        
-                    }
-                }
             }
 
             #bottom_right {
@@ -198,17 +148,68 @@ main {
     border-bottom: 5px solid red;
     background-color: var(--color-background-primary);
 
+    #section__sobre {
+        padding: 5vh 15px 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        min-height: 80vh;
+        z-index: 1;
+
+        .section__sobre__titulo {
+            margin: 4rem;
+            text-align: right;
+            border-bottom: 2px white solid;
+            padding-bottom: 1rem;
+        }
+
+        #topicos {
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.1vw;
+            line-height: 1.3vw;
+            margin: auto 0;
+            padding: 0 10vw;
+
+            #topico__item {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                list-style: circle;
+                text-wrap: nowrap;
+
+                #saiba_mais {
+                    text-decoration: none;
+                    color: var(--color-link);
+                }
+
+                #saiba_mais:hover {
+                    cursor: pointer;
+                    color: var(--color-link-hover);                        
+                }
+            }
+        }
+    }
+
+
+
+
     #section__tecnologias {
         padding: 5vh 15px 5vh 15px;
         display: flex;
         flex-direction: column;
         align-self: center;
         width: 100%;
+        min-height: 80vh;
         z-index: 1;
 
         .section__tecnologias__titulo {
             margin: 4rem;
-            text-align: right;
+            text-align: left;
             border-bottom: 2px white solid;
             padding-bottom: 1rem;
         }
@@ -220,6 +221,7 @@ main {
             margin: 0;
             gap: 2rem;
             padding: 10vh 6vw;
+            margin: auto 0;
 
             .card__tecnologias {
                 display: flex;
@@ -248,6 +250,7 @@ main {
         flex-direction: column;
         align-self: center;
         width: 100%;
+        min-height: 80vh;
         z-index: 1;
 
         .section__certificacoes__titulo {
@@ -262,6 +265,7 @@ main {
             justify-content: center;
             gap: 2.5rem;
             padding: 10vh 6vw 2.5rem 6vw;
+            margin: auto 0;
 
             .card__certificacao {
                 max-width: 550px;
@@ -362,11 +366,12 @@ main {
         flex-direction: column;
         align-self: center;
         width: 100%;
+        min-height: 80vh;
         z-index: 1;
 
         .section__projetos__titulo {
             margin: 4rem;
-            text-align: right;
+            text-align: left;
             border-bottom: 2px white solid;
             padding-bottom: 1rem;
         }
@@ -375,7 +380,7 @@ main {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            margin: 0;
+            margin: auto 0;
             padding-top: 8vh;
 
             .swiper {

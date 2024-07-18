@@ -15,17 +15,13 @@ $(function () {
             
 
             // Hide header when reach main
-            var header = jQuery("#section__principal");
             var headerContent = jQuery("#header__content");
             if (scroll >= window.innerHeight)
             {
-                header.addClass('display-none');
                 headerContent.addClass('blur');
-
             }
             else
             {
-                header.removeClass("display-none");
                 headerContent.removeClass("blur");
             }
 

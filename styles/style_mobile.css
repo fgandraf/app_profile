@@ -3,9 +3,7 @@
 @media screen and (max-width: 500px) {
 
     body {
-        background-size:auto 80%;
-        background-position-x: 53%;
-        background-position-y: 50%;
+        background-image: url(../images/bg-mobile.png);
     }
 
     nav{
@@ -30,77 +28,6 @@
         .menu__item:hover{
             .menu__description{ display: none; }
             .menu__icone{ transform: none;}
-        }
-    }
-
-    header{
-
-        #header__content{
-            #section__principal{
-                width: 86%;
-                height: 80vh;
-                left: 7%;
-                right: 7%;
-    
-                #top_left{
-                    position: absolute;
-                    top: 0;
-                    width: 45vw;
-                    height: 6vh;
-                    border-top: 2px solid transparent;
-                    border-left: 2px solid transparent;
-                }
-    
-                #core{
-                    justify-content: center;
-                    text-align: center;
-                    width: 100%;
-                    margin: 0;
-    
-                    #titulo{
-                        font-size: 2.7rem;
-                        text-wrap: nowrap;
-                    }
-            
-                    #subtitulo{
-                        font-size: 1.1rem;
-                        margin-top: 1rem;
-                    }
-                    
-                }
-    
-                #topicos{
-                    align-self: center;
-                    font-size: 0.9rem;
-                    margin: 0;
-                    line-height: 1.5rem;
-                    padding: 0.5rem 2rem;
-    
-                    #topico__item{
-                        text-wrap: wrap;
-                        font-size: 01rem;
-                        text-align: justify;
-                        gap: 3vh;
-                    }
-                }
-    
-                #bottom_right{
-                    position: absolute;
-                    bottom: 0;
-                    right: 10px;
-                    margin-bottom: 2vh;
-                    width: 45vw;
-                    height: 6vh;
-                    border-bottom: 2px solid transparent;
-                    border-right: 2px solid transparent;
-                    
-                    #curriculo__container{
-                        display: none;
-                    }
-                }
-    
-            }
-
         }
     }
 

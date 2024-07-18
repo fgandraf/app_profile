@@ -2,7 +2,7 @@
 
 body {
     background-image: url(../images/bg.png);
-    background-size: 120%;
+    background-size: cover;
     background-position-x: 60%;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -54,7 +54,7 @@ nav {
 
     .menu__item {
         display: grid;
-        grid-template-columns: 30px 150px;
+        grid-template-columns: 30px auto;
         text-wrap: nowrap;
         flex-wrap: nowrap;
         align-items: center;
@@ -63,7 +63,12 @@ nav {
 
     .menu__description {
         color: var(--color-text-emphasy);
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(to right, white, var(--color-background-primary)) 1;
+        padding-bottom: 0.3rem;
         display: none;
     }
 
@@ -86,8 +91,8 @@ nav {
 }
 
 .blur{
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 header {
@@ -100,39 +105,6 @@ header {
         width: 100%;
         position: fixed;
         display: flex;
-        justify-content: center;
-        align-items: center;
-
-        #section__principal {
-            display: flex;
-            position: absolute;
-            flex-direction: column;
-            justify-content: space-evenly;
-            height: 70vh;
-            width: 75vw;
-
-            #top_left {
-                width: 25vw;
-                height: 12vh;
-                position: absolute;
-                top: 0;
-                left: 0;
-                border-top: 4px solid transparent;
-                border-left: 4px solid transparent;
-                border-image: radial-gradient(circle, white, var(--color-accent)) 1;
-            }
-
-            #bottom_right {
-                width: 25vw;
-                height: 12vh;
-                border-bottom: 4px solid transparent;
-                border-right: 4px solid transparent;
-                border-image: radial-gradient(circle at bottom right, white, var(--color-accent)) 1;
-                position: absolute;
-                right: 0;
-                bottom: 0;
-            }
-        }
     }
 }
 

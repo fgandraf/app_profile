@@ -44,6 +44,7 @@ async function changeLanguage(lang) {
         const projects = getProjectsByLanguage(lang, { [lang]: currentTranslation });
         updateProjects(projects);
         loadIndexPage(currentTranslation, lang);
+        initializeSwiper();
     } catch (error) {
         console.error("Error changing language:", error);
     }

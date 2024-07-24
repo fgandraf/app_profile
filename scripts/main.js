@@ -1,7 +1,6 @@
 import { fetchTranslation } from './modules/fetchTranslations.js';
 import { loadIndexPage } from './modules/load-index-page.js';
 import { openModal, closeModal } from './components/modal.js';
-import { initializeSwiper } from './components/swiper.js';
 import './components/scroll.js';
 
 let currentTranslation = {};
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     currentTranslation = await fetchTranslation(savedLanguage);
 
     loadIndexPage(currentTranslation, savedLanguage);
-    initializeSwiper();
 
     // Adicionar eventos de clique aos links de idioma
     document.getElementById('lang-br').addEventListener('click', (event) => {
@@ -39,7 +37,6 @@ async function changeLanguage(lang) {
         localStorage.setItem('selectedLanguage', lang);
         
         loadIndexPage(currentTranslation, lang);
-        initializeSwiper();
     } catch (error) {
         console.error("Error changing language:", error);
     }

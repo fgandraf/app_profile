@@ -28,6 +28,15 @@ export function loadIndexPage(lang, flag) {
     
     // PortfolioSection
     document.getElementById("portfolio-title").innerText = lang.portfolio.title;
+    loadProject(lang, "promoreApi");
+    loadProject(lang, "ethor");
+    loadProject(lang, "profile");
+    loadProject(lang, "maar");
+    loadProject(lang, "vagalivre");
+    loadProject(lang, "alucar");
+    loadProject(lang, "fluxusApi");
+    loadProject(lang, "fluxusApp");
+    loadProject(lang, "aex30");
 
     // Footer
     // ---resume
@@ -53,3 +62,29 @@ export function loadIndexPage(lang, flag) {
 }
 
 
+function loadProject(lang, projectName) {
+
+    // Carregar informações do json
+    const project = lang.portfolio.projects.find(element => element[projectName])[projectName];
+
+    // Carregar elementos do DOM
+    let tag = document.querySelector(`#${projectName} > .card > .card__tag`);
+    let stacks = document.querySelector(`#${projectName} > .card > .card__content > .card__stacks`);
+    let name = document.querySelector(`#${projectName} > .card > .card__content > .projeto__nome`);
+    let description = document.querySelector(`#${projectName} > .card > .card__content > .projeto__descricao`);
+    let lastUpdate = document.querySelector(`#${projectName} > .card > .card__content > .last_update`);
+
+    // Limpar valores
+    tag.innerText = "";
+    stacks.innerText = "";
+    name.innerText = "";
+    description.innerText = "";
+    lastUpdate.innerText = "";
+
+    // Atualizar valores
+    tag.innerText = project.tag;
+    project.stacks.forEach(element => { stacks.innerHTML += `<li class="stack__item">${element}</li>`});
+    name.innerText = project.name;
+    description.innerText = project.shortDescription;
+    lastUpdate.innerText = project.lastUpdate;
+}

@@ -1,0 +1,398 @@
+{
+    "about": {
+        "title": ": : SOBRE MIM : :",
+        "topics": [
+            "Desenvolvedor de Software Full Stack com ampla experiência em diversas linguagens de programação;",
+            "Cursando o último ano de Análise e Desenvolvimento de Sistemas;",
+            "Com formação prévia em Arquitetura e Urbanismo;",
+            "Apaixonado por criar soluções que impactem positivamente a vida das pessoas, estou sempre em busca de novos desafios;",
+            "Direcionando completamente minha carreira para a área de tecnologia;"
+        ],
+        "moreButton": "Saiba mais...",
+        "whoIAm": {
+            "title": ": : QUEM SOU EU : :",
+            "body": [
+                "Qualquer tentativa de apontar quando começou minha paixão por tecnologia seria, no mínimo, imprecisa. Apenas me lembro de ser muito curioso a respeito de como as coisas funcionavam, mas nunca a ponto de destruir meus brinquedos para saber. Acho que preferia manter a mágica e o sonho de um dia também ser capaz de construir coisas, como aqueles incríveis carrinhos de fricção que colecionava.",
+                "Na escola, só me motivavam os trabalhos que me desafiavam, de qualquer disciplina, apesar de matemática ser a mais interessante, sem dúvida. Mas foi em 1994 que tudo começou a se definir. Foi o ano em que meu pai, empresário do ramo aeroviário, foi premiado em um conferência estadual e levou para casa um microcomputador Compaq Presario 486 DX2-66 com -incrível- kit multimídia e um HD de 80Mb (isso mesmo, não são gigas).",
+                "Naquele período, sem internet em casa, as atividades no computador eram bastante limitadas. Só me restava a velha empreitada de “descobrir como funcionava” e, para isso, foram muitas revistas e livros, sendo a única forma de aprender na época, até abrir uma escola de informática próxima ao bairro. Daí em diante, foram muitos cursos, como Word, Excel, PowerPoint, Corel Draw, Windows, entre outros que não me recordo.",
+                "Acho que tudo começou a ficar sério quando, ainda na mesma década, fiz o curso de Hardware – Montagem e Manutenção de Microcomputadores e, em seguida, Programação com Clipper, descobrindo meu especial apreço pelo desenvolvimento de software.",
+                "Clipper já era uma linguagem obsoleta e não fazia muito sentido para mim, desenvolver qualquer coisa naquela tela preta sem mouse. O “hype” era o Delphi e lá fui eu aos 14 ou 15 anos de idade mergulhar de vez nos códigos. Daí em diante, sistemas operacionais, internet, bug do milênio, segurança de rede, protocolos, Linux, etc, passaram a ser meu grande interesse.",
+                "Anos mais tarde, precisamente em 2004, fui morar nos Estados Unidos e lá, tive a oportunidade de realizar alguns trabalhos freelances. Dentre eles destaco, a higienização e manutenção da base de dados de um pequeno supermercado, o desenvolvimento de um programinha que calculava alguma coisa que não me lembro, para este mesmo supermercado e um site institucional para uma construtora.",
+                "No entanto, conhecer outras culturas e línguas despertou em mim o desejo de saber “como funcionam” as cidades e a sociedade como um todo. Então, já de volta ao Brasil, aos 28 anos de idade, resolvi embarcar na universidade no curso de Arquitetura e Urbanismo, mas o interesse pela lógica e pelos códigos nunca me abandonou, foi apenas temporariamente ofuscado.",
+                "Em 2020, formado arquiteto e com um contrato de prestação de serviços com a Caixa Econômica Federal recém assinado, precisava gerenciar meu fluxo de trabalho e tentei várias ferramentas. A combinação Trello + Planilha do Excel foi a que chegou mais próximo do que eu queria mas, ainda assim, não estava satisfeito. Acreditava que um software sob medida era o que eu precisava (ou só estava me enganando e querendo um motivo) e então resolvi sondar o que havia “por aí” com relação a linguagens de programação.",
+                "Javascript, Java, Python, Ruby, o velho Delphi e....espera... C#, .NET e Visual Studio? Me lembro do surgimento deles mas, na época, estava bem satisfeito com o que o Delphi me entregava. Não custa nada tentar, certo? Errado! Mal sabia que este contato abalaria meus planos iniciais e seria ele o responsável por essa decisão de migrar de carreira e me “re-apaixonar” pelos código, afinal, a curva de aprendizado do .NET com Windows Forms para um enferrujado programador Delphi como eu, era bastante suave e intuitiva.",
+                "Feito! Nasce meu primeiro software em C# com Windows Forms (batizado de Fluxus) e com ele, o interesse por tudo que havia de novo na tecnologia (ao menos, novo para mim). Git, GitHub, GitLab, Docker, API, MySQL, ORMs e tanta coisa nova para explorar. E assim foi em 2021 e 2022: um curso atrás do outro. Udemy, Alura, Balta, Dio viraram minhas novas Netflix.",
+                "O grande passo foi no final de 2022 quando resolvi voltar a salas de aula, mas agora, remotas no curso de Análise e Desenvolvimento de Sistemas e, desde então, não consigo ter outro foco além de migrar de vez para aquela que nunca deixou de ser a minha primeira opção.",
+                "Sou grato a Arquitetura, pois foi ela a responsável por me fazer ver, mais atentamente, a relação entre a função e a estética, o sonho e a realidade e saber que sempre é possível desenvolver qualquer coisa dentro das limitações espaço-temporais ou de orçamento, sem comprometer a qualidade.",
+                "Hoje, reconheço nos títulos “Arquiteto” e “Desenvolvedor” muito mais do que profissões, são traços do que sou!"
+            ]
+        }
+    },
+    "technologies": {
+        "title": ": : PRINCIPAIS TECNOLOGIAS : :"
+    },
+    "certificates": {
+        "title": ": : CERTIFICAÇÕES : :",
+        "certificate1": {
+            "title": "Certificado de Qualificação Profissional em Análise e Design Web 2.0",
+            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
+            "date": "18 de dezembro de 2023"
+        },
+        "certificate2": {
+            "title": "Certificado de Qualificação Profissional em Análise de Sistemas e Prototipagem Web",
+            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
+            "date": "03 de julho de 202"
+        },
+        "courses": "Mais de 500 horas em cursos certificados de programação, banco de dados e áreas correlatas realizados através de diversas plataformas."
+    },
+    "courses": {
+        "title": ": : CURSOS : :",
+        "courses": [
+            {
+                "alura-formation-winforms": {
+                    "title": "Windows Forms com C#",
+                    "subtitle": "Formação Alura - 7 cursos - 86 horas",
+                    "subjects": [
+                        "Acesso ao banco de dados SQL Server;",
+                        "Manipulando os dados do cliente;",
+                        "Persista os dados no banco de dados;",
+                        "Formulários, componentes e eventos;",
+                        "Menus, outros formulários e validação com login e senha;",
+                        "Barra de ferramentas, trabalhando com classes e JSON;",
+                        "Eventos do mouse e mais componentes."
+                    ]
+                }
+            },
+            {
+                "alura-formation-agile": {
+                    "title": "Digital & Agile Thinking",
+                    "subtitle": "Formação Alura - 7 cursos - 65 horas",
+                    "subjects": [
+                        "Agilidade: promovendo a transformação ágil;",
+                        "A Empresa Ágil: introduzindo o Business Agility nas organizações;",
+                        "Scrum: agilidade em seu projeto;",
+                        "Kanban: análises para implementação;",
+                        "Kanban: evolua suas entregas com métricas;",
+                        "Agile avançado: crie modelos e descubra o Nexus;",
+                        "Management 3.0: gerencie o ambiente, não as pessoas."
+                    ]
+                }
+            },
+            {
+                "alura-formation-csharpoop": {
+                    "title": "C# e Orientação a Objetos",
+                    "subtitle": "Formação Alura - 4 cursos - 39 horas",
+                    "subjects": [
+                        "C#: explorando a linguagem;",
+                        "C#: orientação a objetos;",
+                        "C#: usando herança e implementando interfaces;",
+                        "C#: entendendo exceções."
+                    ]
+                }
+            },
+            {
+                "alura-formation-htmlfromscratch": {
+                    "title": "A partir do zero: HTML e CSS para projetos web",
+                    "subtitle": "Formação Alura - 6 cursos - 51 horas",
+                    "subjects": [
+                        "HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tag;",
+                        "HTML e CSS: Classes, posicionamento e Flexbox;",
+                        "HTML e CSS: cabeçalho, footer e variáveis CSS;",
+                        "HTML e CSS: trabalhando com responsividade e publicação de projetos;",
+                        "HTML e CSS: praticando HTML/CSS;",
+                        "HTML e CSS: responsividade com mobile-first."
+                    ]
+                }
+            },
+            {
+                "alura-formation-css": {
+                    "title": "CSS: aprofunde em estilos",
+                    "subtitle": "Formação Alura - 5 cursos - 36 horas",
+                    "subjects": [
+                        "CSS: Flexbox e layouts responsivos;",
+                        "CSS: construindo layouts com Grid;",
+                        "SASS: CSS sintaticamente espetacular;",
+                        "Tailwind CSS: estilizando a sua página com classes utilitárias;",
+                        "Praticando CSS: Grid e Flexbox."
+                    ]
+                }
+            },
+            {
+                "balta-carrer-fundamentals": {
+                    "title": ".NET Developer Fundamentals",
+                    "subtitle": "Carreira balta.io - 2 cursos",
+                    "subjects": [
+                        "Fundamentos do C#;",
+                        "Fundamentos da Orientação a Objetos."
+                    ]
+                }
+            },
+            {
+                "balta-carrer-dataaccess": {
+                    "title": ".NET Data Access",
+                    "subtitle": "Carreira balta.io - 3 cursos",
+                    "subjects": [
+                        "Fundamentos do SQL Server;",
+                        "Acesso à dados com .NET C# Dapper e SQL Server;",
+                        "Fundamentos do Entity Framework."
+                    ]
+                }
+            },
+            {
+                "balta-carrer-aspblazor": {
+                    "title": "ASP.NET/Blazor Developer",
+                    "subtitle": "Carreira balta.io - 9 cursos",
+                    "subjects": [
+                        "Fundamentos do ASP.NET 6;",
+                        "Fundamentos do HTML e CSS;",
+                        "Sites Responsivos;",
+                        "Uma visão geral sobre o ASP.NET Razor Pages;",
+                        "..."
+                    ]
+                }
+            },
+            {
+                "balta-carrer-devops": {
+                    "title": "DevOps",
+                    "subtitle": "Carreira balta.io - 1 curso",
+                    "subjects": [
+                        "Fundamentos do Azure, Git, GitHub e DevOps"
+                    ]
+                }
+            },
+            {
+                "balta-carrer-advanced": {
+                    "title": "Advanced .NET Developer",
+                    "subtitle": "Carreira balta.io - 5 cursos",
+                    "subjects": [
+                        "Modelando domínios ricos;",
+                        "Refatorando para testes de unidade;",
+                        "Aplicando Orientação a Objetos em Projetos Reais com C# 11 e .NET 7;",
+                        "Dominando Injeção de Dependência;",
+                        "Segurança em APIs ASP.NET com JWT e Bearer Authentication."
+                    ]
+                }
+            },
+            {
+                "others": {
+                    "title": "Outras plataformas",
+                    "subtitle": "",
+                    "subjects": [
+                        "BC Pottencial .NET Developer [96 horas]",
+                        "BC Avanade Decola Tech 2024 [73 horas]"
+                    ]
+                }
+            }
+        ]
+    },
+    "portfolio": {
+        "title": ": : PORTFÓLIO : :",
+        "deployButton": "Publicação",
+        "sourceButton": "Código fonte",
+        "projects": [
+            {
+                "vagalivre": {
+                    "img": "./images/thumbs/vagalivre.png",
+                    "stacks": [
+                        "Kotlin",
+                        "Jetpack Compose",
+                        "Google Maps SDK"
+                    ],
+                    "name": "Vagalivre Android App",
+                    "shortDescription": "Aplicativo Android desenvolvido em Kotlin que fornece informações sobre estacionamentos próximos, valores e disponibilidade de vagas com integração com o Google Maps.",
+                    "longDescription": [
+                        "Aplicativo Android desenvolvido em Kotlin que fornece informações sobre estacionamentos próximos, valores e disponibilidade de vagas com integração com o Google Maps.",
+                        "Desenvolvido em 2024 durante o curso de Análise e Desenvolvimento de Sistemas, o aplicativo foi feito em grupo e o desafio era de criar uma solução simples que fosse capas de consumir um serviço web e proporcionar algum benefício no cenário das cidades inteligentes.",
+                        "<a href=\"https://www.linkedin.com/in/henry-thuler-serbillera/\" target=\"_blank\">Henry Thuler</a>, <a href=\"https://www.linkedin.com/in/bianca-ravani-andrade-a7229ab3/\" target=\"_blank\">Bianca Andrade</a> e eu, fomos bem além e criamos o vagalivre. Além de utilizar o Google Maps SDK e a API do Google Places, criamos um backend capaz de gerenciar as contas de usuário e aplicamos muitos conceitos de arquitetura e user-experience.",
+                        "O código completo escrito em Kotlin com Jetpack Compose está disponível no repositório do Github."
+                    ],
+                    "lastUpdate": "Última atualização: Março/2024",
+                    "tag": "MOBILE"
+                }
+            },
+            {
+                "maar": {
+                    "img": "./images/thumbs/maar.png",
+                    "stacks": [
+                        "HTML",
+                        "CSS",
+                        "Javascript",
+                        "Readymag"
+                    ],
+                    "name": "MAAR Website",
+                    "shortDescription": "Somos um novo conceito de empresa de design. Colaboramos com empresas inovadoras para construir e crescer suas marcas, e assim desenharmos juntos a próxima era do design.",
+                    "longDescription": [
+                        "\"Somos um novo conceito de empresa de design. Colaboramos com empresas inovadoras para construir e crescer suas marcas, e assim desenharmos juntos a próxima era do design.\"",
+                        "Estou extremamente orgulhoso por ter sido convidado a integrar a equipe de desenvolvimento do site desta empresa que já nasce gigante.",
+                        "Desenvolvido usando a plataforma lowcode Readymag, minha responsabilidade específica foi programar alguns widgets essenciais e realizar ajustes que não eram possíveis apenas com a funcionalidade de arrastar e soltar.",
+                        "Este projeto foi uma excelente oportunidade para aprofundar meus conhecimentos em design e construção de marcas, além de me desafiar a superar obstáculos técnicos utilizando HTML, CSS e JavaScript.",
+                        "O resultado final deste trabalho de meses pode ser conferido acessando o link ao lado."
+                    ],
+                    "lastUpdate": "Última atualização: Abril/2024",
+                    "tag": "FRONT-END"
+                }
+            },
+            {
+                "ethor": {
+                    "img": "./images/thumbs/ethor.png",
+                    "stacks": [
+                        "Kotlin",
+                        "Jetpack Compose",
+                        "Google AdMob"
+                    ],
+                    "name": "Ethor Android App",
+                    "shortDescription": "Aplicativo móvel para Android comparador de preços entre etanol e gasolina, ajudando os usuários a decidirem qual combustível é mais econômico para abastecer seus veículos.",
+                    "longDescription": [
+                        "Aplicativo móvel para Android comparador de preços entre etanol e gasolina, ajudando os usuários a decidirem qual combustível é mais econômico para abastecer seus veículos.",
+                        "Através de uma interface simples, o usuário insere os preços dos combustíveis e o aplicativo indica a melhor opção de abastecimento.",
+                        "Este projeto proporcionou uma rica experiência no uso da linguagem Kotlin e do Jetpack Compose, um conjunto de ferramentas que permite a criação de interfaces de usuário de forma declarativa e eficiente.",
+                        "O aplicativo, que é o primeiro que publiquei na Google Play Store, também marca minha primeira experiência com a integração de publicidade através do Google AdMob."
+                    ],
+                    "lastUpdate": "Última atualização: Abril/2024",
+                    "tag": "MOBILE"
+                }
+            },
+            {
+                "promoreApi": {
+                    "img": "./images/thumbs/promore.png",
+                    "stacks": [
+                        "C#",
+                        ".NET",
+                        "SQL Server",
+                        "Entity Framework"
+                    ],
+                    "name": "Promore Web API",
+                    "shortDescription": "API Rest desenvolvida para integrar as operações de manipulação e persistência de dados do software Promore com a base de dados em Microsoft Sql Server.",
+                    "longDescription": [
+                        "API Rest desenvolvida para integrar as operações de manipulação e persistência de dados do software Promore, utilizado para a gestão de vistorias de regularização fundiária pelo Sindicato dos Engenheiros do Estado de São Paulo, com a base de dados em Microsoft SQL Server.",
+                        "Desenvolvida em .NET 8, esta API faz uso de abstrações fornecidas pelo ORM Entity Framework, incorporando conceitos de boas práticas de código e arquitetura.",
+                        "O código-fonte da aplicação está disponível em um repositório público no GitHub. Para acessá-lo, clique no botão \"Repositório\""
+                    ],
+                    "lastUpdate": "Última atualização: Julho/2024",
+                    "tag": "BACK-END"
+                }
+            },
+            {
+                "alucar": {
+                    "img": "./images/thumbs/alucar.png",
+                    "stacks": [
+                        "HTML",
+                        "CSS",
+                        "Tailwind"
+                    ],
+                    "name": "AluCar Mobile App",
+                    "shortDescription": "Projeto desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP para o challenge proporcionado junto à BRQ Digital Solutions e a plataforma EasyCarros.",
+                    "longDescription": [
+                        "Protótipo e codificação das telas de um app mobile desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas da FIAP para o challenge proporcionado junto à BRQ Digital Solutions e a plataforma EasyCarros.",
+                        "O trabalho ficou entre os cinco melhores da equipe, o que nos deu o privilégio de poder apresentá-lo no evento <a href=\"https://www.fiap.com.br/next/\" target=\"_blank\">FIAP Next.</a>",
+                        "Desenvolvido ao longo do ano de 2023 em grupo, a proposta do software foi trazer para o mercado de locação de veículos uma nova ferramenta capaz de solucionar alguns dos atuais problemas enfrentados por este tipo de serviço, como melhores preços e maior comodidade para os usuários na hora de retirar e devolver os veículos.",
+                        "Agradecimentos especiais à <a href=\"https://www.linkedin.com/in/henry-thuler-serbillera/\" target=\"_blank\">Henry Thuler</a> e <a href=\"https://www.linkedin.com/in/bianca-ravani-andrade-a7229ab3/\" target=\"_blank\">Bianca Andrade</a> pela parceria."
+                    ],
+                    "lastUpdate": "Última atualização: Setembro/2023",
+                    "tag": "FRONT-END"
+                }
+            },
+            {
+                "profile": {
+                    "img": "./images/thumbs/profile.png",
+                    "stacks": [
+                        "HTML",
+                        "CSS",
+                        "Javascript",
+                        "SwiperJS"
+                    ],
+                    "name": "Profile Web Page",
+                    "shortDescription": "Projeto web desenvolvido para expor os trabalhos de desenvolvimento de software utilizando HTML, CSS e JavaScript nativos para criar uma experiência rica e interativa.",
+                    "longDescription": [
+                        "Projeto web desenvolvido para expor os trabalhos de desenvolvimento de software utilizando HTML, CSS e JavaScript nativos para criar uma experiência rica e interativa.",
+                        "Para alguém que desenvolvia sites no início dos anos 2000, quando todos os estilos eram aplicados diretamente no arquivo HTML, o Javascript era usado apenas para algumas funcionalidades simples e os efeitos visuais dinâmicos só eram possíveis com tecnologias como o extinto Flash, é surpreendente ver como o desenvolvimento web evoluiu.",
+                        "Hoje, a possibilidade de aplicar efeitos visuais apenas com CSS, utilizar tags semânticas e desenvolver lógicas de programação mais complexas com Javascript representa uma mudança realmente disruptiva.",
+                        "Ao longo do tempo, fiz várias modificações, mas tenho mantido o desenvolvimento o mais \"vanilla\" possível, sem uso de frameworks, explorando ao máximo as funcionalidades nativas da tríade HTML + CSS + JavaScript e uma única biblioteca de terceiros: o SwiperJS."
+                    ],
+                    "lastUpdate": "Última atualização: Junho/2024",
+                    "tag": "FRONT-END"
+                }
+            },
+            {
+                "fluxusApi": {
+                    "img": "./images/thumbs/fluxusapi.png",
+                    "stacks": [
+                        "C#",
+                        ".NET",
+                        "MySQL",
+                        "Dapper"
+                    ],
+                    "name": "Fluxus Web API",
+                    "shortDescription": "API Rest desenvolvida para integrar as operações de manipulação e persistência de dados do software Fluxus com a base de dados em MySQL.",
+                    "longDescription": [
+                        "API Rest desenvolvida para integrar as operações de manipulação e persistência de  dados do software Fluxus (gestão de serviços de engenharia para credenciados de bancos públicos) com a base de dados em MySQL.",
+                        "O projeto está publicado no Microsoft Azure e possui dois tipos de repósitorios de dados. Um real que acessa uma base de dados MySQL e outro fictício (mock) e que pode ser conferido clicando no botão \"Projeto\" e seguindo as orientações abaixo:",
+                        "Acesse a primeira rota <span class=\"citation\" readonly\">POST /v1/acounts/login</span>, entre com as informações:",
+                        "Copie o código-token gerado, clique em <span class=\"citation\" readonly\">Authorize</span> e cole para autorizar o acesso."
+                    ],
+                    "lastUpdate": "Última atualização: Janeiro/2024",
+                    "tag": "BACK-END"
+                }
+            },
+            {
+                "fluxusApp": {
+                    "img": "./images/thumbs/fluxus.png",
+                    "stacks": [
+                        "C#",
+                        ".NET",
+                        "Windows Forms",
+                        "iTextSharp"
+                    ],
+                    "name": "Fluxus Windows App",
+                    "shortDescription": "Software para gestão de Ordens de Serviços emitidas pela Caixa Econômica Federal aos arquitetos e engenheiros credenciadas em edital público.",
+                    "longDescription": [
+                        "Após 15 anos afastado da programação, em 2020, decidi enfrentar um desafio pessoal: desenvolver um software para otimizar e automatizar o processo de geração de relatórios mensais exigidos pela Caixa Econômica Federal em minha atuação como arquiteto. Esse projeto, que inicialmente parecia simples, transformou-se em uma jornada de aprendizado e evolução contínua, marcando o início da criação do Fluxus, um software que viria a se tornar muito mais do que um simples gerador de relatórios.",
+                        "Hoje, o Fluxus é muito mais do que um projeto para atender a uma necessidade específica. Ele se tornou um repositório vivo do meu crescimento como desenvolvedor. Embora originalmente criado para gerar relatórios em PDF, agora ele também suporta formatos XLS e automatiza a entrada de dados. Mesmo sem usuários ativos, o Fluxus continua em constante evolução, simbolizando minha jornada pessoal e profissional na programação.",
+                        "Clicando <a href=\"https://www.tabnews.com.br/felipeGandra/mas-por-que-eu-mantenho-um-codigo-morto\" target=\"_blank\">aqui</a>, você poderá ler o artigo que publiquei na plataforma Tabnews sobre o impacto que o desenvolvimento deste software teve em minha carreira."
+                    ],
+                    "lastUpdate": "Última atualização: Dezembro/2023",
+                    "tag": "DESKTOP"
+                }
+            },
+            {
+                "aex30": {
+                    "img": "./images/thumbs/aex30.png",
+                    "stacks": [
+                        "C#",
+                        ".NET",
+                        "Windows Forms",
+                        "NPOI Library"
+                    ],
+                    "name": "Aex30 Windows App",
+                    "shortDescription": "Software assistente para automatizar o preenchimento dos relatórios de acompanhamento de evolução de obra fornecidos pela Caixa Econômica Federal.",
+                    "longDescription": [
+                        "--Assistente responsável por automatizar o processo de preenchimento do RAE (Relatório de Acompanhamento de Evolução de Obra) fornecido pela Caixa Econômica Federal, direcionado aos profissionais credenciados no edital de prestação de serviços de arquitetura e engenharia.",
+                        "--Utilizando como base o arquivo de convocação para prestação de serviço e a planilha proposta (PCI) do proponente, o sistema facilita todo o procedimento para o prestador de serviços.",
+                        "--Com uma interface intuitiva, o software guia o usuário passo a passo, garantindo um preenchimento eficiente e preciso. Ao final do processo, o sistema gera a planilha RAE com todos os dados de cabeçalho, percentuais por item, cronograma físico-financeiro e informações contratuais necessárias. A única tarefa restante para o usuário é o preenchimento do apurado em vistoria."
+                    ],
+                    "lastUpdate": "Última atualização: Abril/2023",
+                    "tag": "DESKTOP"
+                }
+            }
+        ]
+    },
+    "footer": {
+        "resume": {
+            "title": "Currículo",
+            "description": "Currículo (pt-br)",
+            "link": "https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing"
+        },
+        "links": {
+            "title": "Links",
+            "moreAboutMe": "→ Saiba mais",
+            "courses": "→ Cursos"
+        },
+        "contacts": {
+            "title": "Contatos",
+            "email": "fgandraf@gmail.com",
+            "phone": "(14) 99829-0103",
+            "github": "github.com/fgandraf",
+            "linkedin": "linkedin.com/in/fgandraf"
+        }
+    }
+}

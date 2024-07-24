@@ -3,9 +3,9 @@
 body {
     background-image: url(../images/bg.png);
     background-size: cover;
-    background-position-x: 60%;
-    background-attachment: fixed;
+    background-attachment:fixed;
     overflow-x: hidden;
+    z-index: 1;
 }
 
 .display-none {
@@ -67,7 +67,7 @@ nav {
         font-weight: 600;
         letter-spacing: 0.1rem;
         border-bottom: 2px solid transparent;
-        border-image: linear-gradient(to right, white, var(--color-background-primary)) 1;
+        border-image: linear-gradient(to right, white, transparent) 1;
         padding-bottom: 0.3rem;
         display: none;
     }
@@ -99,17 +99,60 @@ header {
     width: 100vw;
     height: 100vh;
     z-index: 10;
-
+    
     #header__content {
-        height: 100%;
         width: 100%;
         position: fixed;
         display: flex;
+        
+        #languages__selector{
+            display: flex;
+            gap: 1rem;
+            padding: 2rem;
+            width: 100%;
+            justify-content: flex-end;
+
+            .language__item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+                width: 36px;
+
+                .language__flag{
+                    width: 32px;
+                    height: 32px;
+                    transition: 0.7s;
+                    padding-bottom: 0.5rem;
+                    border-bottom: solid 2px transparent;
+
+                }
+
+                .language__description{
+                    color: var(--color-text-emphasy);
+                    font-size: 0.7rem;
+                    font-weight: 400;
+                    display: none;
+                }
+            }
+
+            .language__item:hover{
+                .language__description{
+                    display: flex;
+                }
+
+                .language__flag{
+                    transform: translate(0, -10px);
+                }
+            }
+
+        }
     }
+
+
 }
 
 main {
-    width: 100vw;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -119,83 +162,73 @@ main {
     border-top: 5px solid red;
     border-bottom: 5px solid red;
     background-color: var(--color-background-primary);
+    font-size: 1.1vw;
+    line-height: 1.5rem;
 
-    #section__sobre {
-        padding: 5vh 15px 0 15px;
+    section{
+        padding: 5vh 0 0 0;
         display: flex;
         flex-direction: column;
         align-self: center;
+        justify-content: center;
         width: 100%;
         min-height: 80vh;
-        z-index: 1;
+        z-index: 10;
 
-        .section__sobre__titulo {
+        .section__title{
             margin: 4rem;
-            text-align: right;
             border-bottom: 2px white solid;
-            padding-bottom: 1rem;
+            padding-bottom: 1.5rem;
+        }
+    
+        .section__container{
+            display: flex 0 0 auto;
+            justify-content: center;
+            flex-wrap: wrap;
+            min-width: 70vw;
+            margin: auto 0;
+            align-self: center;
+            gap: 2rem;
+        }
+    }
+
+    
+
+    #about-section {
+        line-height: 3rem;
+        
+        #about-title { 
+            text-align: right 
         }
 
-        #topicos {
-            box-sizing: border-box;
-            width: 100%;
-            display: flex;
+        #about-container { 
             flex-direction: column;
-            align-items: center;
-            font-size: 1.1vw;
-            line-height: 1.3vw;
-            margin: auto 0;
-            padding: 0 10vw;
 
-            #topico__item {
-                display: flex;
-                flex-direction: column;
-                gap: 1.5rem;
-                list-style: circle;
-                text-wrap: nowrap;
+            #about-topics { 
+                list-style: circle 
+            }
 
-                #saiba_mais {
-                    text-decoration: none;
-                    color: var(--color-link);
-                }
+            #about-more { 
+                color: var(--color-link) 
+            }
 
-                #saiba_mais:hover {
-                    cursor: pointer;
-                    color: var(--color-link-hover);                        
-                }
+            #about-more:hover { 
+                cursor: pointer;
+                color: var(--color-link-hover)
             }
         }
     }
 
 
+    #technologies-section {
 
+        #technologies-title { text-align: left; }
 
-    #section__tecnologias {
-        padding: 5vh 15px 5vh 15px;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        width: 100%;
-        min-height: 80vh;
-        z-index: 1;
-
-        .section__tecnologias__titulo {
-            margin: 4rem;
-            text-align: left;
-            border-bottom: 2px white solid;
-            padding-bottom: 1rem;
-        }
-
-        #tecnologias__container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 0;
-            gap: 2rem;
+        #technologies-container {
             padding: 10vh 6vw;
-            margin: auto 0;
+            display: flex;
 
-            .card__tecnologias {
+            .technologies__card {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -216,28 +249,14 @@ main {
         }
     }
 
-    #section__certificacoes {
-        padding: 5vh 15px 5vh 15px;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        width: 100%;
-        min-height: 80vh;
-        z-index: 1;
 
-        .section__certificacoes__titulo {
-            margin: 4rem;
-            text-align: right;
-            border-bottom: 2px white solid;
-            padding-bottom: 1rem;
-        }
+    #certificates-section {
 
-        #certificacoes__container {
-            display: flex;
-            justify-content: center;
-            gap: 2.5rem;
+        #certificates-title { text-align: right; }
+
+        #certificates-container {
             padding: 10vh 6vw 2.5rem 6vw;
-            margin: auto 0;
+            display: flex;
 
             .card__certificacao {
                 max-width: 550px;
@@ -332,31 +351,15 @@ main {
         }
     }
 
-    #section__projetos {
-        padding: 0 15px 15vh 15px;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        width: 100%;
-        min-height: 80vh;
-        z-index: 1;
+    #portfolio-section {
 
-        .section__projetos__titulo {
-            margin: 4rem;
-            text-align: left;
-            border-bottom: 2px white solid;
-            padding-bottom: 1rem;
-        }
+        #portfolio-title { text-align: left; }
 
-        #projetos__container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: auto 0;
-            padding-top: 8vh;
+        #portfolio-container {
+            padding: 8vh 0 10vh 0;
 
             .swiper {
-                width: 100%;
+                width: 100vw;
                 padding-bottom: 120px;
 
                 .swiper-pagination-bullet {
@@ -426,7 +429,7 @@ main {
                             border-radius: 0 30px 0 30px;
                             align-self: center;
                             font-weight: 600;
-                            padding: 0.15rem 0.8rem;
+                            padding: 0 0.8rem;
                         }
                     }
 
@@ -460,7 +463,7 @@ main {
                 }
             }
         }
-    }
+    }    
 }
 
 footer {
@@ -468,8 +471,10 @@ footer {
     width: 100vw;
     font-size: 0.85rem;
     letter-spacing: 0.07rem;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 
-    #footer__desktop {
+    #desktop-footer-section {
         width: 100%;
         height: 45vh;
         display: flex;
@@ -478,7 +483,7 @@ footer {
         position: fixed;
         bottom: 0;
         
-        .footer__container {
+        #desktop-footer__container {
             width: 100%;
             color: white;
             display: none;
@@ -487,8 +492,9 @@ footer {
             position: fixed;
 
 
-            .footer__column {
-                h2 {
+            .desktop-footer__column {
+
+                .desktop-footer__title{
                     color: white;
                     font-size: 1.5rem;
                     margin-bottom: 2rem;
@@ -500,63 +506,40 @@ footer {
                     flex-direction: column;
                     gap: 1rem;
 
-                    li {
-                        a {
-                            display: flex;
-                            text-wrap: nowrap;
-                            gap: 0.8rem;
-                            align-items: center;
-                            color: var(--color-link);
-    
-                            .material-symbols-outlined {
-                                width: 14%;
-                                font-size: 1.4rem;
-                            }
+                    li, a {
+                        display: flex;
+                        text-wrap: nowrap;
+                        gap: 0.8rem;
+                        color: var(--color-link);
+                        cursor: pointer;
+                        align-items: center;
+                    }
 
-                            .menu_email{ background-image: url('../images/menu/email.svg'); }
-                            .menu_phone{ background-image: url('../images/menu/phone.svg'); }
-                            .menu_github{ background-image: url('../images/menu/github.svg'); }
-                            .menu_linkedin{ background-image: url('../images/menu/linkedin.svg'); }
+                    .menu_email{ background-image: url('../images/menu/email.svg'); }
+                    .menu_phone{ background-image: url('../images/menu/phone.svg'); }
+                    .menu_github{ background-image: url('../images/menu/github.svg'); }
+                    .menu_linkedin{ background-image: url('../images/menu/linkedin.svg'); }
 
-                            .menu_email, .menu_phone, .menu_github, .menu_linkedin{
-                                width: 24px;
-                                height: 24px;
-                                filter: invert(88%) sepia(12%) saturate(2901%) hue-rotate(201deg) brightness(98%) contrast(94%);
-                                background-size: cover;
-                            }
-                        }
-    
-                        a:hover {
-                            color: var(--color-link-hover);
-
-                            .menu_email, .menu_phone, .menu_github, .menu_linkedin{
-                                filter: invert(52%) sepia(75%) saturate(468%) hue-rotate(227deg) brightness(95%) contrast(97%);
-                            }
-
-                        }
-
-                        .open_modal_link{
-                            color: var(--color-link);
-                        }
-    
-                        .open_modal_link:hover {
-                            cursor: pointer;
-                            color: var(--color-link-hover);
-                        }
-    
-                        .open_modal_link {
-                            cursor: pointer;
-                        }
-    
+                    .menu_email, .menu_phone, .menu_github, .menu_linkedin{
+                        width: 24px;
+                        height: 24px;
+                        filter: invert(88%) sepia(12%) saturate(2901%) hue-rotate(201deg) brightness(98%) contrast(94%);
+                        background-size: cover;
+                    }
+                    
+                    li:hover, a:hover{
+                        color: var(--color-link-hover);
                         
-                        
+                        .menu_email, .menu_phone, .menu_github, .menu_linkedin{
+                            filter: invert(52%) sepia(75%) saturate(468%) hue-rotate(227deg) brightness(95%) contrast(97%);
+                        }
                     }
                 }
             }
         }
     }
 
-    #footer__mobile {
+    #mobile-footer-section {
 
         .curriculo_item {
             display: flex;
@@ -567,7 +550,7 @@ footer {
         }
     }
 
-    #footer__desktop, #footer__mobile{
+    #desktop-footer-section, #mobile-footer-section{
         display: none;
     }
 

@@ -20,14 +20,11 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Artifika&family=Montserrat:wght@300;400;600&display=swap">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Artifika&family=Montserrat:wght@300;400;600&display=swap">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="./images/favicon.png" />
-
 
     <!-- SWIPERJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -61,178 +58,171 @@
         </div>
     </nav>
 
-    <header id="">
-
+    <header>
         <section id="header__content">
+            <div id="languages__selector">
+                <div id="lang-br" class="language__item">
+                    <img id="flag-br" class="language__flag" src="./images/flags/br-flag.png" alt="brazilian flag"/>
+                    <span class="language__description">Português</span>
+                </div>
+
+                <div id="lang-en" class="language__item">
+                    <img id="flag-en" class="language__flag" src="./images/flags/us-flag.png" alt="us flag"/>
+                    <span class="language__description">English</span>
+                </div>
+
+                <div id="lang-es" class="language__item">
+                    <img id="flag-es" class="language__flag" src="./images/flags/es-flag.png" alt="spain flag"/>
+                    <span class="language__description">Español</span>
+                </div>
+
+            </div>
         </section>
-
-
     </header>
 
+
     <main>
-        <section id="section__sobre">
-            <h3 class="section__sobre__titulo">: : SOBRE MIM : :</h3>
+        <section id="about-section" class="section">
 
-            <div id="topicos">
-                <ul id="topico__item">
-                    <li>Desenvolvedor de Software Full Stack com ampla experiência em diversas linguagens de
-                        programação;
-                    </li>
-                    <li>Cursando o último ano de Análise e Desenvolvimento de Sistemas;</li>
-
-
-                    <li>Com formação prévia em Arquitetura e Urbanismo.
-                    </li>
-                    
-                    <li>Apaixonado por criar soluções que impactem positivamente a vida das pessoas, estou sempre
-                        em busca de novos desafios;</li>
-
-                        <li>Direcionando completamente minha carreira para a área de
-                            tecnologia;
-                        </li>
-                    <li><span id="saiba_mais" onclick="openModal('./pages/about.html')">Saiba mais...</span></li>
-                </ul>
+            <h3 id="about-title" class="section__title">##</h3>
+            
+            <div id="about-container" class="section__container">
+                <ul id="about-topics">##</ul>
+                <span id="about-more" onclick="openModal('./pages/about.html')">##</span>
             </div>
 
         </section>
 
+        <section id="technologies-section" class="section">
+            
+            <h3 id="technologies-title" class="section__title">##</h3>
+            
+            <div id="technologies-container" class="section__container">
 
-        <section id="section__tecnologias">
-            <h3 class="section__tecnologias__titulo">: : PRINCIPAIS TECNOLOGIAS : :</h3>
-            <div id="tecnologias__container">
-
-                <span class="card__tecnologias">
+                <div class="technologies__card">
                     <i class="devicon-csharp-plain"></i>
                     <p>C Sharp</p>
-                </span>
+                </div>
 
-                <span class="card__tecnologias">
+                <div class="technologies__card">
                     <i class="devicon-dot-net-plain"></i>
                     <p>.NET</p>
-                </span>
+                </div>
 
-                <span class="card__tecnologias">
+                <div class="technologies__card">
                     <i class="devicon-kotlin-plain"></i>
                     <p>Kotlin</p>
-                </span>
+                </div>
 
-                <span class="card__tecnologias">
+                <div class="technologies__card">
                     <i class="devicon-jetpackcompose-plain"></i>
                     <p>Jetpack</p>
-                </span>
+                </div>
 
-                <span class="card__tecnologias">
+                <div class="technologies__card">
                     <i class="devicon-html5-plain"></i>
                     <p>HTML 5</p>
-                </span>
+                </div>
 
-                <span class="card__tecnologias">
+                <div class="technologies__card">
                     <i class="devicon-css3-plain"></i>
                     <p>CSS 3</p>
-                </span>
+                </div>
 
-                <span class="card__tecnologias">
+                <div class="technologies__card">
                     <i class="devicon-javascript-plain"></i>
                     <p>Javascript</p>
-                </span>
+                </div>
 
-                <span class="card__tecnologias">
+                <div class="technologies__card">
                     <i class="devicon-tailwindcss-original"></i>
                     <p>Tailwind CSS</p>
-                </span>
+                </div>
 
-                <span class="card__tecnologias">
+                <div class="technologies__card">
                     <i class="devicon-mysql-original"></i>
                     <p>MySQL</p>
-                </span>
+                </div>
 
-                <span class="card__tecnologias">
+                <div class="technologies__card">
                     <i class="devicon-microsoftsqlserver-plain"></i>
                     <p>SQL Server</p>
-                </span>
+                </div>
 
             </div>
         </section>
 
-        <section id="section__certificacoes">
-            <h3 class="section__certificacoes__titulo">: : CERTIFICAÇÕES : :</h3>
-            <div id="certificacoes__container">
+        <section id="certificates-section" class="section">
+            <h3 id="certificates-title" class="section__title">##</h3>
+            <div id="certificates-container" class="section__container">
 
-                <div class="card__certificacao">
+                <div id="certificate1" class="card__certificacao">
                     <div class="left">
                         <img src="images/fiap-gold-certified.png">
                         <p>Gold Certified</p>
                     </div>
                     <div class="right">
-                        <h3>Certificado de Qualificação Profissional em Análise e Design Web 2.0</h3>
-
-                        <p>Certificate in Web 2.0 Development and Design</p>
-                        <p>FIAP - Faculdade de Informática e Administração Paulista</p>
-                        <p>18 de dezembro de 2023</p>
-                        <span class="download"><a
-                                href="https://on1.fiap.com.br/updown/DocumentosAssinados/2b160339-d113-4d14-89e3-bd80da2ef8e9.pdf"
-                                target="_blank" class="material-symbols-outlined">download</a></span>
+                        <h3 id="certificate1-title" class="title">##</h3>
+                        <p id="certificate1-institution" class="institution">##</p>
+                        <p id="certificate1-date" class="date">##</p>
+                        
+                        <span class="download"><a href="https://on1.fiap.com.br/updown/DocumentosAssinados/2b160339-d113-4d14-89e3-bd80da2ef8e9.pdf" target="_blank" class="material-symbols-outlined">download</a></span>
                     </div>
                 </div>
 
-                <div class="card__certificacao">
+                <div id="certificate2" class="card__certificacao">
                     <div class="left">
                         <img src="images/fiap-gold-certified.png">
                         <p>Gold Certified</p>
                     </div>
                     <div class="right">
-                        <h3>Certificado de Qualificação Profissional em Análise de Sistemas e Prototipagem Web</h3>
-                        <p>Certificate in System Analysis and Web Prototyping</p>
-                        <p>FIAP - Faculdade de Informática e Administração Paulista</p>
-                        <p>03 de julho de 2023</p>
-                        <span class="download"><a
-                                href="https://on1.fiap.com.br/updown/DocumentosAssinados/fc9cc099-9099-429c-bcb3-15cc56ed1149.pdf"
-                                target="_blank" class="material-symbols-outlined">download</a></span>
+                        <h3 id="certificate2-title" class="title">##</h3>
+                        <p id="certificate2-institution" class="institution">##</p>
+                        <p id="certificate2-date" class="date">##</p>
+                        <span class="download"><a href="https://on1.fiap.com.br/updown/DocumentosAssinados/fc9cc099-9099-429c-bcb3-15cc56ed1149.pdf" target="_blank" class="material-symbols-outlined">download</a></span>
                     </div>
                 </div>
 
             </div>
 
             <div class="card__demais__certificacoes">
-                <span id="todos_os_cursos" onclick="openModal('./pages/cursos.html')">Mais de 500 horas em cursos
-                    certificados de programação, banco de dados e áreas correlatas realizados através de diversas
-                    plataformas.</span>
+                <span id="todos_os_cursos" onclick="openModal('./pages/cursos.html')">##</span>
             </div>
         </section>
 
-        <section id="section__projetos">
-            <h3 class="section__projetos__titulo">: : PORTFOLIO : :</h3>
+        <section id="portfolio-section" class="section">
+            <h3 id="portfolio-title" class="section__title">##</h3>
 
-            <div id="projetos__container">
+            <div id="portfolio-container" class="section__container">
 
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div id="promoreApi" class="card-container"></div>
+                            <div id="promoreApi" class="card-container">##</div>
                         </div>
                         <div class="swiper-slide">
-                            <div id="ethor" class="card-container"></div>
+                            <div id="ethor" class="card-container">##</div>
                         </div>
                         <div class="swiper-slide">
-                            <div id="profile" class="card-container"></div>
+                            <div id="profile" class="card-container">##</div>
                         </div>
                         <div class="swiper-slide">
-                            <div id="maar" class="card-container"></div>
+                            <div id="maar" class="card-container">##</div>
                         </div>
                         <div class="swiper-slide">
-                            <div id="vagalivre" class="card-container"></div>
+                            <div id="vagalivre" class="card-container">##</div>
                         </div>
                         <div class="swiper-slide">
-                            <div id="alucar" class="card-container"></div>
+                            <div id="alucar" class="card-container">##</div>
                         </div>
                         <div class="swiper-slide">
-                            <div id="fluxusApi" class="card-container"></div>
+                            <div id="fluxusApi" class="card-container">##</div>
                         </div>
                         <div class="swiper-slide">
-                            <div id="fluxusApp" class="card-container"></div>
+                            <div id="fluxusApp" class="card-container">##</div>
                         </div>
                         <div class="swiper-slide">
-                            <div id="aex30" class="card-container"></div>
+                            <div id="aex30" class="card-container">##</div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -242,64 +232,52 @@
     </main>
 
     <footer>
-        <section id="footer__desktop">
-            <div class="footer__container">
-                <div class="footer__column">
-                    <h2>Currículo</h2>
+        <section id="desktop-footer-section">
+            <div id="desktop-footer__container">
+                <div class="desktop-footer__column">
+                    <h2 id="desktop-footer__resume-title" class="desktop-footer__title"></h2>
                     <ul>
                         <li>
-                            <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing"
-                                download target="_blank">
+                            <a id="desktop-footer__resume-link" href="" download target="_blank">
                                 <i class="material-symbols-outlined">download</i>
-                                Português (pt-br)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing"
-                                download target="_blank">
-                                <i class="material-symbols-outlined">download</i>
-                                English (en-us)
+                                <div class="description">##</div>
                             </a>
                         </li>
                     </ul>
 
                 </div>
-                <div class="footer__column">
-                    <h2>Links</h2>
+                <div class="desktop-footer__column">
+                    <h2 id="desktop-footer__links-title" class="desktop-footer__title"></h2>
                     <ul>
-                        <li>
-                            <span class="open_modal_link" onclick="openModal('./pages/about.html')">→ Saiba mais</span>
-                        </li>
-                        <li>
-                            <span class="open_modal_link" onclick="openModal('./pages/cursos.html')">→ Cursos</span>
-                        </li>
+                        <li id="desktop-footer__links-more" onclick="openModal('./pages/about.html')">##</li>
+                        <li id="desktop-footer__links-courses" onclick="openModal('./pages/cursos.html')">##</li>
                     </ul>
                 </div>
-                <div class="footer__column">
-                    <h2>Contato</h2>
+                <div class="desktop-footer__column">
+                    <h2 id="desktop-footer__contacts-title" class="desktop-footer__title"></h2>
                     <ul>
                         <li>
                             <a href="mailto: fgandraf@gmail.com" target="_blank">
                                 <i class="menu_email"></i>
-                                <span>fgandraf@gmail.com</span>
+                                <span id="desktop-footer__contacts-email">##</span>
                             </a>
                         </li>
                         <li>
                             <a href="tel:14998290103" target="_blank">
                                 <i class="menu_phone"></i>
-                                <span>(14) 99829-0103</span>
+                                <span id="desktop-footer__contacts-phone">##</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.github.com/fgandraf/" target="_blank">
                                 <i class="menu_github"></i>
-                                <span>github.com/fgandraf</span>
+                                <span id="desktop-footer__contacts-github">##</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/in/fgandraf/" target="_blank">
                                 <i class="menu_linkedin"></i>
-                                <span>linkedin.com/in/fgandraf</span>
+                                <span id="desktop-footer__contacts-linkedin">##</span>
                             </a>
                         </li>
                     </ul>
@@ -307,17 +285,12 @@
             </div>
         </section>
 
-        <section id="footer__mobile">
+        <section id="mobile-footer-section">
             <div class="footer__mobile__container">
-                <a href="https://drive.google.com/file/d/1ITklasT8Wm_IyoRZQlKMPtlmUP4aiftM/view?usp=sharing" download
-                    target="_blank" class="curriculo_item">
+                
+                <a id="mobile-footer__resume-link" href="" download target="_blank">
                     <i class="material-symbols-outlined">download</i>
-                    Currículo (pt-br)
-                </a>
-                <a href="https://drive.google.com/file/d/15HvtpmEJhm2zOV01VaXSBkW5pguIOyc4/view?usp=sharing" download
-                    target="_blank" class="curriculo_item">
-                    <i class="material-symbols-outlined">download</i>
-                    Resume (en-us)
+                    <div class="description">##</div>
                 </a>
             </div>
 
@@ -333,15 +306,10 @@
         </div>
     </div>
 
+    <script type="module" src="./scripts/main.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script src="./scripts/portfolio.js"></script>
-    <script src="./scripts/modal.js"></script>
-    <script src="./scripts/scroll_mobile.js"></script>
-    <script src="./scripts/scroll_desktop.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./scripts/swiper.js"></script>
 </body>
 
 </html>

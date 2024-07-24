@@ -127,7 +127,7 @@ main {
             margin-bottom: 2rem;
         }
 
-        .descricao {
+        #long-description {
             line-height: 1.3rem;
             text-align: justify;
         }

@@ -20,12 +20,7 @@
         <div class="esquerda">
 
             <div class="stacks__container">
-                <ul class="stacks">
-                    <li class="stack__item">C#</li>
-                    <li class="stack__item">.NET</li>
-                    <li class="stack__item">MySQL</li>
-                    <li class="stack__item">Dapper</li>
-                </ul>
+                <ul class="stacks">##</ul>
             </div>
 
             <div class="video__container">
@@ -35,11 +30,11 @@
             <div class="links__container">
                 <a href="https://fluxus-api.azurewebsites.net/swagger/index.html" target="_blank" class="button">
                     <i class="material-symbols-outlined icone__repo">deployed_code</i>
-                    Publicação
+                    <span id="deploy-button">#</span>
                 </a>
                 <a href="https://github.com/fgandraf/app_fluxus-api" target="_blank" class="button">
                     <i class="material-symbols-outlined icone__repo">code</i>
-                    Código-fonte
+                    <span id="source-button">#</span>
                 </a>
             </div>
 
@@ -47,28 +42,12 @@
 
         <div class="direita">
             <h2>FLUXUS WEB API</h2>
-            <div class="descricao">
-                <p class="descricao">API Rest desenvolvida para integrar as operações de manipulação e persistência de
-                    dados do software Fluxus (gestão de serviços de engenharia para credenciados de bancos públicos) com
-                    a base de dados em MySQL.</p>
-                <p class="descricao">O projeto está publicado no Microsoft Azure e possui dois tipos de repósitorios de
-                    dados. Um real que acessa uma base de dados MySQL e outro fictício (mock) e que pode ser conferido
-                    clicando no botão "Projeto" e seguindo as orientações abaixo:</p>
-                <br/>
-                <p>Acesse a primeira rota <span class="citation" readonly">POST /v1/acounts/login</span>, entre com as informações:</p>
-                <textarea class="code" readonly">{ "userName": "admin", "password": "admin" }</textarea>
-                <p class="descricao">Copie o código-token gerado, clique em <span class="citation" readonly">Authorize</span> e
-                    cole
-                    para autorizar o acesso.</p>
-
-            </div>
-            <p class="data">Última atualização: 7 de janeiro de 2024</p>
+            <div id="long-description">##</div>
+            <p class="data">##</p>
         </div>
     </main>
 
-    <footer>
-
-    </footer>
+    <script type="module" src="../../scripts/modules/load-project-page.js"></script>
 </body>
 
 </html>

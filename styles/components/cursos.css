@@ -13,14 +13,14 @@ body::-webkit-scrollbar {
     scrollbar-width: none;
 }
 
-main{
+main {
     #cursos__section {
         color: #939393;
         font-family: "Inter", sans-serif;
         min-height: 100vh;
         padding: 4rem;
 
-        #foto__container{
+        #foto__container {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -55,53 +55,47 @@ main{
                 padding: 1.25rem 0.5rem;
                 width: 310px;
                 height: max-content;
-                
-                background: 
-                    linear-gradient(
-                        140deg, 
-                            var(--color-background-cards),
-                            var(--color-background-cards)
-            
-                        ) padding-box, 
-                    
-                    linear-gradient(
-                        140deg, 
-                            var(--color-background-cards),
-                            var(--color-background-cards),
-                            var(--color-accent),
-                            var(--color-background-primary),
-                            var(--color-background-primary)
-                        ) border-box; 
+                background:
+                    linear-gradient(140deg,
+                        var(--color-background-cards),
+                        var(--color-background-cards)) padding-box,
+
+                    linear-gradient(140deg,
+                        var(--color-background-cards),
+                        var(--color-background-cards),
+                        var(--color-accent),
+                        var(--color-background-primary),
+                        var(--color-background-primary)) border-box;
                 border: 0.5px solid transparent;
 
                 a {
                     text-decoration: none;
                     color: hsl(254, 65%, 90%);
                 }
-                
+
                 a:hover {
-                    color:  #9780e4;
+                    color: #9780e4;
                 }
 
-                .card__titulo {
+                .card__title {
                     font-size: 1.1rem;
                     text-align: center;
                     color: white;
                     margin: 0;
                     margin-bottom: 0.6rem;
                 }
-                
-                .card__subtitulo {
+
+                .card__subtitle {
                     display: flex;
                     justify-content: center;
-                    align-items: center;    
+                    align-items: center;
                     font-size: 0.7rem;
                     font-weight: 300;
                     margin: 0;
                     color: white;
                 }
-                
-                .card__topicos {
+
+                .card__topics {
                     margin-top: 1.5rem;
                     padding-left: 1rem;
                     font-size: 0.75rem;
@@ -109,14 +103,14 @@ main{
                     line-height: 1.25rem;
                     margin-bottom: 0;
 
-                    .topico__incompleto{
+                    .topico__incompleto {
                         list-style-type: "";
-                     }
+                    }
 
                     a {
                         color: #939393;
                     }
-                    
+
                     a:hover {
                         color: hsl(254, 65%, 90%);
                     }
@@ -138,20 +132,20 @@ main{
 
 @media screen and (max-width: 500px) {
 
-    main{
+    main {
         #cursos__section {
             padding: 1rem;
 
-            h3{
+            h3 {
                 font-size: 1.8rem;
                 margin: 4rem 0;
             }
 
-            #cursos__container{
+            #cursos__container {
                 flex-direction: row;
-                max-height:max-content;
+                max-height: max-content;
 
-                .card{
+                .card {
                     width: 100%;
                 }
             }

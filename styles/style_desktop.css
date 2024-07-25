@@ -31,13 +31,6 @@ a {
     text-decoration: none;
 }
 
-h3{
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--color-text-emphasy);
-}
-
-
 nav {
     display: flex;
     flex-direction: column;
@@ -99,7 +92,7 @@ header {
     width: 100vw;
     height: 100vh;
     z-index: 10;
-    
+
     #header__content {
         width: 100%;
         position: fixed;
@@ -176,7 +169,10 @@ main {
         z-index: 10;
 
         .section__title{
-            margin: 4rem;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--color-text-emphasy);
+            margin: 4rem 4rem 4rem 5.5rem;
             border-bottom: 2px white solid;
             padding-bottom: 1.5rem;
         }
@@ -473,6 +469,7 @@ footer {
     letter-spacing: 0.07rem;    
 
     #desktop-footer-section {
+        background-color: rgb(0, 0, 0,30%);
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
         position: fixed;

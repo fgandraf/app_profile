@@ -6,10 +6,9 @@ import './components/scroll.js';
 let currentTranslation = {};
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // Carregar o idioma selecionado ou o padrão (português)
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'br';
+    // Carregar o idioma selecionado ou o padrão (english)
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
     currentTranslation = await fetchTranslation(savedLanguage);
-
     loadIndexPage(currentTranslation, savedLanguage);
 
     // Adicionar eventos de clique aos links de idioma
@@ -32,12 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 async function changeLanguage(lang) {
-    try {
-        currentTranslation = await fetchTranslation(lang);
-        localStorage.setItem('selectedLanguage', lang);
-        
-        loadIndexPage(currentTranslation, lang);
-    } catch (error) {
-        console.error("Error changing language:", error);
-    }
+    currentTranslation = await fetchTranslation(lang);
+    localStorage.setItem('selectedLanguage', lang);
+    loadIndexPage(currentTranslation, lang);
 }

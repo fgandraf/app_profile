@@ -8,6 +8,7 @@ let currentTranslation = {};
 document.addEventListener('DOMContentLoaded', async () => {
     // Carregar o idioma selecionado ou o padrão (english)
     const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    localStorage.setItem('selectedLanguage', savedLanguage);
     currentTranslation = await fetchTranslation(savedLanguage);
     loadIndexPage(currentTranslation, savedLanguage);
 

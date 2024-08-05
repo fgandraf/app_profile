@@ -1,7 +1,8 @@
 import { fetchTranslation } from './fetchTranslations.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'br';
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    localStorage.setItem('selectedLanguage', savedLanguage);
     const currentTranslation = await fetchTranslation(savedLanguage);
 
     // Obter o nome da página atual
@@ -36,4 +37,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     const lastUpdate = currentTranslation.portfolio.projects.find(project => project[pageName])[pageName].lastUpdate;
     let lastUpdateElement = document.querySelector("main > .direita > .data");
     lastUpdateElement.innerText = lastUpdate;
+
+    // Desativar menu de contexto do vídeo
+    document.querySelectorAll('.localVideo').forEach(video => {
+        video.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    });
 });

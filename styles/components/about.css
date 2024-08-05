@@ -57,12 +57,12 @@ main{
             display: none;
         }
 
-        #mais__informacoes {
+        #whoim-content__continue-button {
             color: #9780e4;
             font-size: 1rem;
         }
         
-        #mais__informacoes:hover {
+        #whoim-content__continue-button:hover {
             color: hsl(254, 65%, 90%);
             cursor: pointer;
         }

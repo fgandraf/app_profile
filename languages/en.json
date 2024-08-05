@@ -25,7 +25,8 @@
                 "The big step was at the end of 2022 when I decided to return to classrooms, but now remote ones in the Analysis and Systems Development course, and since then, I can't have any other focus besides fully migrating to what has always been my first option.",
                 "I am grateful to Architecture because it was responsible for making me see more attentively the relationship between function and aesthetics, dream and reality, and knowing that it is always possible to develop anything within space-time or budget limitations without compromising quality.",
                 "Today, I recognize in the titles 'Architect' and 'Developer' much more than professions, they are traits of who I am!"
-            ]
+            ],
+            "continueButton": "Continue..."
         }
     },
     "technologies": {
@@ -187,7 +188,7 @@
     },
     "portfolio": {
         "title": ": : PORTFOLIO : :",
-        "deployButton": "Deploy",
+        "deployButton": "Deployed",
         "sourceButton": "Source code",
         "projects": [
             {

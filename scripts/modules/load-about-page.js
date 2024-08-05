@@ -24,4 +24,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     secondPart.innerHTML += "<p>" +  currentTranslation.about.whoIAm.body[10] + "</p>";
     secondPart.innerHTML += "<p>" +  currentTranslation.about.whoIAm.body[11] + "</p>";
     secondPart.innerHTML += "<p>" +  currentTranslation.about.whoIAm.body[12] + "</p>";
+
+    let continueButton = document.getElementById("whoim-content__continue-button");
+    continueButton.innerText = currentTranslation.about.whoIAm.continueButton;
+
 });

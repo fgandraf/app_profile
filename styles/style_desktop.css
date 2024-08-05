@@ -151,7 +151,7 @@ main {
     border-top: 5px solid red;
     border-bottom: 5px solid red;
     background-color: var(--color-background-primary);
-    font-size: 1.1vw;
+    font-size: 1.4rem;
     line-height: 1.5rem;
 
     section {
@@ -185,7 +185,7 @@ main {
     }
 
     #about-section {
-        line-height: 3rem;
+        line-height: 3.5rem;
 
         #about-title {
             text-align: right
@@ -196,7 +196,7 @@ main {
 
 
             #about-topics {
-                list-style: circle
+                list-style: circle;
             }
 
             #about-more {

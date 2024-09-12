@@ -318,20 +318,19 @@
                 "fluxusApi": {
                     "img": "./images/thumbs/fluxusapi.png",
                     "stacks": [
-                        "C#",
-                        ".NET",
-                        "MySQL",
-                        "Dapper"
+                        "Java",
+                        "Springboot",
+                        "Hibernate",
+                        "Flyway"
                     ],
-                    "name": "Fluxus Web API",
-                    "shortDescription": "API Rest desarrollada para integrar las operaciones de manipulación y persistencia de datos del software Fluxus con la base de datos MySQL.",
+                    "name": "Fluxus Web API V2",
+                    "shortDescription": "API Rest desarrollada para integrar las operaciones de manipulación y persistencia de datos del software Fluxus con la base de datos OracleDB.",
                     "longDescription": [
-                        "API Rest desarrollada para integrar las operaciones de manipulación y persistencia de datos del software Fluxus (gestión de servicios de ingeniería para profesionales acreditados de bancos públicos) con la base de datos MySQL.",
-                        "El proyecto está publicado en Microsoft Azure y tiene dos tipos de repositorios de datos. Uno real que accede a una base de datos MySQL y otro ficticio (mock) que puede verificarse haciendo clic en el botón \"Proyecto\" y siguiendo las instrucciones a continuación:",
-                        "Acceda a la primera ruta <span class=\"citation\" readonly\">POST /v1/accounts/login</span>, ingrese la información:",
-                        "Copie el código del token generado, haga clic en <span class=\"citation\" readonly\">Autorizar</span> y pegue para autorizar el acceso."
+                        "Esta API REST fue desarrollada para integrar el software Fluxus, enfocado en la gestión de servicios de ingeniería para profesionales acreditados por bancos públicos, con una base de datos OracleDB. La API permite la manipulación y persistencia de datos esenciales, como información de profesionales, órdenes de servicio y facturas.",
+                        "En esta segunda versión, se implementaron mejoras enfocadas en seguridad, organización, escalabilidad y limpieza del código, con el objetivo de optimizar el rendimiento y garantizar la robustez de la aplicación sin impactar el software de escritorio en producción. Los cambios se diseñaron para minimizar el retrabajo y facilitar futuras expansiones sin comprometer la arquitectura original.",                    
+                        "El código fuente de la API está disponible en el repositorio GitHub, accesible a través del enlace al lado."
                     ],
-                    "lastUpdate": "Última actualización: Enero/2024",
+                    "lastUpdate": "Última actualización: Septiembre/2024",
                     "tag": "BACK-END"
                 }
             },

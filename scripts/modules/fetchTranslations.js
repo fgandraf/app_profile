@@ -1,5 +1,5 @@
 export async function fetchTranslation(lang) {
-    const cachedTranslation = localStorage.getItem(`translation_${lang}`);
+    const cachedTranslation = sessionStorage.getItem(`translation_${lang}`);
     if (cachedTranslation)
         return JSON.parse(cachedTranslation);
 
@@ -8,7 +8,7 @@ export async function fetchTranslation(lang) {
         throw new Error(`Failed to load translation file for language: ${lang}`);
 
     const translation = await response.json();
-    localStorage.setItem(`translation_${lang}`, JSON.stringify(translation));
-    // console.log('Translation loaded from file');
+    sessionStorage.setItem(`translation_${lang}`, JSON.stringify(translation));
+
     return translation;
 }

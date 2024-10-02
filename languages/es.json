@@ -324,9 +324,9 @@
                         "Flyway"
                     ],
                     "name": "Fluxus Web API V2",
-                    "shortDescription": "API Rest desarrollada para integrar las operaciones de manipulación y persistencia de datos del software Fluxus con la base de datos OracleDB.",
+                    "shortDescription": "API Rest desarrollada para integrar las operaciones de manipulación y persistencia de datos del software Fluxus con la base de datos MySQL.",
                     "longDescription": [
-                        "Esta API REST fue desarrollada para integrar el software Fluxus, enfocado en la gestión de servicios de ingeniería para profesionales acreditados por bancos públicos, con una base de datos OracleDB. La API permite la manipulación y persistencia de datos esenciales, como información de profesionales, órdenes de servicio y facturas.",
+                        "Esta API REST fue desarrollada para integrar el software Fluxus, enfocado en la gestión de servicios de ingeniería para profesionales acreditados por bancos públicos, con una base de datos MySQL. La API permite la manipulación y persistencia de datos esenciales, como información de profesionales, órdenes de servicio y facturas.",
                         "En esta segunda versión, se implementaron mejoras enfocadas en seguridad, organización, escalabilidad y limpieza del código, con el objetivo de optimizar el rendimiento y garantizar la robustez de la aplicación sin impactar el software de escritorio en producción. Los cambios se diseñaron para minimizar el retrabajo y facilitar futuras expansiones sin comprometer la arquitectura original.",                    
                         "El código fuente de la API está disponible en el repositorio GitHub, accesible a través del enlace al lado."
                     ],

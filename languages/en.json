@@ -324,9 +324,9 @@
                         "Flyway"
                     ],
                     "name": "Fluxus Web API V2",
-                    "shortDescription": "Rest API developed to integrate the operations of data manipulation and persistence of the Fluxus software with the OracleDB.",
+                    "shortDescription": "Rest API developed to integrate the operations of data manipulation and persistence of the Fluxus software with the MySQL.",
                     "longDescription": [
-                        "This REST API was developed to integrate the Fluxus software, designed for managing engineering services for professionals accredited by public banks, with an OracleDB database. The API allows the manipulation and persistence of essential data, such as professional information, service requests, and invoices.",
+                        "This REST API was developed to integrate the Fluxus software, designed for managing engineering services for professionals accredited by public banks, with an MySQL database. The API allows the manipulation and persistence of essential data, such as professional information, service requests, and invoices.",
                         "In this second version, improvements were implemented focusing on security, organization, scalability, and code cleanliness, aiming to optimize performance and ensure the robustness of the application without impacting the desktop software in production. The changes were designed to minimize rework and facilitate future expansions without compromising the original architecture.",
                         "The API’s source code is available in the GitHub repository, accessible via the link provided."
                     ],

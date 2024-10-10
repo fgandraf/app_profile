@@ -2,7 +2,7 @@
 @import url("../components/modal.css");
 
 body {
-    background-image: url(../../images/bg.png);
+    background-image: url(/assets/images/bg.png);
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -486,19 +486,19 @@ footer {
                     }
 
                     .menu_email {
-                        background-image: url('../../images/menu/email.svg');
+                        background-image: url('/assets/images/menu/email.svg');
                     }
 
                     .menu_phone {
-                        background-image: url('../../images/menu/phone.svg');
+                        background-image: url('/assets/images/menu/phone.svg');
                     }
 
                     .menu_github {
-                        background-image: url('../../images/menu/github.svg');
+                        background-image: url('/assets/images/menu/github.svg');
                     }
 
                     .menu_linkedin {
-                        background-image: url('../../images/menu/linkedin.svg');
+                        background-image: url('/assets/images/menu/linkedin.svg');
                     }
 
                     
@@ -530,7 +530,7 @@ footer {
 @media screen and (max-width: 500px) {
 
     body {
-        background-image: url(../images/bg-mobile.png);
+        background-image: url(/assets/images/bg-mobile.png);
         background-position-x: 40%;
     }
 

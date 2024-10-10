@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="styles/style_desktop.css">
-    <link rel="stylesheet" href="styles/style_mobile.css">
-    <link rel="stylesheet" href="styles/components/modal.css">
+    <link rel="stylesheet" href="styles/pages/index.css">
+    <link rel="stylesheet" href="styles/global.css">
 
     <!-- DEVICON -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -86,18 +85,18 @@
     <main>
         <section id="about-section" class="section">
 
-            <h3 id="about-title" class="section__title">##</h3>
+            <h2 id="about-title">##</h2>
 
             <div id="about-container" class="section__container">
                 <ul id="about-topics">##</ul>
-                <span id="about-more" onclick="openModal('./pages/about.html')">##</span>
+                <span id="about-more" class="link" onclick="openModal('./pages/about.html')">##</span>
             </div>
 
         </section>
 
         <section id="technologies-section" class="section">
 
-            <h3 id="technologies-title" class="section__title">##</h3>
+            <h2 id="technologies-title">##</h2>
 
             <div id="technologies-container" class="section__container">
 
@@ -153,7 +152,7 @@
         </section>
 
         <section id="certificates-section" class="section">
-            <h3 id="certificates-title" class="section__title">##</h3>
+            <h2 id="certificates-title">##</h2>
             <div id="certificates-container" class="section__container">
 
                 <div id="certificate1" class="card__certificacao">
@@ -168,7 +167,7 @@
 
                         <span class="download"><a
                                 href="https://on1.fiap.com.br/updown/DocumentosAssinados/2b160339-d113-4d14-89e3-bd80da2ef8e9.pdf"
-                                target="_blank" class="material-symbols-outlined">download</a></span>
+                                target="_blank" class="material-symbols-outlined link">download</a></span>
                     </div>
                 </div>
 
@@ -183,19 +182,19 @@
                         <p id="certificate2-date" class="date">##</p>
                         <span class="download"><a
                                 href="https://on1.fiap.com.br/updown/DocumentosAssinados/fc9cc099-9099-429c-bcb3-15cc56ed1149.pdf"
-                                target="_blank" class="material-symbols-outlined">download</a></span>
+                                target="_blank" class="material-symbols-outlined link">download</a></span>
                     </div>
                 </div>
 
             </div>
 
             <div class="card__demais__certificacoes">
-                <span id="todos_os_cursos" onclick="openModal('./pages/cursos.html')">##</span>
+                <span id="todos_os_cursos" class="link" onclick="openModal('./pages/cursos.html')">##</span>
             </div>
         </section>
 
         <section id="portfolio-section" class="section">
-            <h3 id="portfolio-title" class="section__title">##</h3>
+            <h2 id="portfolio-title">##</h2>
 
             <div id="portfolio-container" class="section__container">
 
@@ -356,10 +355,10 @@
         <section id="desktop-footer-section">
             <div id="desktop-footer__container">
                 <div class="desktop-footer__column">
-                    <h2 id="desktop-footer__resume-title" class="desktop-footer__title"></h2>
+                    <h3 id="desktop-footer__resume-title" class="desktop-footer__title"></h3>
                     <ul>
                         <li>
-                            <a id="desktop-footer__resume-link" href="" download target="_blank">
+                            <a id="desktop-footer__resume-link" href="" download target="_blank" class="link">
                                 <i class="material-symbols-outlined">download</i>
                                 <div class="description">##</div>
                             </a>
@@ -368,36 +367,36 @@
 
                 </div>
                 <div class="desktop-footer__column">
-                    <h2 id="desktop-footer__links-title" class="desktop-footer__title"></h2>
+                    <h3 id="desktop-footer__links-title" class="desktop-footer__title"></h3>
                     <ul>
-                        <li id="desktop-footer__links-more" onclick="openModal('./pages/about.html')">##</li>
-                        <li id="desktop-footer__links-courses" onclick="openModal('./pages/cursos.html')">##</li>
+                        <li id="desktop-footer__links-more" class="link" onclick="openModal('./pages/about.html')">##</li>
+                        <li id="desktop-footer__links-courses" class="link" onclick="openModal('./pages/cursos.html')">##</li>
                     </ul>
                 </div>
                 <div class="desktop-footer__column">
-                    <h2 id="desktop-footer__contacts-title" class="desktop-footer__title"></h2>
+                    <h3 id="desktop-footer__contacts-title" class="desktop-footer__title"></h3>
                     <ul>
                         <li>
-                            <a href="mailto: fgandraf@gmail.com" target="_blank">
-                                <i class="menu_email"></i>
+                            <a href="mailto: fgandraf@gmail.com" class="link" target="_blank">
+                                <i class="footer_item menu_email"></i>
                                 <span id="desktop-footer__contacts-email">##</span>
                             </a>
                         </li>
                         <li>
-                            <a href="tel:14998290103" target="_blank">
-                                <i class="menu_phone"></i>
+                            <a href="tel:14998290103" class="link" target="_blank">
+                                <i class="footer_item menu_phone"></i>
                                 <span id="desktop-footer__contacts-phone">##</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.github.com/fgandraf/" target="_blank">
-                                <i class="menu_github"></i>
+                            <a href="https://www.github.com/fgandraf/" class="link" target="_blank">
+                                <i class="footer_item menu_github"></i>
                                 <span id="desktop-footer__contacts-github">##</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/fgandraf/" target="_blank">
-                                <i class="menu_linkedin"></i>
+                            <a href="https://www.linkedin.com/in/fgandraf/" class="link" target="_blank">
+                                <i class="footer_item menu_linkedin"></i>
                                 <span id="desktop-footer__contacts-linkedin">##</span>
                             </a>
                         </li>
@@ -409,7 +408,7 @@
         <section id="mobile-footer-section">
             <div id="footer__mobile__container">
 
-                <a id="mobile-footer__resume-link" href="" download target="_blank">
+                <a id="mobile-footer__resume-link" class="link" href="" download target="_blank">
                     <i class="material-symbols-outlined">download</i>
                     <div class="description">##</div>
                 </a>

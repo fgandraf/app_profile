@@ -1,5 +1,4 @@
 :root {
-    
     --color-base: #9a81e4;
 
     --color-base-accent-H: 255;
@@ -22,19 +21,4 @@
     --swiper-pagination-bullet-inactive-color: var(--color-link);
     --swiper-pagination-color: var(var(--color-accent));
     --swiper-pagination-bullet-horizontal-gap: 8px;
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-background-menu);
-}
-
-::-webkit-scrollbar-thumb {
-    background: #FFFFFF;
-    border-radius: 5px;
 }

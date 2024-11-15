@@ -366,11 +366,31 @@
                     "name": "Aex30 Windows App",
                     "shortDescription": "Software assistente para automatizar o preenchimento dos relatórios de acompanhamento de evolução de obra fornecidos pela Caixa Econômica Federal.",
                     "longDescription": [
-                        "--Assistente responsável por automatizar o processo de preenchimento do RAE (Relatório de Acompanhamento de Evolução de Obra) fornecido pela Caixa Econômica Federal, direcionado aos profissionais credenciados no edital de prestação de serviços de arquitetura e engenharia.",
-                        "--Utilizando como base o arquivo de convocação para prestação de serviço e a planilha proposta (PCI) do proponente, o sistema facilita todo o procedimento para o prestador de serviços.",
-                        "--Com uma interface intuitiva, o software guia o usuário passo a passo, garantindo um preenchimento eficiente e preciso. Ao final do processo, o sistema gera a planilha RAE com todos os dados de cabeçalho, percentuais por item, cronograma físico-financeiro e informações contratuais necessárias. A única tarefa restante para o usuário é o preenchimento do apurado em vistoria."
+                        "Assistente responsável por automatizar o processo de preenchimento do RAE (Relatório de Acompanhamento de Evolução de Obra) fornecido pela Caixa Econômica Federal, direcionado aos profissionais credenciados no edital de prestação de serviços de arquitetura e engenharia.",
+                        "Utilizando como base o arquivo de convocação para prestação de serviço e a planilha proposta (PCI) do proponente, o sistema facilita todo o procedimento para o prestador de serviços.",
+                        "Com uma interface intuitiva, o software guia o usuário passo a passo, garantindo um preenchimento eficiente e preciso. Ao final do processo, o sistema gera a planilha RAE com todos os dados de cabeçalho, percentuais por item, cronograma físico-financeiro e informações contratuais necessárias. A única tarefa restante para o usuário é o preenchimento do apurado em vistoria."
                     ],
                     "lastUpdate": "Última atualização: Abril/2023",
+                    "tag": "DESKTOP"
+                }
+            },
+            {
+                "money": {
+                    "img": "./assets/images/thumbs/money.png",
+                    "stacks": [
+                        "Kotlin",
+                        "Compose Desktop",
+                        "Hibernate",
+                        "Flyway"
+                    ],
+                    "name": "Money Desktop App",
+                    "shortDescription": "Software desktop multi-plataforma para gestão de finanças pessoais. Controle as transações bancários, cartão de crédito, contas à pagar e contas à receber.",
+                    "longDescription": [
+                        "Desenvolvido em linguagem Kotlin, utilizando o framework Compose Multiplatform, o Money (nome ainda temporário) é um software multi-plataforma de gestão de finanças pessoais que pretende ser uma alternativa de código-fonte aberto para os usuários dos sistemas operacionais Windows, MacOS e Linux.",
+                        "Sob a licença OpenSource MIT e com uma interface limpa, intuitiva e sem publicidade, a aplicação ainda está em fase inicial de desenvolvimentos e deve receber muitos recursos e lapidações, de design e de código, nos próximos meses.",
+                        "Em breve, mais informações."
+                    ],
+                    "lastUpdate": "Última atualização: Novembro/2024",
                     "tag": "DESKTOP"
                 }
             }

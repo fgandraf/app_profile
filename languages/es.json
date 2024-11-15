@@ -350,7 +350,7 @@
                         "Hoy, Fluxus es mucho más que un proyecto para satisfacer una necesidad específica. Se ha convertido en un repositorio vivo de mi crecimiento como desarrollador. Aunque originalmente creado para generar informes en PDF, ahora también soporta formatos XLS y automatiza la entrada de datos. Incluso sin usuarios activos, Fluxus sigue evolucionando, simbolizando mi viaje personal y profesional en la programación.",
                         "Al hacer clic <a href=\"https://www.tabnews.com.br/felipeGandra/mas-por-que-eu-mantenho-um-codigo-morto\" target=\"_blank\">aquí</a>, puede leer el artículo que publiqué en la plataforma Tabnews sobre el impacto que el desarrollo de este software tuvo en mi carrera."
                     ],
-                    "lastUpdate": "diciembre/2023",
+                    "lastUpdate": "Última actualización: Diciembre/2023",
                     "tag": "DESKTOP"
                 }
             },
@@ -370,7 +370,27 @@
                         "Basado en el archivo de convocatoria de prestación de servicios y la hoja de cálculo propuesta (PCI) del proponente, el sistema facilita todo el procedimiento para el prestador de servicios.",
                         "Con una interfaz intuitiva, el software guía al usuario paso a paso, asegurando un llenado eficiente y preciso. Al final del proceso, el sistema genera la hoja de cálculo RAE con todos los datos de encabezado, porcentajes por ítem, cronograma físico-financiero e información contractual necesaria. La única tarea restante para el usuario es completar los resultados de la inspección."
                     ],
-                    "lastUpdate": "abril/2023",
+                    "lastUpdate": "Última actualización: Abril/2023",
+                    "tag": "DESKTOP"
+                }
+            },
+            {
+                "money": {
+                    "img": "./assets/images/thumbs/money.png",
+                    "stacks": [
+                        "Kotlin",
+                        "Compose Desktop",
+                        "Hibernate",
+                        "Flyway"
+                    ],
+                    "name": "Money Desktop App",
+                    "shortDescription": "Software desktop multiplataforma para la gestión de finanzas personales. Controle transacciones bancarias, tarjetas de crédito, cuentas por pagar y cuentas por cobrar.",
+                    "longDescription": [
+                        "Desarrollado en lenguaje Kotlin, utilizando el framework Compose Multiplatform, Money (nombre aún temporal) es un software multiplataforma para la gestión de finanzas personales que busca ser una alternativa de código abierto para los usuarios de sistemas operativos Windows, MacOS y Linux.",
+                        "Bajo la licencia OpenSource MIT y con una interfaz limpia, intuitiva y sin publicidad, la aplicación aún se encuentra en una etapa inicial de desarrollo y recibirá muchas mejoras en funcionalidad, diseño y código en los próximos meses.",
+                        "Próximamente, más información."
+                    ],
+                    "lastUpdate": "Última actualización: Noviembre/2024",
                     "tag": "DESKTOP"
                 }
             }

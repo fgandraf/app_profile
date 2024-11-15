@@ -28,6 +28,7 @@ export function loadIndexPage(lang, flag) {
     
     // PortfolioSection
     document.getElementById("portfolio-title").innerText = lang.portfolio.title;
+    loadProject(lang, "money");
     loadProject(lang, "promoreApi");
     loadProject(lang, "ethor");
     loadProject(lang, "profile");

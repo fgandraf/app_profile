@@ -2,9 +2,11 @@
     "about": {
         "title": ": : SOBRE MÍ : :",
         "topics": [
-            "Desarrollador de Software Full Stack con amplia experiencia en varios lenguajes de programación;",
-            "Con formación en Análisis y Desarrollo de Sistemas y en Arquitectura y Urbanismo;",
-            "Apasionado por crear soluciones que impacten positivamente en la vida de las personas, siempre estoy buscando nuevos desafíos."
+            "Más de 20 años de experiencia con diversos lenguajes de programación;",
+            "Siempre buscando la perfecta integración entre funcionalidad y design;",
+            "Experiencia en desarrollo backend, frontend, desktop y móvil;",
+            "Experiencia en gestión de proyectos y productos;",
+            "Títulos universitarios en Análisis y Desarrollo de Sistemas y en Arquitectura y Urbanismo."
         ],
         "moreButton": "Saber más...",
         "whoIAm": {
@@ -308,7 +310,7 @@
                         "Hoy en día, la posibilidad de aplicar efectos visuales solo con CSS, utilizar etiquetas semánticas y desarrollar lógicas de programación más complejas con JavaScript representa un cambio realmente disruptivo.",
                         "Con el tiempo, he hecho varias modificaciones, pero he mantenido el desarrollo lo más \"vanilla\" posible, sin el uso de frameworks, explorando al máximo las funcionalidades nativas de la tríada HTML + CSS + JavaScript y una única biblioteca de terceros: SwiperJS."
                     ],
-                    "lastUpdate": "Última actualización: Agosto/2024",
+                    "lastUpdate": "Última actualización: Enero/2025",
                     "tag": "FRONT-END"
                 }
             },
@@ -388,7 +390,7 @@
                         "Bajo la licencia OpenSource MIT y con una interfaz limpia, intuitiva y sin publicidad, la aplicación aún se encuentra en una etapa inicial de desarrollo y recibirá muchas mejoras en funcionalidad, diseño y código en los próximos meses.",
                         "Próximamente, más información."
                     ],
-                    "lastUpdate": "Última actualización: Noviembre/2024",
+                    "lastUpdate": "Última actualización: Enero/2025",
                     "tag": "DESKTOP"
                 }
             }

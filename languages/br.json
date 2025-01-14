@@ -2,9 +2,11 @@
     "about": {
         "title": ": : SOBRE MIM : :",
         "topics": [
-            "Desenvolvedor de Software Full Stack com ampla experiência em diversas linguagens de programação;",
-            "Com formação em Análise e Desenvolvimento de Sistemas e em Arquitetura e Urbanismo;",
-            "Apaixonado por criar soluções que impactem positivamente a vida das pessoas, estou sempre em busca de novos desafios."
+            "+20 anos de experiência com diversas linguagens de programação;",
+            "Sempre em busca da perfeita integração entre funcionalidade e design;",
+            "Experiência em desenvolvimento backend, frontend, desktop e mobile;",
+            "Experiência em gestão de projetos e produtos;",
+            "Formação superior em Análise e Desenvolvimento de Sistemas e em Arquitetura e Urbanismo."
         ],
         "moreButton": "Saiba mais...",
         "whoIAm": {
@@ -308,7 +310,7 @@
                         "Hoje, a possibilidade de aplicar efeitos visuais apenas com CSS, utilizar tags semânticas e desenvolver lógicas de programação mais complexas com Javascript representa uma mudança realmente disruptiva.",
                         "Ao longo do tempo, fiz várias modificações, mas tenho mantido o desenvolvimento o mais \"vanilla\" possível, sem uso de frameworks, explorando ao máximo as funcionalidades nativas da tríade HTML + CSS + JavaScript e uma única biblioteca de terceiros: o SwiperJS."
                     ],
-                    "lastUpdate": "Última atualização: Agosto/2024",
+                    "lastUpdate": "Última atualização: Janeiro/2025",
                     "tag": "FRONT-END"
                 }
             },
@@ -388,7 +390,7 @@
                         "Sob a licença OpenSource MIT e com uma interface limpa, intuitiva e sem publicidade, a aplicação ainda está em fase inicial de desenvolvimentos e deve receber muitos recursos e lapidações, de design e de código, nos próximos meses.",
                         "Em breve, mais informações."
                     ],
-                    "lastUpdate": "Última atualização: Novembro/2024",
+                    "lastUpdate": "Última atualização: Janeiro/2025",
                     "tag": "DESKTOP"
                 }
             }

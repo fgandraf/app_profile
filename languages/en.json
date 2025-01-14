@@ -2,9 +2,11 @@
     "about": {
         "title": ": : ABOUT ME : :",
         "topics": [
-            "Full Stack Software Developer with extensive experience in various programming languages;",
-            "Holds a degree in Systems Analysis and Development and in Architecture and Urbanism;",
-            "Passionate about creating solutions that positively impact people's lives, always seeking new challenges."
+            "Over 20 years of experience with various programming languages;",
+            "Always seeking the perfect integration between functionality and design;",
+            "Experience in backend, frontend, desktop, and mobile development;",
+            "Experience in project and product management;",
+            "Bachelor's degrees in Systems Analysis and Development and Architecture and Urbanism."
         ],
         "moreButton": "Learn more...",
         "whoIAm": {
@@ -308,7 +310,7 @@
                         "Today, the ability to apply visual effects only with CSS, use semantic tags, and develop more complex programming logic with JavaScript represents a truly disruptive change.",
                         "Over time, I have made several modifications, but I have kept the development as \"vanilla\" as possible, without using frameworks, exploring the native functionalities of the HTML + CSS + JavaScript triad to the fullest, and a single third-party library: SwiperJS."
                     ],
-                    "lastUpdate": "Last update: August/2024",
+                    "lastUpdate": "Last update: January/2025",
                     "tag": "FRONT-END"
                 }
             },
@@ -388,7 +390,7 @@
                         "Licensed under the OpenSource MIT license, with a clean, intuitive interface and no advertisements, the application is still in its early development stages and is expected to receive many features and refinements, both in design and code, over the coming months.",
                         "More information coming soon."
                     ],
-                    "lastUpdate": "Last update: November/2024",
+                    "lastUpdate": "Last update: January/2025",
                     "tag": "DESKTOP"
                 }
             }

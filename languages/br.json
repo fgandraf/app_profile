@@ -383,12 +383,12 @@
                         "Hibernate",
                         "Flyway"
                     ],
-                    "name": "Money Desktop App",
+                    "name": "GranaWiz Desktop App",
                     "shortDescription": "Software desktop multi-plataforma para gestão de finanças pessoais. Controle as transações bancários, cartão de crédito, contas à pagar e contas à receber.",
                     "longDescription": [
-                        "Desenvolvido em linguagem Kotlin, utilizando o framework Compose Multiplatform, o Money (nome ainda temporário) é um software multi-plataforma de gestão de finanças pessoais que pretende ser uma alternativa de código-fonte aberto para os usuários dos sistemas operacionais Windows, MacOS e Linux.",
+                        "Desenvolvido em linguagem Kotlin, utilizando o framework Compose Multiplatform, o GranaWiz é um software multi-plataforma de gestão de finanças pessoais que pretende ser uma alternativa de código-fonte aberto para os usuários dos sistemas operacionais Windows, MacOS e Linux.",
                         "Sob a licença OpenSource MIT e com uma interface limpa, intuitiva e sem publicidade, a aplicação ainda está em fase inicial de desenvolvimentos e deve receber muitos recursos e lapidações, de design e de código, nos próximos meses.",
-                        "Em breve, mais informações."
+                        "Na página do repositório (link \"Código fonte\"), é possível baixar uma versão prévia (alpha) da aplicação para acompanhar a evolução do desenvolvimento."
                     ],
                     "lastUpdate": "Última atualização: Janeiro/2025",
                     "tag": "DESKTOP"

@@ -16,14 +16,28 @@ export function loadIndexPage(lang, flag) {
 
     // CertificatesSection
     document.getElementById("certificates-title").innerText = lang.certificates.title;
+
     const certificate1 = document.getElementById("certificate1");
     certificate1.querySelector('.title').innerText = lang.certificates.certificate1.title;
     certificate1.querySelector('.right > .institution').innerText = lang.certificates.certificate1.institution;
     certificate1.querySelector('.right > .date').innerText = lang.certificates.certificate1.date;
+
     const certificate2 = document.getElementById("certificate2");
     certificate2.querySelector('.title').innerText = lang.certificates.certificate2.title;
     certificate2.querySelector('.right > .institution').innerText = lang.certificates.certificate2.institution;
     certificate2.querySelector('.right > .date').innerText = lang.certificates.certificate2.date;
+
+    const certificate3 = document.getElementById("certificate3");
+    certificate3.querySelector('.title').innerText = lang.certificates.certificate3.title;
+    certificate3.querySelector('.right > .institution').innerText = lang.certificates.certificate3.institution;
+    certificate3.querySelector('.right > .date').innerText = lang.certificates.certificate3.date;
+    
+    const certificate4 = document.getElementById("certificate4");
+    certificate4.querySelector('.title').innerText = lang.certificates.certificate4.title;
+    certificate4.querySelector('.right > .institution').innerText = lang.certificates.certificate4.institution;
+    certificate4.querySelector('.right > .date').innerText = lang.certificates.certificate4.date;
+    
+    
     document.getElementById('todos_os_cursos').innerText = lang.certificates.courses;
     
     // PortfolioSection

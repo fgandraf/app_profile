@@ -35,12 +35,22 @@
     "certificates": {
         "title": ": : CERTIFICATIONS : :",
         "certificate1": {
-            "title": "Certificate in Web 2.0 Development and Design",
+            "title": "Professional Qualification Certificate in Strategy and Technological Innovation with applications in AI and IoT",
+            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
+            "date": "December 20, 2024"
+        },
+        "certificate2": {
+            "title": "Professional Qualification Certificate in Mobile Application Development",
+            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
+            "date": "July 10, 2024"
+        },
+        "certificate3": {
+            "title": "Professional Qualification Certificate in Web 2.0 Analysis and Design",
             "institution": "FIAP - Faculdade de Informática e Administração Paulista",
             "date": "December 18, 2023"
         },
-        "certificate2": {
-            "title": "Certificate in System Analysis and Web Prototyping",
+        "certificate4": {
+            "title": "Professional Qualification Certificate in Systems Analysis and Web Prototyping",
             "institution": "FIAP - Faculdade de Informática e Administração Paulista",
             "date": "July 03, 2023"
         },

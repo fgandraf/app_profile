@@ -35,11 +35,21 @@
     "certificates": {
         "title": ": : CERTIFICACIONES : :",
         "certificate1": {
+            "title": "Certificado de Calificación Profesional en Estrategia e Innovación Tecnológica con aplicaciones en IA y IoT",
+            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
+            "date": "20 de diciembre de 2024"
+        },
+        "certificate2": {
+            "title": "Certificado de Calificación Profesional en Desarrollo de Aplicaciones Móviles",
+            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
+            "date": "10 de julio de 2024"
+        },
+        "certificate3": {
             "title": "Certificado de Calificación Profesional en Análisis y Diseño Web 2.0",
             "institution": "FIAP - Faculdade de Informática e Administração Paulista",
             "date": "18 de diciembre de 2023"
         },
-        "certificate2": {
+        "certificate4": {
             "title": "Certificado de Calificación Profesional en Análisis de Sistemas y Prototipado Web",
             "institution": "FIAP - Faculdade de Informática e Administração Paulista",
             "date": "03 de julio de 2023"

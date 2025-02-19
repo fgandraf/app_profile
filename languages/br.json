@@ -35,14 +35,24 @@
     "certificates": {
         "title": ": : CERTIFICAÇÕES : :",
         "certificate1": {
+            "title": "Certificado de Qualificação Profissional em Estratégia e Inovação Tecnológica com aplicações em IA e IoT",
+            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
+            "date": "20 de dezembro de 2024"
+        },
+        "certificate2": {
+            "title": "Certificado de Qualificação Profissional em Desenvolvimento de Aplicações Móveis",
+            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
+            "date": "10 de julho de 2024"
+        },
+        "certificate3": {
             "title": "Certificado de Qualificação Profissional em Análise e Design Web 2.0",
             "institution": "FIAP - Faculdade de Informática e Administração Paulista",
             "date": "18 de dezembro de 2023"
         },
-        "certificate2": {
+        "certificate4": {
             "title": "Certificado de Qualificação Profissional em Análise de Sistemas e Prototipagem Web",
             "institution": "FIAP - Faculdade de Informática e Administração Paulista",
-            "date": "03 de julho de 202"
+            "date": "03 de julho de 2023"
         },
         "courses": "Mais de 500 horas em cursos certificados de programação, banco de dados e áreas correlatas realizados através de diversas plataformas."
     },

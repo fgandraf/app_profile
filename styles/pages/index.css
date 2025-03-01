@@ -236,7 +236,7 @@ main {
 
 
             .card__certificacao {
-                width: 550px;
+                width: 500px;
                 border-bottom: solid 1px var(--color-accent);
                 background-color: var(--color-background-cards);
                 border-radius: 20px;

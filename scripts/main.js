@@ -7,10 +7,10 @@ let currentTranslation = {};
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Carregar o idioma selecionado ou o padrão (english)
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-    localStorage.setItem('selectedLanguage', savedLanguage);
-    currentTranslation = await fetchTranslation(savedLanguage);
-    loadIndexPage(currentTranslation, savedLanguage);
+    const language = localStorage.getItem('selectedLanguage') || 'en';
+    localStorage.setItem('selectedLanguage', language);
+    currentTranslation = await fetchTranslation(language);
+    loadIndexPage(currentTranslation, language);
 
     // Adicionar eventos de clique aos links de idioma
     document.getElementById('lang-br').addEventListener('click', (event) => {

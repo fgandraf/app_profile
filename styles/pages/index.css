@@ -240,8 +240,7 @@ main {
                 border-bottom: solid 1px var(--color-accent);
                 background-color: var(--color-background-cards);
                 border-radius: 20px;
-                display: grid;
-                grid-template-columns: auto auto;
+                display: flex;
                 padding: 50px 20px 10px 20px;
                 box-sizing: border-box;
                 justify-content: center;
@@ -257,6 +256,7 @@ main {
                         font-size: 0.6rem;
                         color: #a18a3f;
                         font-style: italic;
+                        text-wrap: nowrap;
                     }
 
                     img {
@@ -618,12 +618,15 @@ footer {
             #about-container {
                 padding: 0.5rem 3rem;
 
+                
+
+
+
                 #about-topics {
                     line-height: 1.5rem;
                     text-wrap: wrap;
                     display: flex;
                     flex-direction: column;
-                    gap: 1.5rem;
                     text-align: justify;
                     li{
                         line-height:unset;
@@ -631,8 +634,6 @@ footer {
                 }
 
                 #about-more {
-                    display: flex;
-                    margin-top: 2rem;
                     padding-top: 0.5rem;
                 }
             }
@@ -659,40 +660,30 @@ footer {
                 }
             }
         }
+        
 
         #certificates-section {
             padding-bottom: 5vh;
 
+        
             #certificates-title {
-                margin: 2rem 5vw 4rem 5vw;
+                margin: 4rem 5vw 4rem 5vw;
                 font-weight: 600;
                 font-size: 1.2rem;
             }
 
-            #certificacoes__container {
-                flex-direction: column;
-
-                
+            #certificates-container {
+                width: 80vw;
 
                 .card__certificacao {
-                    padding: 50px 10px 10px 10px;
-
-                    .left {
-                        img {
-                            width: 50px;
-                        }
-                    }
-
-                    .right {
-                        h3 {
-                            font-size: 1rem;
-                        }
-                    }
+                    padding: 10px 20px;
+                    flex-direction: column;
                 }
+
             }
 
             .card__demais__certificacoes {
-                width: 70%;
+                width: 80vw;
                 margin: 0 20%;
                 font-size: 1rem;
                 line-height: unset;

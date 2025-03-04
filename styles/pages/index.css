@@ -343,8 +343,7 @@ main {
                     .swiper-slide {
                         background-position: center;
                         background-size: cover;
-                        min-width: 510px;
-                        width: 24vw;
+                        width: 500px;
                     }
                 }
             }
@@ -352,10 +351,9 @@ main {
             .card {
                 display: flex;
                 flex-direction: column;
-                width: 50px;
 
                 .card__tag {
-                    width: 200px;
+                    width: 100%;
                     box-sizing: border-box;
                     padding: 0.6rem 0;
                     margin-bottom: 15px;
@@ -368,8 +366,7 @@ main {
                 }
 
                 .card__content {
-                    min-width: 500px;
-                    width: 23vw;
+                    width: 100%;
                     min-height: 700px;
                     height: 62vh;
                     display: flex;
@@ -385,8 +382,7 @@ main {
 
                     .card__cover {
                         border-radius: 6px 6px 0 0;
-                        min-width: 500px;
-                        width: 23vw;
+                        width: 100%;
                     }
 
                     .card__stacks {
@@ -394,7 +390,7 @@ main {
                         flex-wrap: wrap;
                         gap: 0.5rem;
                         font-size: 0.9rem;
-                        padding: 0.0rem;
+                        padding: 0rem;
                         justify-content: center;
 
                         .stack__item {
@@ -714,21 +710,21 @@ footer {
 
             #portfolio-container {
                 .swiper {
+
                     .swiper-pagination-bullet {
-                        width: 20px;
-                        height: 20px;
+                        display: none;
                     }
 
                     .swiper-wrapper {
                         .swiper-slide {
-                            width: 360px;
+                            min-width: none;
+                            width: 95vw;
                             padding: 0 50px;
                         }
                     }
                 }
 
                 .card {
-                    width: 362px;
 
                     .card__tag{
                         font-size: 0.8rem;
@@ -736,13 +732,8 @@ footer {
                     }
 
                     .card__content{
-                        width: 360px;
-                        height: 540px;
+                        min-height: 540px;
                         
-
-                        .card__cover {
-                            width: 360px;
-                        }
 
                         .card__stacks {
                             gap: 0.4rem;

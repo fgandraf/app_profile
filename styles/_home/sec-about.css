@@ -8,9 +8,13 @@
 
 #about-container {
     max-width: 70vw;
-    height: 80vh;
+    min-height: 80vh;
     align-self: center;
     align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #about-topics {

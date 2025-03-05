@@ -4,10 +4,11 @@
     align-self: center;
     align-content: center;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     row-gap: 3rem;
     column-gap: 2rem;
-    flex-wrap: wrap;
 }
 
 .technologies__card {

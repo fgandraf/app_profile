@@ -3,6 +3,13 @@
 }
 
 #certificates-container {
+    display: flex 0 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 70vw;
+    margin: auto 0;
+    align-self: center;
+    gap: 2rem;
     width: 50vw;
     display: flex;
     flex-wrap: wrap;

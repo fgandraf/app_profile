@@ -6,6 +6,13 @@
     }
 
     #portfolio-container {
+        display: flex 0 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-width: 70vw;
+        margin: auto 0;
+        align-self: center;
+        gap: 2rem;
         padding: 4vh 0 10vh 0;
 
         .swiper {
@@ -31,7 +38,7 @@
             flex-direction: column;
 
             .card__tag {
-                width: 100%;
+                width: 60%;
                 box-sizing: border-box;
                 padding: 0.6rem 0;
                 margin-bottom: 15px;

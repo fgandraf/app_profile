@@ -7,52 +7,38 @@
 }
 
 #about-container {
-    flex-direction: column;
-    width: 70vw;
-    line-height: 1.75rem;
+    max-width: 70vw;
+    height: 80vh;
+    align-self: center;
+    align-content: center;
 }
 
 #about-topics {
-    line-height: 2.5rem;
     padding-bottom: 2rem;
+    list-style:disc;
     text-align: justify;
-    list-style: circle;
 }
 
 #about-topics li{
-    line-height: 3rem;
+    line-height: 2.5rem;
     padding-bottom: 1.75rem;
-}
-
-#about-more:hover {
-    cursor: pointer;
-    color: var(--color-link-hover)
 }
 
 @media screen and (max-width: 500px) {
 
     #about-section {
-        padding-bottom: 8vh;
+        padding-top: 5vh;
         font-size: 1rem;
-        line-height: 1.5rem;
     }
 
     #about-title {
-        margin: 4rem 5vw 4rem 5vw;
-        font-weight: 600;
+        margin: 0 5vw;
         font-size: 1.2rem;
     }
 
     #about-container {
-        padding: 0.5rem 3rem;
-    }
-
-    #about-topics {
-        line-height: 1.5rem;
-        text-wrap: wrap;
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
+        max-width: 90vw;
+        padding: 0 3rem;
     }
 
     #about-topics li{ line-height:unset }

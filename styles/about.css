@@ -1,4 +1,4 @@
-@import url("../variables.css");
+@import url("./variables.css");
 
 body {
     background-color: var(--color-background-secondary);
@@ -17,7 +17,6 @@ body::-webkit-scrollbar {
 }
 
 
-main{
     #apresentacao {
         color: #acacac;
         text-align: justify;
@@ -67,7 +66,6 @@ main{
             cursor: pointer;
         }
     }
-}
 
 
 
@@ -81,17 +79,14 @@ main{
 
     
 
-    main{
-        #apresentacao {
-            padding: 6rem 2rem;
 
-            h3 {
-                text-align: center;
-                font-size: 1.8rem;
-            }
+    #apresentacao {
+        padding: 6rem 2rem;
+
+        h3 {
+            text-align: center;
+            font-size: 1.8rem;
         }
-
     }
 
-    
 }

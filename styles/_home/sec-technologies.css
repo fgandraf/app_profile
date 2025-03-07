@@ -1,0 +1,54 @@
+#technologies-container {
+    max-width: 70vw;
+    min-height: 80vh;
+    align-self: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 3rem;
+    column-gap: 2rem;
+}
+
+.technologies__card {
+    display: flex;
+    flex: 1 0 15%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.technologies__card i {
+    border-radius: 2rem 0rem 2rem 0rem;
+    border-top: solid 1px var(--color-accent);
+    background-color: var(--color-background-cards);
+    padding: 0.8rem 2rem;
+    font-size: 4rem;
+}
+
+.technologies__card p {
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    #technologies-title {
+        margin: 2rem 5vw 4rem 5vw;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    #technologies-container {
+        padding: 10vh 8vw;
+    }
+
+    .technologies__card i {
+        font-size: 3rem;
+    }
+
+    .technologies__card p {
+        font-size: 0.8rem;
+    }
+}

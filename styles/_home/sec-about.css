@@ -1,0 +1,51 @@
+#about-section {
+    font-size: 1.8rem;
+}
+
+#about-title{
+    text-align: right
+}
+
+#about-container {
+    max-width: 70vw;
+    min-height: 80vh;
+    align-self: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#about-topics {
+    padding-bottom: 2rem;
+    list-style:disc;
+    text-align: justify;
+}
+
+#about-topics li{
+    line-height: 2.5rem;
+    padding-bottom: 1.75rem;
+}
+
+@media screen and (max-width: 500px) {
+
+    #about-section {
+        padding-top: 5vh;
+        font-size: 1rem;
+    }
+
+    #about-title {
+        margin: 0 5vw;
+        font-size: 1.2rem;
+    }
+
+    #about-container {
+        max-width: 90vw;
+        padding: 0 3rem;
+    }
+
+    #about-topics li{ line-height:unset }
+
+    #about-more { padding-top: 0.5rem }
+}

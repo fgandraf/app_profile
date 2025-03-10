@@ -133,7 +133,8 @@
             .swiper {
 
                 .swiper-pagination-bullet {
-                    display: none;
+                    width: 20px;
+                    height: 12px;
                 }
 
                 .swiper-wrapper {

@@ -1,6 +1,6 @@
 {
     "about": {
-        "title": ": : SOBRE MIM : :",
+        "title": "SOBRE MIM",
         "topics": [
             "+20 anos de experiência com diversas linguagens de programação;",
             "Sempre buscando a perfeita integração entre funcionalidade e design;",
@@ -30,10 +30,10 @@
         }
     },
     "technologies": {
-        "title": ": : PRINCIPAIS TECNOLOGIAS : :"
+        "title": "TECNOLOGIAS"
     },
     "certificates": {
-        "title": ": : CERTIFICAÇÕES : :",
+        "title": "CERTIFICAÇÕES",
         "academic": {
             "title": "Análise e Desenvolvimento de Sistemas",
             "subtitle": "Tecnólogo Superior - São Paulo/SP - FIAP",
@@ -65,7 +65,7 @@
         }
     },
     "portfolio": {
-        "title": ": : PORTFÓLIO : :",
+        "title": "PORTFÓLIO",
         "deployButton": "Publicação",
         "sourceButton": "Código fonte",
         "projects": [

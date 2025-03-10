@@ -13,7 +13,7 @@
         margin: auto 0;
         align-self: center;
         gap: 2rem;
-        padding: 4vh 0 10vh 0;
+        padding: 10vh 0 10vh 0;
 
         .swiper {
             width: 100vw;
@@ -128,12 +128,6 @@
 
     #portfolio-section {
         padding-bottom: 8vh;
-
-        #portfolio-title {
-            margin: 4rem 5vw 4rem 5vw;
-            font-weight: 600;
-            font-size: 1.2rem;
-        }
 
         #portfolio-container {
             .swiper {

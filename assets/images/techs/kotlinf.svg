@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 60 50"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="kotlinf.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   width="60"
+   height="50"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.3187292"
+     inkscape:cx="33.922016"
+     inkscape:cy="47.236118"
+     inkscape:window-width="1352"
+     inkscape:window-height="876"
+     inkscape:window-x="448"
+     inkscape:window-y="206"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <path
+     fill="#c711e1"
+     d="M 55.259476,49.470736 H 5.7887399 V 0 H 55.259476 L 30.524108,24.735368 Z m 0,0"
+     id="path1"
+     style="fill:#000000;fill-opacity:1;stroke-width:0.510176" />
+</svg>

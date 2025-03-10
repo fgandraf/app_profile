@@ -3,7 +3,7 @@
 }
 
 #about-title{
-    text-align: right
+    text-align: right;
 }
 
 #about-container {
@@ -32,13 +32,10 @@
 
     #about-section {
         padding-top: 5vh;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
-    #about-title {
-        margin: 0 5vw;
-        font-size: 1.2rem;
-    }
+    
 
     #about-container {
         max-width: 90vw;

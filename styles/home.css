@@ -8,6 +8,8 @@
 @import url("./_home/sec-certificates.css");
 @import url("./_home/sec-portfolio.css");
 @import url("./_home/footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 ::-webkit-scrollbar {
@@ -26,7 +28,7 @@
 }
 
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Inter", sans-serif;
     color: var(--color-text-normal);
     font-optical-sizing: auto;
     font-weight: 300;
@@ -48,12 +50,13 @@ html {
 }
 
 .section-title {
-    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 5rem;
     font-weight: 600;
     color: var(--color-text-emphasy);
-    margin: 4rem 4rem 4rem 5.5rem;
+    margin: 4rem 1.5rem 4rem 4.5rem;
     border-bottom: 2px white solid;
-    padding-bottom: 1.5rem; 
+    padding-bottom: 3rem; 
 }
 
 body {
@@ -103,4 +106,12 @@ body {
         background-image: url(/assets/images/bg-mobile.png);
         background-position-x: 40%;
     }
+
+    .section-title {
+        padding-bottom: 1rem; 
+        margin: 0 5vw;
+        font-size: 2rem;
+        margin: 4rem 5vw 4rem 5vw;
+    }
+    
 }

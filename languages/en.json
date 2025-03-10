@@ -34,167 +34,35 @@
     },
     "certificates": {
         "title": ": : CERTIFICATIONS : :",
-        "certificate1": {
-            "title": "Professional Qualification Certificate in Strategy and Technological Innovation with applications in AI and IoT",
-            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
-            "date": "December 20, 2024"
+        "academic": {
+            "title": "Systems Analysis and Development",
+            "subtitle": "Tecnólogo Superior - São Paulo/SP - FIAP",
+            "institution": "Faculdade de Informática e Administração Paulista",
+            "year": "2023 - 2024"
         },
-        "certificate2": {
-            "title": "Professional Qualification Certificate in Mobile Application Development",
-            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
-            "date": "July 10, 2024"
-        },
-        "certificate3": {
-            "title": "Professional Qualification Certificate in Web 2.0 Analysis and Design",
-            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
-            "date": "December 18, 2023"
-        },
-        "certificate4": {
-            "title": "Professional Qualification Certificate in Systems Analysis and Web Prototyping",
-            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
-            "date": "July 03, 2023"
-        },
-        "courses": "More than 500 hours of certified courses in programming, databases, and related areas completed through various platforms."
-    },
-    "courses": {
-        "title": ": : COURSES : :",
-        "courses": [
-            {
-                "alura-formation-winforms": {
-                    "title": "Windows Forms with C#",
-                    "subtitle": "Alura Formation - 7 courses - 86 hours",
-                    "subjects": [
-                        "Access to SQL Server database;",
-                        "Handling customer data;",
-                        "Persisting data in the database;",
-                        "Forms, components, and events;",
-                        "Menus, other forms, and validation with login and password;",
-                        "Toolbar, working with classes and JSON;",
-                        "Mouse events and more components."
-                    ]
-                }
+        "certificateFiap": {
+            "title": "Professional Qualification Certificate",
+            "first":{
+                "title": "Strategy and Technological Innovation with applications in AI and IoT",
+                "date": "December 20, 2024"
             },
-            {
-                "alura-formation-agile": {
-                    "title": "Digital & Agile Thinking",
-                    "subtitle": "Alura Formation - 7 courses - 65 hours",
-                    "subjects": [
-                        "Agility: promoting agile transformation;",
-                        "The Agile Company: introducing Business Agility in organizations;",
-                        "Scrum: agility in your project;",
-                        "Kanban: analyses for implementation;",
-                        "Kanban: enhance your deliveries with metrics;",
-                        "Advanced Agile: create models and discover Nexus;",
-                        "Management 3.0: manage the environment, not the people."
-                    ]
-                }
+            "second":{
+                "title": "Mobile Application Development",
+                "date": "July 10, 2024"
             },
-            {
-                "alura-formation-csharpoop": {
-                    "title": "C# and Object-Oriented Programming",
-                    "subtitle": "Alura Formation - 4 courses - 39 hours",
-                    "subjects": [
-                        "C#: exploring the language;",
-                        "C#: object-oriented programming;",
-                        "C#: using inheritance and implementing interfaces;",
-                        "C#: understanding exceptions."
-                    ]
-                }
+            "third":{
+                "title": "Web 2.0 Analysis and Design",
+                "date": "December 18, 2023"
             },
-            {
-                "alura-formation-htmlfromscratch": {
-                    "title": "From Scratch: HTML and CSS for Web Projects",
-                    "subtitle": "Alura Formation - 6 courses - 51 hours",
-                    "subjects": [
-                        "HTML and CSS: development environments, file structure, and tags;",
-                        "HTML and CSS: Classes, positioning, and Flexbox;",
-                        "HTML and CSS: header, footer, and CSS variables;",
-                        "HTML and CSS: working with responsiveness and project publishing;",
-                        "HTML and CSS: practicing HTML/CSS;",
-                        "HTML and CSS: mobile-first responsiveness."
-                    ]
-                }
-            },
-            {
-                "alura-formation-css": {
-                    "title": "CSS: Deep Dive into Styles",
-                    "subtitle": "Alura Formation - 5 courses - 36 hours",
-                    "subjects": [
-                        "CSS: Flexbox and responsive layouts;",
-                        "CSS: building layouts with Grid;",
-                        "SASS: syntactically awesome CSS;",
-                        "Tailwind CSS: styling your page with utility classes;",
-                        "Practicing CSS: Grid and Flexbox."
-                    ]
-                }
-            },
-            {
-                "balta-carrer-fundamentals": {
-                    "title": ".NET Developer Fundamentals",
-                    "subtitle": "balta.io Career - 2 courses",
-                    "subjects": [
-                        "C# Fundamentals;",
-                        "Object-Oriented Programming Fundamentals."
-                    ]
-                }
-            },
-            {
-                "balta-carrer-dataaccess": {
-                    "title": ".NET Data Access",
-                    "subtitle": "balta.io Career - 3 courses",
-                    "subjects": [
-                        "SQL Server Fundamentals;",
-                        ".NET C# Data Access with Dapper and SQL Server;",
-                        "Entity Framework Fundamentals."
-                    ]
-                }
-            },
-            {
-                "balta-carrer-aspblazor": {
-                    "title": "ASP.NET/Blazor Developer",
-                    "subtitle": "balta.io Career - 9 courses",
-                    "subjects": [
-                        "ASP.NET 6 Fundamentals;",
-                        "HTML and CSS Fundamentals;",
-                        "Responsive Sites;",
-                        "An Overview of ASP.NET Razor Pages;",
-                        "..."
-                    ]
-                }
-            },
-            {
-                "balta-carrer-devops": {
-                    "title": "DevOps",
-                    "subtitle": "balta.io Career - 1 course",
-                    "subjects": [
-                        "Azure, Git, GitHub, and DevOps Fundamentals"
-                    ]
-                }
-            },
-            {
-                "balta-carrer-advanced": {
-                    "title": "Advanced .NET Developer",
-                    "subtitle": "balta.io Career - 5 courses",
-                    "subjects": [
-                        "Modeling Rich Domains;",
-                        "Refactoring for Unit Tests;",
-                        "Applying Object-Oriented Programming in Real Projects with C# 11 and .NET 7;",
-                        "Mastering Dependency Injection;",
-                        "Security in ASP.NET APIs with JWT and Bearer Authentication."
-                    ]
-                }
-            },
-            {
-                "others": {
-                    "title": "Other Platforms",
-                    "subtitle": "",
-                    "subjects": [
-                        "BC Potencial .NET Developer [96 hours]",
-                        "BC Avanade Decola Tech 2024 [73 hours]"
-                    ]
-                }
+            "fourth":{
+                "title": "Systems Analysis and Web Prototyping",
+                "date": "July 03, 2023"
             }
-        ]
+        },
+        "others": {
+            "title": "Additional Courses and Training",
+            "more": "Over 500 certified hours between courses and bootcamps"
+        }
     },
     "portfolio": {
         "title": ": : PORTFOLIO : :",

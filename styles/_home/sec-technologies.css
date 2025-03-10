@@ -22,13 +22,14 @@
 .technologies__card i {
     border-radius: 2rem 0rem 2rem 0rem;
     border-top: solid 1px var(--color-accent);
-    background-color: var(--color-background-cards);
+    border-bottom: solid 1px var(--color-accent);
     padding: 0.8rem 2rem;
     font-size: 4rem;
 }
 
 .technologies__card p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    color: white;
 }
 
 

@@ -3,36 +3,45 @@ import { loadIndexPage } from './modules/load-index-page.js';
 import { openModal, closeModal } from './components/modal.js';
 import './components/scroll.js';
 
-let currentTranslation = {};
+let languagePack = {};
+let currentFlag = '';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // Carregar o idioma selecionado ou o padrão (english)
-    const language = localStorage.getItem('selectedLanguage') || 'en';
-    localStorage.setItem('selectedLanguage', language);
-    currentTranslation = await fetchTranslation(language);
-    loadIndexPage(currentTranslation, language);
 
-    // Adicionar eventos de clique aos links de idioma
-    document.getElementById('lang-br').addEventListener('click', (event) => {
-        event.preventDefault();
-        changeLanguage('br');
-    });
-    document.getElementById('lang-en').addEventListener('click', (event) => {
-        event.preventDefault();
-        changeLanguage('en');
-    });
-    document.getElementById('lang-es').addEventListener('click', (event) => {
-        event.preventDefault();
-        changeLanguage('es');
-    });
+    setFlag();
+    configLanguageSelector();
+    loadTranslation(currentFlag);
+    setModal();
 
-    // Anexar funções globais ao objeto window
-    window.openModal = openModal;
-    window.closeModal = closeModal;
 });
 
-async function changeLanguage(lang) {
-    currentTranslation = await fetchTranslation(lang);
-    localStorage.setItem('selectedLanguage', lang);
-    loadIndexPage(currentTranslation, lang);
+async function setFlag(){
+    currentFlag = localStorage.getItem('selectedLanguage') || 'en';
+    localStorage.setItem('selectedLanguage', currentFlag);
+    document.getElementById(`flag-${currentFlag}`).style.borderBottom = 'solid 2px white';
+}
+
+async function configLanguageSelector(){
+    document.querySelectorAll(".language__item").forEach(language => {
+        language.addEventListener("click", (event) => {
+            event.preventDefault;
+            document.getElementById("flag-br").style.borderBottom = 'solid 2px transparent';
+            document.getElementById("flag-en").style.borderBottom = 'solid 2px transparent';
+            document.getElementById("flag-es").style.borderBottom = 'solid 2px transparent';
+
+            loadTranslation(language.id.slice(-2));
+        });
+    });
+}
+
+async function loadTranslation(flag) {
+    languagePack = await fetchTranslation(flag);
+    localStorage.setItem('selectedLanguage', flag);
+    loadIndexPage(languagePack, flag);
+    setFlag();
+}
+
+function setModal(){
+    window.openModal = openModal;
+    window.closeModal = closeModal;
 }

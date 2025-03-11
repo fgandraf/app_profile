@@ -5,49 +5,42 @@
 }
 
 #portfolio-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    min-width: 70vw;
-    margin: auto 0;
-    align-self: center;
-    gap: 2rem;
-    padding: 25vh 0;
+    margin-top: 15vh;
+    padding-bottom: 20vh;
 
     .swiper {
         width: 100vw;
-        padding-bottom: 15vh;
+    }
+
+    .swiper-footer{
+        margin-top: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .swiper-pagination{
-        height: 10vh;
-        width: 100%;
+        position: static;
+        width: auto;
     }
     .swiper-pagination-bullet {
-        margin-top: 5vh;
         width: 40px;
         height: 20px;
     }
 
-    /* .swiper-button{
-        margin-top: 5vh;
-        height: 10vh;
-        width: 100%;
-        position: absolute;
-        align-items: center;
-    }
-
     .swiper-button-next,
     .swiper-button-prev {
-        margin-left:30vw;
-        margin-right: 30vw;
+        position: static;
+        width: 100px;
+        height: auto;
+        margin: 0;
     }
 
     .swiper-button-next::after,
     .swiper-button-prev::after {
-        font-size: 4vw !important;
+        font-size: 5.5vh !important;
         color: var(--color-accent);
-    } */
+    } 
 
     .swiper-slide {
         background-position: center;
@@ -159,21 +152,28 @@
         }
 
         #portfolio-container {
+            margin-top: 0;
             padding: 5vh 0;
 
-            .swiper {
+            .swiper-footer{
+                margin-top: 6vh;
+            }
 
-                .swiper-pagination-bullet {
-                    width: 20px;
-                    height: 12px;
-                }
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none;
+            }
 
-                .swiper-wrapper {
-                    .swiper-slide {
-                        min-width: none;
-                        width: 95vw;
-                        padding: 0 50px;
-                    }
+            .swiper-pagination-bullet {
+                width: 20px;
+                height: 12px;
+            }
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    min-width: none;
+                    width: 95vw;
+                    padding: 0 50px;
                 }
             }
 

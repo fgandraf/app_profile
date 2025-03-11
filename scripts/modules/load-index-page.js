@@ -48,11 +48,11 @@ export function loadIndexPage(lang, flag) {
         const project = lang.portfolio.projects.find(element => element[projectName])[projectName];
 
         // Carregar elementos do DOM
-        let tag = document.querySelector(`#${projectName} > .card > .card__tag`)
-        let stacks = document.querySelector(`#${projectName} > .card > .card__content > .card__stacks`);
-        let name = document.querySelector(`#${projectName} > .card > .card__content > .projeto__nome`);
-        let description = document.querySelector(`#${projectName} > .card > .card__content > .projeto__descricao`);
-        let lastUpdate = document.querySelector(`#${projectName} > .card > .card__content > .last_update`);
+        let tag = document.querySelector(`#${projectName} .card .card__tag`)
+        let stacks = document.querySelector(`#${projectName} .card .card__content .card__stacks`);
+        let name = document.querySelector(`#${projectName} .card .card__content .projeto__nome`);
+        let description = document.querySelector(`#${projectName} .card .card__content .projeto__descricao`);
+        let lastUpdate = document.querySelector(`#${projectName} .card .card__content .last_update`);
 
         // // Atualizar valores
         tag.innerText = project.tag;

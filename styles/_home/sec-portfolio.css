@@ -1,125 +1,150 @@
-#portfolio-section {
 
-    #portfolio-title {
-        text-align: left;
+
+#portfolio-title {
+    text-align: left;
+}
+
+#portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 70vw;
+    margin: auto 0;
+    align-self: center;
+    gap: 2rem;
+    padding: 25vh 0;
+
+    .swiper {
+        width: 100vw;
+        padding-bottom: 15vh;
     }
 
-    #portfolio-container {
-        display: flex 0 0 auto;
-        justify-content: center;
+    .swiper-pagination{
+        height: 10vh;
+        width: 100%;
+    }
+    .swiper-pagination-bullet {
+        margin-top: 5vh;
+        width: 40px;
+        height: 20px;
+    }
+
+    /* .swiper-button{
+        margin-top: 5vh;
+        height: 10vh;
+        width: 100%;
+        position: absolute;
+        align-items: center;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        margin-left:30vw;
+        margin-right: 30vw;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 4vw !important;
+        color: var(--color-accent);
+    } */
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 500px;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__tag {
+        width: 60%;
+        box-sizing: border-box;
+        padding: 0.6rem 0;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to right, var(--color-border), var(--color-background-primary)) 1;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: var(--color-text-normal);
+    }
+
+    .card__content {
+        width: 100%;
+        min-height: 700px;
+        height: 62vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.7rem;
+        border-radius: 8px;
+        border: 1px solid var(--color-border);
+        background-color: var(--color-background-cards);
+        color: var(--color-text-normal);
+        transition: 0.1s;
+        cursor: pointer;
+    }
+
+    .card__cover {
+        border-radius: 6px 6px 0 0;
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    .card__stacks {
+        display: flex;
         flex-wrap: wrap;
-        min-width: 70vw;
-        margin: auto 0;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        padding: 0rem;
+        justify-content: center;
+    }
+
+    .stack__item {
+        background-color: var(--color-text-normal);
+        color: #000;
+        text-wrap: nowrap;
+        border-radius: 0 30px 0 30px;
         align-self: center;
-        gap: 2rem;
-        padding: 25vh 0;
+        font-weight: 600;
+        padding: 0 0.8rem;
+    }
+    
+    .projeto__nome {
+        color: var(--color-text-emphasy);
+        text-align: center;
+        font-size: 2rem;
+        line-height: 0rem;
+        font-weight: 600;
+        padding: 2rem 0 1rem 0;
+    }
 
-        .swiper {
-            width: 100vw;
-            padding-bottom: 90px;
+    .projeto__descricao {
+        color: var(--color-text-normal);
+        text-align: justify;
+        font-size: 1.2rem;
+        padding: 1rem 3rem;
+        line-height: 2rem;
+        margin-bottom: 1.0rem;
+    }
 
-            .swiper-pagination-bullet {
-                width: 40px;
-                height: 20px;
-            }
+    .citacao {
+        font-style: italic;
+    }
 
-            .swiper-wrapper {
-                .swiper-slide {
-                    background-position: center;
-                    background-size: cover;
-                    width: 500px;
-                }
-            }
-        }
-
-        .card {
-            display: flex;
-            flex-direction: column;
-
-            .card__tag {
-                width: 60%;
-                box-sizing: border-box;
-                padding: 0.6rem 0;
-                margin-bottom: 15px;
-                margin-left: 5px;
-                border-bottom: 1px solid transparent;
-                border-image: linear-gradient(to right, var(--color-border), var(--color-background-primary)) 1;
-                font-size: 1.2rem;
-                font-weight: 300;
-                color: var(--color-text-normal);
-            }
-
-            .card__content {
-                width: 100%;
-                min-height: 700px;
-                height: 62vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                gap: 0.7rem;
-                border-radius: 8px;
-                border: 1px solid var(--color-border);
-                background-color: var(--color-background-cards);
-                color: var(--color-text-normal);
-                transition: 0.1s;
-                cursor: pointer;
-
-                .card__cover {
-                    border-radius: 6px 6px 0 0;
-                    width: 100%;
-                    opacity: 0.8;
-                }
-
-                .card__stacks {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 0.5rem;
-                    font-size: 0.9rem;
-                    padding: 0rem;
-                    justify-content: center;
-
-                    .stack__item {
-                        background-color: var(--color-text-normal);
-                        color: #000;
-                        text-wrap: nowrap;
-                        border-radius: 0 30px 0 30px;
-                        align-self: center;
-                        font-weight: 600;
-                        padding: 0 0.8rem;
-                    }
-                }
-
-                .projeto__nome {
-                    color: var(--color-text-emphasy);
-                    text-align: center;
-                    font-size: 2rem;
-                    line-height: 0rem;
-                    font-weight: 600;
-                    padding: 2rem 0 1rem 0;
-                }
-
-                .projeto__descricao {
-                    color: var(--color-text-normal);
-                    text-align: justify;
-                    font-size: 1.2rem;
-                    padding: 1rem 3rem;
-                    line-height: 2rem;
-                    margin-bottom: 1.0rem;
-                }
-
-                .citacao {
-                    font-style: italic;
-                }
-
-                .last_update {
-                    font-size: 0.8rem;
-                    text-align: right;
-                    padding: 0 1.5rem 0.5rem 1.5rem;
-                }
-            }
-        }
+    .last_update {
+        font-size: 0.8rem;
+        text-align: right;
+        padding: 0 1.5rem 0.5rem 1.5rem;
     }
 }
+
+    
+
 
 
 

@@ -1,5 +1,4 @@
 #portfolio-section {
-    padding-bottom: 20vh;
 
     #portfolio-title {
         text-align: left;
@@ -13,7 +12,7 @@
         margin: auto 0;
         align-self: center;
         gap: 2rem;
-        padding: 10vh 0 10vh 0;
+        padding: 25vh 0;
 
         .swiper {
             width: 100vw;
@@ -130,7 +129,13 @@
     #portfolio-section {
         padding-bottom: 8vh;
 
+        #portfolio-title {
+            text-align: center;
+        }
+
         #portfolio-container {
+            padding: 5vh 0;
+
             .swiper {
 
                 .swiper-pagination-bullet {

@@ -1,6 +1,7 @@
 {
     "about": {
         "title": "ABOUT ME",
+        "subtitle": "Developer passionate about technology and innovation.",
         "topics": [
             "Over 20 years of experience with various programming languages;",
             "Always seeking the perfect integration between functionality and design;",
@@ -30,14 +31,16 @@
         }
     },
     "technologies": {
-        "title": "TECHNOLOGIES"
+        "title": "TECHNOLOGIES",
+        "subtitle": "Main languages and tools I’ve had the opportunity to work with."
     },
     "certificates": {
         "title": "CERTIFICATIONS",
+        "subtitle": "Over twenty years collecting certifications in technology.",
         "academic": {
             "title": "Systems Analysis and Development",
-            "subtitle": "Tecnólogo Superior - São Paulo/SP - FIAP",
-            "institution": "Faculdade de Informática e Administração Paulista",
+            "subtitle": "Tecnólogo Superior - São Paulo/SP",
+            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
             "year": "2023 - 2024"
         },
         "certificateFiap": {
@@ -66,6 +69,7 @@
     },
     "portfolio": {
         "title": "PORTFOLIO",
+        "subtitle": "Most recent projects I’ve developed or contributed to.",
         "deployButton": "Deployed",
         "sourceButton": "Source code",
         "projects": [

@@ -36,6 +36,9 @@
     }
 
     
+    #about-title{
+        text-align: center;
+    }
 
     #about-container {
         max-width: 90vw;

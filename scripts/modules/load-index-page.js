@@ -2,14 +2,17 @@ export function loadIndexPage(lang, flag) {
     
     // AboutSection
     document.getElementById("about-title").innerText = lang.about.title;
+    document.getElementById("about-subtitle").innerText = lang.about.subtitle;
     document.getElementById("about-topics").innerHTML = lang.about.topics.map(topic => `<li>${topic}</li>`).join('');
     document.getElementById("about-more").innerText = lang.about.moreButton;
 
     // TechnologiesSection
     document.getElementById("technologies-title").innerText = lang.technologies.title;
+    document.getElementById("technologies-subtitle").innerText = lang.technologies.subtitle;
 
     // CertificatesSection
     document.getElementById("certificates-title").innerText = lang.certificates.title;
+    document.getElementById("certificates-subtitle").innerText = lang.certificates.subtitle;
 
 
     //academic
@@ -38,6 +41,7 @@ export function loadIndexPage(lang, flag) {
    
     // PortfolioSection
     document.getElementById("portfolio-title").innerText = lang.portfolio.title;
+    document.getElementById("portfolio-subtitle").innerText = lang.portfolio.subtitle;
 
     lang.portfolio.projects.forEach(el => {
         const projectName = Object.keys(el)[0];

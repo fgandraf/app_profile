@@ -1,6 +1,7 @@
 {
     "about": {
         "title": "SOBRE MIM",
+        "subtitle": "Desenvolvedor apaixonado por tecnologia e inovação.",
         "topics": [
             "+20 anos de experiência com diversas linguagens de programação;",
             "Sempre buscando a perfeita integração entre funcionalidade e design;",
@@ -30,14 +31,16 @@
         }
     },
     "technologies": {
-        "title": "TECNOLOGIAS"
+        "title": "TECNOLOGIAS",
+        "subtitle": "Principais linguagens e ferramentas que já tive oportunidade de trabalhar."
     },
     "certificates": {
         "title": "CERTIFICAÇÕES",
+        "subtitle": "Há mais de vinte anos colecionando certificações em tecnologia.",
         "academic": {
             "title": "Análise e Desenvolvimento de Sistemas",
-            "subtitle": "Tecnólogo Superior - São Paulo/SP - FIAP",
-            "institution": "Faculdade de Informática e Administração Paulista",
+            "subtitle": "Tecnólogo Superior - São Paulo/SP",
+            "institution": "FIAP - Faculdade de Informática e Administração Paulista",
             "year": "2023 - 2024"
         },
         "certificateFiap": {
@@ -66,6 +69,7 @@
     },
     "portfolio": {
         "title": "PORTFÓLIO",
+        "subtitle": "Trabalhos mais recentes que desenvolvi ou participei.",
         "deployButton": "Publicação",
         "sourceButton": "Código fonte",
         "projects": [

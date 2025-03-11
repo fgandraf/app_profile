@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 5vw;
+    padding: 25vh 0;
 }
 
 .academic {
@@ -132,10 +133,15 @@
     #certificates-section {
         padding-bottom: 5vh;
 
+        #certificates-title{
+            text-align: center
+        }
+
         #certificates-container {
             width: 85vw;
-            padding-top: 5vh;
+            /* padding-top: 5vh; */
             gap: 5rem;
+            padding: 10vh 0;
 
             .academic{
                 width: 100%;

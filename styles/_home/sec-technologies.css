@@ -11,6 +11,7 @@
     column-gap: 2rem;
 }
 
+
 .technologies__card {
     display: flex;
     flex: 1 0 15%;
@@ -29,7 +30,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .technologies__card i img{
@@ -51,16 +51,15 @@
     }
 
     .technologies__card i {
-        width: 60px;
-        height: 50px;
-        font-size: 3rem;
+        width: 50px;
+        height: 45px;
     }
 
     .technologies__card i img{
-        width: 50px;
+        width: 65px;
     }
 
     .technologies__card p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }

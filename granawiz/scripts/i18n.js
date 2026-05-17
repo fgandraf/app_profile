@@ -3,7 +3,7 @@
 
   const STORAGE_KEY = 'granawiz_lang';
   const DEFAULT_LANG = 'en';
-  const LANG_ATTR = { br: 'pt-BR', en: 'en', es: 'es' };
+  const LANG_ATTR = { br: 'pt-BR', en: 'en' };
 
   let currentLang = DEFAULT_LANG;
   let detectedOS = 'mac';

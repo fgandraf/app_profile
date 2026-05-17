@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(fuser 8099/tcp)",
+      "Bash(rtk wc *)"
+    ]
+  }
+}

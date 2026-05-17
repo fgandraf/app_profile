@@ -3,7 +3,11 @@
     "allow": [
       "mcp__plugin_context-mode_context-mode__ctx_batch_execute",
       "Bash(rtk read *)",
-      "Bash(rtk ls *)"
+      "Bash(rtk ls *)",
+      "Bash(mkdir -p /home/felipe/dev/app_profile/granawiz/languages /home/felipe/dev/app_profile/granawiz/scripts)"
+    ],
+    "additionalDirectories": [
+      "/home/felipe/dev/app_profile/granawiz"
     ]
   }
 }

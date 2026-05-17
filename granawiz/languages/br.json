@@ -1,0 +1,120 @@
+{
+  "page": {
+    "title": "GranaWiz — Finanças pessoais que ficam no seu computador",
+    "description": "Software desktop, offline e gratuito para controlar suas finanças. Sem nuvem, sem assinatura, sem cadastro. macOS, Windows e Linux."
+  },
+  "nav": {
+    "principles": "Princípios",
+    "features": "Recursos",
+    "forWho": "Para quem",
+    "tech": "Tecnologia",
+    "download": "Download",
+    "cta": "Baixar"
+  },
+  "hero": {
+    "title": "Suas finanças,<br/>do <span class=\"grad\">seu jeito</span>.",
+    "subtitle": "GranaWiz é um app desktop que vive no seu computador — não na nuvem. Sem cadastro, sem assinatura, sem mandar seus dados pra lugar nenhum. Você abre, usa, e pronto.",
+    "ctaSecondary": "Ver o que faz",
+    "meta1": "Sem cadastro",
+    "meta2": "Sem assinatura",
+    "meta3": "Sem trial de 14 dias",
+    "dashboardAlt": "Captura de tela do dashboard do GranaWiz mostrando saldo total, fluxo do período e despesas por categoria"
+  },
+  "principles": {
+    "1": {
+      "title": "Fica no seu disco",
+      "desc": "Seus dados nunca saem do seu computador. Nada de servidor, nada de \"sincronização\", nada de backup que você não pediu."
+    },
+    "2": {
+      "title": "Sem assinatura",
+      "desc": "Sem mensalidade, sem plano premium, sem feature bloqueada esperando você pagar. Baixou, usou — é seu."
+    },
+    "3": {
+      "title": "Sem cadastro",
+      "desc": "Não pedimos seu e-mail. Nem CPF. Nem perfil de investidor. Não há conta para criar nem senha para esquecer."
+    }
+  },
+  "manifesto": {
+    "label": "A diferença",
+    "quote": "A maioria das ferramentas financeiras foi feita pra <span class=\"em\">capturar você</span> — não pra te ajudar.",
+    "p1": "Elas querem seu e-mail, seu CPF, seu extrato, sua atenção e — claro — seu dinheiro em forma de assinatura mensal. Em troca, oferecem dashboards bonitos, notificações que você ignora e a sensação constante de que você <em>deveria</em> estar fazendo mais.",
+    "p2": "<strong>GranaWiz é diferente.</strong> Roda no seu Mac, PC ou Linux. Não precisa de internet. Não manda nada pra servidor nenhum. Não tem termos de uso que mudam de tempos em tempos.",
+    "p3": "Seus dados ficam no seu computador. Só no seu. Isso não é detalhe técnico — é uma escolha filosófica sobre <strong>quem é dono das suas informações financeiras</strong>."
+  },
+  "features": {
+    "label": "O que faz",
+    "title": "Controle financeiro<br/>sem virar analista de dados.",
+    "sub": "Interface limpa, em português, sem jargão. Cada funcionalidade existe porque resolve um problema real — não porque ficaria bonita num slide.",
+    "items": {
+      "accounts":      { "title": "Contas bancárias",        "desc": "Conta corrente, poupança e cartão de crédito. Saldo atualizado automaticamente conforme você lança." },
+      "transactions":  { "title": "Transações",              "desc": "Receitas, despesas e transferências com data, valor, categoria, etiquetas, pagador e recebedor." },
+      "scheduling":    { "title": "Agendamentos",            "desc": "Programe lançamentos fixos ou recorrentes pra nunca esquecer aquela conta de luz no dia 12." },
+      "categories":    { "title": "Categorias & etiquetas",  "desc": "Organização do seu jeito. Categorize pelo que faz sentido pra sua vida, não pelo que o app impõe." },
+      "payees":        { "title": "Pagadores & recebedores", "desc": "Histórico de quem te paga e pra quem você paga — com totais e padrões ao longo do tempo." },
+      "import":        { "title": "Importação de extratos",  "desc": "CSV e OFX — os formatos que os bancos brasileiros mais exportam. Importe, revise, categorize." },
+      "dashboard":     { "title": "Dashboard consolidado",   "desc": "Saldo total, fluxo do mês, ritmo de gastos, patrimônio líquido. O que importa, sem ruído." },
+      "theme":         { "title": "Tema claro & escuro",     "desc": "Pra trabalhar com a luz que você prefere — de dia, de madrugada, ou na sala com a luz apagada." },
+      "multiplatform": { "title": "Multi-plataforma",        "desc": "Um instalador pra cada sistema. macOS, Windows, Linux. Mesmo app, mesma experiência." }
+    },
+    "spotlight": {
+      "label": "Importação",
+      "title": "Do extrato do banco<br/>pro seu fluxo de caixa.",
+      "desc": "Arrasta o CSV ou OFX que seu banco exporta. O GranaWiz lê, mostra cada linha, e você decide categoria e etiqueta antes de salvar — nada entra sem você ver.",
+      "csvDate": "Data",
+      "csvDesc": "Descrição",
+      "csvAmount": "Valor",
+      "imported": "↓ importado",
+      "txDesc": "Supermercado · 06 mai",
+      "category": "Alimentação",
+      "others": "+ outros"
+    }
+  },
+  "personas": {
+    "label": "Pra quem",
+    "title": "Pra quem cansou<br/>de planilha e de SaaS.",
+    "freelancer":    { "title": "O autônomo",             "desc": "Recebe de forma irregular e precisa saber, antes de aceitar um projeto ou fazer uma compra grande, quanto efetivamente tem disponível." },
+    "exSpreadsheet": { "title": "O ex-planilheiro",       "desc": "Já tentou planilha — criou fórmulas, formatou células, desistiu na terceira semana — e quer algo que simplesmente funcione, sem manutenção." },
+    "homeWorker":    { "title": "Quem trabalha em casa",  "desc": "Tem mais de uma fonte de renda, ou simplesmente quer parar de chegar no final do mês sem entender pra onde o dinheiro foi." },
+    "privacy":       { "title": "Quem valoriza privacidade", "desc": "Não quer que seu padrão de gastos vire dado de treinamento pra modelos de recomendação de produtos financeiros." }
+  },
+  "promises": {
+    "label": "O contrato",
+    "title": "O que GranaWiz <em style=\"color: var(--accent-2); font-style: normal;\">não</em> faz —<br/>e o que faz.",
+    "noEmail":  { "title": "Não pede seu e-mail",       "desc": "Nem CPF, nem perfil de investidor, nem cartão de crédito \"só pra liberar o trial\"." },
+    "runsNow":  { "title": "Roda direto, do nada",      "desc": "Instalou, abriu, criou sua primeira conta. Sem onboarding de oito telas." },
+    "noAds":    { "title": "Não tem anúncio",            "desc": "Nem plano premium escondido. Nem feature bloqueada esperando upgrade." },
+    "offline":  { "title": "Funciona offline",           "desc": "No avião, no sítio do seu pai, no escritório com Wi-Fi caindo. Funciona igual." },
+    "noCloud":  { "title": "Não sincroniza com nuvem",  "desc": "Seus dados ficam num arquivo no seu disco. Você decide o que fazer com ele." },
+    "imports":  { "title": "Importa CSV e OFX",          "desc": "Dos principais bancos brasileiros. Sem precisar conectar credenciais a lugar nenhum." }
+  },
+  "tech": {
+    "label": "Construído com cuidado",
+    "title": "Não é projeto de fim de semana.<br/>É decisão deliberada.",
+    "desc": "GranaWiz é desenvolvido em Kotlin com Compose Desktop — a mesma stack que sustenta apps de produção modernos. A escolha de ser local e offline não foi limitação técnica. Foi uma decisão sobre <strong style=\"color: var(--text);\">que tipo de ferramenta vale a pena existir</strong>: uma que serve o usuário, não o desenvolvedor.",
+    "quote": "\"Projeto independente, desenvolvido por um único criador, que cresce funcionalidade por funcionalidade — fazendo cada parte bem-feita antes de adicionar a próxima.\"",
+    "author": "— Felipe Gandra, criador do GranaWiz"
+  },
+  "download": {
+    "label": "Download",
+    "title": "Disponível agora,<br/>gratuitamente.",
+    "sub": "Sem cadastro. Sem cartão. Sem \"grátis por 14 dias\". Baixa, instala, usa.",
+    "detected": "Detectado no seu sistema",
+    "mac":   { "ext": "instalador .dmg · Intel + Apple Silicon", "desc": "Funciona em macOS 11 Big Sur ou superior. Universal binary.",                                                  "btn": "Baixar para macOS" },
+    "win":   { "ext": "instalador .msi · 64-bit",                "desc": "Windows 10 ou 11. Não pede permissão de administrador depois da instalação.",                                   "btn": "Baixar para Windows" },
+    "linux": { "ext": "instalador .deb · x86_64",                "desc": "Para distribuições baseadas em Debian: Ubuntu, Linux Mint, Pop!_OS e outros.",                                  "btn": "Baixar para Linux" },
+    "step1": "Instale",
+    "step2": "Abra",
+    "step3": "Começa a usar"
+  },
+  "finalCta": {
+    "title": "É assim que<br/>deveria ser.",
+    "desc": "Um aplicativo que abre, faz o que promete, e te deixa em paz. GranaWiz tá pronto.",
+    "btn": "Baixar GranaWiz grátis"
+  },
+  "footer": {
+    "resources": "Recursos",
+    "tech": "Tecnologia",
+    "download": "Download",
+    "author": "Feito por <strong>Felipe Gandra</strong> · GranaWiz © 2026"
+  }
+}

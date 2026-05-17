@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GranaWiz — Finanças pessoais que ficam no seu computador</title>
+<meta name="description" content="Software desktop, offline e gratuito para controlar suas finanças. Sem nuvem, sem assinatura, sem cadastro. macOS, Windows e Linux." />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav class="top">
+  <div class="wrap nav-inner">
+    <a href="#" class="brand" aria-label="GranaWiz">
+      <span class="mark">
+         <img src="assets/icon.png" alt="Icon" aria-hidden="true" />
+      </span>
+      GranaWiz
+    </a>
+    <div class="nav-links">
+      <a href="#principios" data-i18n="nav.principles">Princípios</a>
+      <a href="#recursos" data-i18n="nav.features">Recursos</a>
+      <a href="#para-quem" data-i18n="nav.forWho">Para quem</a>
+      <a href="#tecnologia" data-i18n="nav.tech">Tecnologia</a>
+      <a href="#download" data-i18n="nav.download">Download</a>
+    </div>
+    <div class="gw-lang-selector">
+      <button class="gw-lang-btn" data-lang="br">PT</button>
+      <button class="gw-lang-btn" data-lang="en">EN</button>
+      <button class="gw-lang-btn" data-lang="es">ES</button>
+    </div>
+    <a href="#download" class="nav-cta">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+      <span data-i18n="nav.cta">Baixar</span>
+    </a>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header class="hero wrap" data-screen-label="01 Hero">
+  <h1 class="hero-title" data-i18n-html="hero.title">
+    Suas finanças,<br/>
+    do <span class="grad">seu jeito</span>.
+  </h1>
+  <p class="hero-sub" data-i18n="hero.subtitle">
+    GranaWiz é um app desktop que vive no seu computador — não na nuvem.
+    Sem cadastro, sem assinatura, sem mandar seus dados pra lugar nenhum.
+    Você abre, usa, e pronto.
+  </p>
+  <div class="hero-ctas">
+    <a href="#download" class="btn btn-primary" id="heroDownloadBtn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+      <span id="heroDownloadLabel">Baixar grátis</span>
+    </a>
+    <a href="#recursos" class="btn btn-ghost">
+      <span data-i18n="hero.ctaSecondary">Ver o que faz</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
+    </a>
+  </div>
+  <div class="hero-meta">
+    <span>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      <span data-i18n="hero.meta1">Sem cadastro</span>
+    </span>
+    <span>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      <span data-i18n="hero.meta2">Sem assinatura</span>
+    </span>
+    <span>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      <span data-i18n="hero.meta3">Sem trial de 14 dias</span>
+    </span>
+  </div>
+
+  <div class="hero-shot reveal">
+    <div class="hero-shot-glow"></div>
+
+    <div class="app-carousel" id="appCarousel">
+      <!-- Invisible sizer that establishes container height -->
+      <img class="app-carousel-sizer" src="assets/dashboard-dark.png" alt="" aria-hidden="true" />
+
+      <div class="app-slide active" data-label="Dashboard - Modo Escuro" data-theme="dark">
+        <img src="assets/dashboard-dark.png" alt="Dashboard do GranaWiz — modo escuro" loading="eager" />
+      </div>
+      <div class="app-slide" data-label="Transações" data-theme="dark">
+        <img src="assets/transactions-dark.png" alt="Histórico de transações" loading="lazy" />
+      </div>
+      <div class="app-slide" data-label="Categorias" data-theme="dark">
+        <img src="assets/categories-dark.png" alt="Categorias personalizadas" loading="lazy" />
+      </div>
+      <div class="app-slide" data-label="Contas Bancárias" data-theme="dark">
+        <img src="assets/account-dark.png" alt="Contas bancárias" loading="lazy" />
+      </div>
+      <div class="app-slide" data-label="Dashboard - Modo Claro" data-theme="light">
+        <img src="assets/dashboard-light.png" alt="Dashboard do GranaWiz — modo claro" loading="lazy" />
+      </div>
+      
+    </div>
+
+    <div class="carousel-bar">
+      <div class="carousel-dots" id="carouselDots">
+        <button class="cdot active" aria-label="Slide 1"></button>
+        <button class="cdot" aria-label="Slide 2"></button>
+        <button class="cdot" aria-label="Slide 3"></button>
+        <button class="cdot" aria-label="Slide 4"></button>
+        <button class="cdot" aria-label="Slide 5"></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════ PRINCIPLES ═══════════ -->
+<section id="principios" style="padding-top: 60px;">
+  <div class="wrap">
+    <div class="principles">
+      <div class="principle reveal">
+        <div class="principle-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M22 12H2"/><circle cx="7" cy="12" r="1.5" fill="currentColor"/></svg>
+        </div>
+        <h3 data-i18n="principles.1.title">Fica no seu disco</h3>
+        <p data-i18n="principles.1.desc">Seus dados nunca saem do seu computador. Nada de servidor, nada de "sincronização", nada de backup que você não pediu.</p>
+      </div>
+      <div class="principle reveal">
+        <div class="principle-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M4.93 4.93l14.14 14.14"/></svg>
+        </div>
+        <h3 data-i18n="principles.2.title">Sem assinatura</h3>
+        <p data-i18n="principles.2.desc">Sem mensalidade, sem plano premium, sem feature bloqueada esperando você pagar. Baixou, usou — é seu.</p>
+      </div>
+      <div class="principle reveal">
+        <div class="principle-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 5-3.5 7.5-9 9-5.5-1.5-9-4-9-9V5l9-3 9 3v7z"/></svg>
+        </div>
+        <h3 data-i18n="principles.3.title">Sem cadastro</h3>
+        <p data-i18n="principles.3.desc">Não pedimos seu e-mail. Nem CPF. Nem perfil de investidor. Não há conta para criar nem senha para esquecer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ MANIFESTO ═══════════ -->
+<section data-screen-label="03 Manifesto">
+  <div class="wrap">
+    <div class="manifesto reveal">
+      <div>
+        <span class="section-label" data-i18n="manifesto.label">A diferença</span>
+        <h2 class="manifesto-quote" data-i18n-html="manifesto.quote">
+          A maioria das ferramentas financeiras foi feita pra <span class="em">capturar você</span> — não pra te ajudar.
+        </h2>
+      </div>
+      <div class="manifesto-body">
+        <p data-i18n-html="manifesto.p1">
+          Elas querem seu e-mail, seu CPF, seu extrato, sua atenção e — claro — seu dinheiro em forma de assinatura mensal. Em troca, oferecem dashboards bonitos, notificações que você ignora e a sensação constante de que você <em>deveria</em> estar fazendo mais.
+        </p>
+        <p data-i18n-html="manifesto.p2">
+          <strong>GranaWiz é diferente.</strong> Roda no seu Mac, PC ou Linux. Não precisa de internet. Não manda nada pra servidor nenhum. Não tem termos de uso que mudam de tempos em tempos.
+        </p>
+        <p data-i18n-html="manifesto.p3">
+          Seus dados ficam no seu computador. Só no seu. Isso não é detalhe técnico — é uma escolha filosófica sobre <strong>quem é dono das suas informações financeiras</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FEATURES ═══════════ -->
+<section id="recursos" data-screen-label="04 Recursos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-label" data-i18n="features.label">O que faz</span>
+      <h2 class="section-title" data-i18n-html="features.title">Controle financeiro<br/>sem virar analista de dados.</h2>
+      <p class="section-sub" data-i18n="features.sub">
+        Interface limpa, em português, sem jargão. Cada funcionalidade existe porque resolve um problema real — não porque ficaria bonita num slide.
+      </p>
+    </div>
+
+    <div class="features reveal">
+      <article class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M7 15h3"/></svg>
+        </div>
+        <h4 data-i18n="features.items.accounts.title">Contas bancárias</h4>
+        <p data-i18n="features.items.accounts.desc">Conta corrente, poupança e cartão de crédito. Saldo atualizado automaticamente conforme você lança.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l5-5 4 4 5-5"/><path d="M17 7h4v4"/><path d="M3 3v18h18"/></svg>
+        </div>
+        <h4 data-i18n="features.items.transactions.title">Transações</h4>
+        <p data-i18n="features.items.transactions.desc">Receitas, despesas e transferências com data, valor, categoria, etiquetas, pagador e recebedor.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/><circle cx="12" cy="15" r="1.5" fill="currentColor"/></svg>
+        </div>
+        <h4 data-i18n="features.items.scheduling.title">Agendamentos</h4>
+        <p data-i18n="features.items.scheduling.desc">Programe lançamentos fixos ou recorrentes pra nunca esquecer aquela conta de luz no dia 12.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5l9-3 9 3v6c0 5-3.5 8.5-9 10-5.5-1.5-9-5-9-10V5z"/><circle cx="12" cy="11" r="2.5"/></svg>
+        </div>
+        <h4 data-i18n="features.items.categories.title">Categorias &amp; etiquetas</h4>
+        <p data-i18n="features.items.categories.desc">Organização do seu jeito. Categorize pelo que faz sentido pra sua vida, não pelo que o app impõe.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 22c0-4 3-7 7-7s7 3 7 7"/><circle cx="17" cy="10" r="3"/><path d="M22 22c0-3-2.5-5-5-5"/></svg>
+        </div>
+        <h4 data-i18n="features.items.payees.title">Pagadores &amp; recebedores</h4>
+        <p data-i18n="features.items.payees.desc">Histórico de quem te paga e pra quem você paga — com totais e padrões ao longo do tempo.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+        </div>
+        <h4 data-i18n="features.items.import.title">Importação de extratos</h4>
+        <p data-i18n="features.items.import.desc">CSV e OFX — os formatos que os bancos brasileiros mais exportam. Importe, revise, categorize.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+        </div>
+        <h4 data-i18n="features.items.dashboard.title">Dashboard consolidado</h4>
+        <p data-i18n="features.items.dashboard.desc">Saldo total, fluxo do mês, ritmo de gastos, patrimônio líquido. O que importa, sem ruído.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </div>
+        <h4 data-i18n="features.items.theme.title">Tema claro &amp; escuro</h4>
+        <p data-i18n="features.items.theme.desc">Pra trabalhar com a luz que você prefere — de dia, de madrugada, ou na sala com a luz apagada.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h4 data-i18n="features.items.multiplatform.title">Multi-plataforma</h4>
+        <p data-i18n="features.items.multiplatform.desc">Um instalador pra cada sistema. macOS, Windows, Linux. Mesmo app, mesma experiência.</p>
+      </article>
+    </div>
+
+    <!-- Spotlight CSV/OFX -->
+    <div class="spotlight reveal">
+      <div class="spotlight-text">
+        <span class="section-label" data-i18n="features.spotlight.label">Importação</span>
+        <h3 data-i18n-html="features.spotlight.title">Do extrato do banco<br/>pro seu fluxo de caixa.</h3>
+        <p data-i18n="features.spotlight.desc">
+          Arrasta o CSV ou OFX que seu banco exporta. O GranaWiz lê, mostra cada linha, e você decide categoria e etiqueta antes de salvar — nada entra sem você ver.
+        </p>
+        <div class="chips">
+          <span class="chip">.csv</span>
+          <span class="chip">ofx</span>
+          <span class="chip">Itaú</span>
+          <span class="chip">Bradesco</span>
+          <span class="chip">Nubank</span>
+          <span class="chip">Inter</span>
+          <span class="chip" data-i18n="features.spotlight.others">+ outros</span>
+        </div>
+      </div>
+      <div class="spotlight-visual">
+        <div class="csv-demo" id="csvDemo">
+          <div class="head">
+            <span class="dots"><span></span><span></span><span></span></span>
+            <span>extrato_nubank_2026-05.csv</span>
+          </div>
+          <div class="row h">
+            <span data-i18n="features.spotlight.csvDate">Data</span><span data-i18n="features.spotlight.csvDesc">Descrição</span><span class="amount" data-i18n="features.spotlight.csvAmount">Valor</span>
+          </div>
+          <div class="row">
+            <span>03/05</span><span class="desc">PADARIA SÃO BENTO</span><span class="amount out">-32,40</span>
+          </div>
+          <div class="row">
+            <span>04/05</span><span class="desc">SALARIO MAIO</span><span class="amount in">+6.800,00</span>
+          </div>
+          <div class="row">
+            <span>05/05</span><span class="desc">UBER *TRIP</span><span class="amount out">-18,90</span>
+          </div>
+          <div class="row">
+            <span>06/05</span><span class="desc">SUPERMERCADO</span><span class="amount out">-180,00</span>
+          </div>
+          <div class="arrow" data-i18n="features.spotlight.imported">↓ importado</div>
+          <div class="tx">
+            <span class="desc" data-i18n="features.spotlight.txDesc">Supermercado · 06 mai</span>
+            <span class="cat" data-i18n="features.spotlight.category">Alimentação</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PERSONAS ═══════════ -->
+<section id="para-quem">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-label" data-i18n="personas.label">Pra quem</span>
+      <h2 class="section-title" data-i18n-html="personas.title">Pra quem cansou<br/>de planilha e de SaaS.</h2>
+    </div>
+    <div class="personas reveal">
+      <article class="persona">
+        <div class="persona-avatar">A</div>
+        <div>
+          <h4 data-i18n="personas.freelancer.title">O autônomo</h4>
+          <p data-i18n="personas.freelancer.desc">Recebe de forma irregular e precisa saber, antes de aceitar um projeto ou fazer uma compra grande, quanto efetivamente tem disponível.</p>
+        </div>
+      </article>
+      <article class="persona">
+        <div class="persona-avatar">P</div>
+        <div>
+          <h4 data-i18n="personas.exSpreadsheet.title">O ex-planilheiro</h4>
+          <p data-i18n="personas.exSpreadsheet.desc">Já tentou planilha — criou fórmulas, formatou células, desistiu na terceira semana — e quer algo que simplesmente funcione, sem manutenção.</p>
+        </div>
+      </article>
+      <article class="persona">
+        <div class="persona-avatar">H</div>
+        <div>
+          <h4 data-i18n="personas.homeWorker.title">Quem trabalha em casa</h4>
+          <p data-i18n="personas.homeWorker.desc">Tem mais de uma fonte de renda, ou simplesmente quer parar de chegar no final do mês sem entender pra onde o dinheiro foi.</p>
+        </div>
+      </article>
+      <article class="persona">
+        <div class="persona-avatar">$</div>
+        <div>
+          <h4 data-i18n="personas.privacy.title">Quem valoriza privacidade</h4>
+          <p data-i18n="personas.privacy.desc">Não quer que seu padrão de gastos vire dado de treinamento pra modelos de recomendação de produtos financeiros.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROMISES ═══════════ -->
+<section style="padding-top: 20px;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-label" data-i18n="promises.label">O contrato</span>
+      <h2 class="section-title" data-i18n-html="promises.title">O que GranaWiz <em style="color: var(--accent-2); font-style: normal;">não</em> faz —<br/>e o que faz.</h2>
+    </div>
+    <div class="promises reveal">
+      <div class="promise">
+        <div class="x">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </div>
+        <div>
+          <h5 data-i18n="promises.noEmail.title">Não pede seu e-mail</h5>
+          <p data-i18n="promises.noEmail.desc">Nem CPF, nem perfil de investidor, nem cartão de crédito "só pra liberar o trial".</p>
+        </div>
+      </div>
+      <div class="promise">
+        <div class="check">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <div>
+          <h5 data-i18n="promises.runsNow.title">Roda direto, do nada</h5>
+          <p data-i18n="promises.runsNow.desc">Instalou, abriu, criou sua primeira conta. Sem onboarding de oito telas.</p>
+        </div>
+      </div>
+      <div class="promise">
+        <div class="x">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </div>
+        <div>
+          <h5 data-i18n="promises.noAds.title">Não tem anúncio</h5>
+          <p data-i18n="promises.noAds.desc">Nem plano premium escondido. Nem feature bloqueada esperando upgrade.</p>
+        </div>
+      </div>
+      <div class="promise">
+        <div class="check">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <div>
+          <h5 data-i18n="promises.offline.title">Funciona offline</h5>
+          <p data-i18n="promises.offline.desc">No avião, no sítio do seu pai, no escritório com Wi-Fi caindo. Funciona igual.</p>
+        </div>
+      </div>
+      <div class="promise">
+        <div class="x">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </div>
+        <div>
+          <h5 data-i18n="promises.noCloud.title">Não sincroniza com nuvem</h5>
+          <p data-i18n="promises.noCloud.desc">Seus dados ficam num arquivo no seu disco. Você decide o que fazer com ele.</p>
+        </div>
+      </div>
+      <div class="promise">
+        <div class="check">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <div>
+          <h5 data-i18n="promises.imports.title">Importa CSV e OFX</h5>
+          <p data-i18n="promises.imports.desc">Dos principais bancos brasileiros. Sem precisar conectar credenciais a lugar nenhum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TECH ═══════════ -->
+<section id="tecnologia">
+  <div class="wrap">
+    <div class="tech-card reveal">
+      <div class="tech-grid">
+        <div>
+          <span class="section-label" data-i18n="tech.label">Construído com cuidado</span>
+          <h3 data-i18n-html="tech.title">Não é projeto de fim de semana.<br/>É decisão deliberada.</h3>
+          <p data-i18n-html="tech.desc">
+            GranaWiz é desenvolvido em Kotlin com Compose Desktop — a mesma stack que sustenta apps de produção modernos. A escolha de ser local e offline não foi limitação técnica. Foi uma decisão sobre <strong style="color: var(--text);">que tipo de ferramenta vale a pena existir</strong>: uma que serve o usuário, não o desenvolvedor.
+          </p>
+          <div class="tech-stack">
+            <span class="stack-badge"><span class="glyph">Kt</span> Kotlin</span>
+            <span class="stack-badge"><span class="glyph">◆</span> Compose Desktop</span>
+            <span class="stack-badge"><span class="glyph">⌂</span> 100% local</span>
+            <span class="stack-badge"><span class="glyph">∅</span> Zero telemetria</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-quote">
+            <span data-i18n="tech.quote">"Projeto independente, desenvolvido por um único criador, que cresce funcionalidade por funcionalidade — fazendo cada parte bem-feita antes de adicionar a próxima."</span>
+            <span class="author" data-i18n="tech.author">— Felipe Gandra, criador do GranaWiz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ DOWNLOAD ═══════════ -->
+<section id="download" data-screen-label="08 Download">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="section-label" data-i18n="download.label">Download</span>
+      <h2 class="section-title" data-i18n-html="download.title">Disponível agora,<br/>gratuitamente.</h2>
+      <p class="section-sub" data-i18n="download.sub">
+        Sem cadastro. Sem cartão. Sem "grátis por 14 dias". Baixa, instala, usa.
+      </p>
+    </div>
+
+    <div class="downloads reveal">
+      <article class="download-card" data-os="mac" data-detected-label="Detectado no seu sistema">
+        <div class="os-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 12.04c-.03-2.78 2.27-4.12 2.37-4.18-1.29-1.89-3.3-2.15-4.02-2.18-1.71-.17-3.34 1.01-4.21 1.01-.87 0-2.21-.99-3.63-.96-1.87.03-3.59 1.09-4.55 2.76-1.94 3.36-.49 8.33 1.39 11.07.92 1.34 2.02 2.85 3.46 2.8 1.39-.06 1.91-.9 3.59-.9 1.68 0 2.15.9 3.62.87 1.5-.03 2.45-1.37 3.36-2.72 1.06-1.56 1.5-3.07 1.52-3.15-.03-.01-2.91-1.12-2.93-4.42M14.4 4.04c.76-.92 1.27-2.2 1.13-3.47-1.09.05-2.42.73-3.21 1.65-.7.81-1.32 2.11-1.16 3.36 1.22.09 2.46-.62 3.24-1.54"/></svg>
+        </div>
+        <h4>macOS</h4>
+        <span class="ext" data-i18n="download.mac.ext">instalador .dmg · Intel + Apple Silicon</span>
+        <p class="desc" data-i18n="download.mac.desc">Funciona em macOS 11 Big Sur ou superior. Universal binary.</p>
+        <a href="#" class="download-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+          <span data-i18n="download.mac.btn">Baixar para macOS</span>
+        </a>
+      </article>
+
+      <article class="download-card" data-os="win" data-detected-label="Detectado no seu sistema">
+        <div class="os-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5L10.5 4.5v7.5H3V5.5zm0 13L10.5 19.5v-7H3v6zM11.5 4.4L21 3v9.5h-9.5V4.4zm0 9.6H21V21l-9.5-1.4V14z"/></svg>
+        </div>
+        <h4>Windows</h4>
+        <span class="ext" data-i18n="download.win.ext">instalador .msi · 64-bit</span>
+        <p class="desc" data-i18n="download.win.desc">Windows 10 ou 11. Não pede permissão de administrador depois da instalação.</p>
+        <a href="#" class="download-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+          <span data-i18n="download.win.btn">Baixar para Windows</span>
+        </a>
+      </article>
+
+      <article class="download-card" data-os="linux" data-detected-label="Detectado no seu sistema">
+        <div class="os-icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489.117.751.418 1.481.926 2.144a2.6 2.6 0 0 0-.295.711c-.075.348-.07.71.001 1.077l.001.005c-.039.226-.087.358-.155.448s-.166.158-.351.236c-.244.105-.357.193-.5.359-.142.166-.224.378-.224.605 0 .26.122.482.296.654.174.172.4.297.65.376.5.158 1.092.247 1.535.279.443.032.764-.025.97-.108.226-.091.42-.207.594-.323.214-.141.355-.225.521-.243.16-.018.34.011.61.108.434.156.96.213 1.475.207.516-.007 1.034-.071 1.461-.211.43-.142.85-.357 1.122-.51.213-.121.341-.207.488-.225.146-.018.245.04.479.187.193.121.396.234.622.31.232.078.501.115.83.114.36-.002.793-.087 1.347-.232.343-.09.683-.196.985-.328.215-.094.398-.196.546-.327.149-.131.262-.301.262-.499 0-.226-.082-.439-.224-.605s-.255-.254-.5-.359c-.184-.078-.283-.146-.351-.236s-.115-.222-.155-.448l.001-.005c.07-.367.077-.729.001-1.077a2.6 2.6 0 0 0-.295-.711c.508-.663.81-1.393.926-2.144.124-.805-.009-1.657-.286-2.489-.589-1.771-1.832-3.47-2.717-4.521-.751-1.067-.975-1.928-1.05-3.02-.066-1.491 1.056-5.965-3.17-6.298A6.16 6.16 0 0 0 12.504 0z"/></svg>
+        </div>
+        <h4>Linux</h4>
+        <span class="ext" data-i18n="download.linux.ext">instalador .deb · x86_64</span>
+        <p class="desc" data-i18n="download.linux.desc">Para distribuições baseadas em Debian: Ubuntu, Linux Mint, Pop!_OS e outros.</p>
+        <a href="#" class="download-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+          <span data-i18n="download.linux.btn">Baixar para Linux</span>
+        </a>
+      </article>
+    </div>
+
+    <div class="install-steps reveal">
+      <span class="step"><span class="num">1</span><span data-i18n="download.step1">Instale</span></span>
+      <span class="arrow">→</span>
+      <span class="step"><span class="num">2</span><span data-i18n="download.step2">Abra</span></span>
+      <span class="arrow">→</span>
+      <span class="step"><span class="num">3</span><span data-i18n="download.step3">Começa a usar</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FINAL CTA ═══════════ -->
+<section style="padding: 0;">
+  <div class="wrap">
+    <div class="final-cta reveal">
+      <h2 data-i18n-html="finalCta.title">É assim que<br/>deveria ser.</h2>
+      <p data-i18n="finalCta.desc">
+        Um aplicativo que abre, faz o que promete, e te deixa em paz. GranaWiz tá pronto.
+      </p>
+      <div class="hero-ctas">
+        <a href="#download" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+          <span data-i18n="finalCta.btn">Baixar GranaWiz grátis</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="wrap foot">
+    <div class="brand">
+      <span class="mark">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      </span>
+      GranaWiz
+    </div>
+    <div class="foot-links">
+      <a href="#recursos" data-i18n="footer.resources">Recursos</a>
+      <a href="#tecnologia" data-i18n="footer.tech">Tecnologia</a>
+      <a href="#download" data-i18n="footer.download">Download</a>
+    </div>
+    <div class="author" data-i18n-html="footer.author">
+      Feito por <strong>Felipe Gandra</strong> · GranaWiz © 2026
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function reveal() {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function (e) { e.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
+<script src="scripts/i18n.js"></script>
+<script>
+  (function initAppCarousel() {
+    var carousel = document.getElementById('appCarousel');
+    if (!carousel) return;
+    var slides = carousel.querySelectorAll('.app-slide');
+    var dots = document.querySelectorAll('#carouselDots .cdot');
+    var current = 0;
+    var timer = null;
+    var INTERVAL = 3600;
+
+    function goTo(idx) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (idx + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function start() {
+      timer = setInterval(function () { goTo(current + 1); }, INTERVAL);
+    }
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () {
+        clearInterval(timer);
+        goTo(i);
+        start();
+      });
+    });
+
+    start();
+  })();
+</script>
+
+</body>
+</html>

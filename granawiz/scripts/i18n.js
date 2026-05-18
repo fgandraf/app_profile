@@ -4,6 +4,7 @@
   const STORAGE_KEY = 'granawiz_lang';
   const DEFAULT_LANG = 'en';
   const LANG_ATTR = { br: 'pt-BR', en: 'en' };
+  const LANG_IMG_SUFFIX = { br: 'pt', en: 'en' };
 
   let currentLang = DEFAULT_LANG;
   let detectedOS = 'mac';
@@ -68,6 +69,11 @@
         card.dataset.detectedLabel = detectedLabel;
       });
     }
+
+    var suffix = LANG_IMG_SUFFIX[currentLang] || 'en';
+    document.querySelectorAll('[data-lang-src]').forEach(function (img) {
+      img.src = img.dataset.langSrc.replace('{lang}', suffix);
+    });
   }
 
   function updateSelector() {

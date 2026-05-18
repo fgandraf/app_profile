@@ -3,11 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<base href="/granawiz/" />
 <title>GranaWiz — Finanças pessoais que ficam no seu computador</title>
 <meta name="description" content="Software desktop, offline e gratuito para controlar suas finanças. Sem nuvem, sem assinatura, sem cadastro. macOS, Windows e Linux." />
 <link rel="icon" type="image/png" href="assets/logo.png" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
 
@@ -79,22 +78,22 @@
 
     <div class="app-carousel" id="appCarousel">
       <!-- Invisible sizer that establishes container height -->
-      <img class="app-carousel-sizer" src="assets/dashboard-dark.png" alt="" aria-hidden="true" />
+      <img class="app-carousel-sizer" src="assets/dashboard-dark-en.png" data-lang-src="assets/dashboard-dark-{lang}.png" alt="" aria-hidden="true" />
 
-      <div class="app-slide active" data-label="Dashboard - Modo Escuro" data-theme="dark">
-        <img src="assets/dashboard-dark.png" alt="Dashboard do GranaWiz — modo escuro" loading="eager" />
+      <div class="app-slide active" data-label="Dashboard" data-theme="dark">
+        <img src="assets/dashboard-dark-en.png" data-lang-src="assets/dashboard-dark-{lang}.png" alt="GranaWiz dashboard — dark mode" loading="eager" />
       </div>
-      <div class="app-slide" data-label="Transações" data-theme="dark">
-        <img src="assets/transactions-dark.png" alt="Histórico de transações" loading="lazy" />
+      <div class="app-slide" data-label="Transactions" data-theme="dark">
+        <img src="assets/transactions-dark-en.png" data-lang-src="assets/transactions-dark-{lang}.png" alt="Transaction history" loading="lazy" />
       </div>
-      <div class="app-slide" data-label="Categorias" data-theme="dark">
-        <img src="assets/categories-dark.png" alt="Categorias personalizadas" loading="lazy" />
+      <div class="app-slide" data-label="Categories" data-theme="dark">
+        <img src="assets/categories-dark-en.png" data-lang-src="assets/categories-dark-{lang}.png" alt="Custom categories" loading="lazy" />
       </div>
-      <div class="app-slide" data-label="Contas Bancárias" data-theme="dark">
-        <img src="assets/account-dark.png" alt="Contas bancárias" loading="lazy" />
+      <div class="app-slide" data-label="Accounts" data-theme="dark">
+        <img src="assets/account-dark-en.png" data-lang-src="assets/account-dark-{lang}.png" alt="Bank accounts" loading="lazy" />
       </div>
-      <div class="app-slide" data-label="Dashboard - Modo Claro" data-theme="light">
-        <img src="assets/dashboard-light.png" alt="Dashboard do GranaWiz — modo claro" loading="lazy" />
+      <div class="app-slide" data-label="Dashboard - Light" data-theme="light">
+        <img src="assets/dashboard-light-en.png" data-lang-src="assets/dashboard-light-{lang}.png" alt="GranaWiz dashboard — light mode" loading="lazy" />
       </div>
       
     </div>
@@ -445,7 +444,7 @@
         <h4>macOS</h4>
         <span class="ext" data-i18n="download.mac.ext">instalador .dmg · Intel + Apple Silicon</span>
         <p class="desc" data-i18n="download.mac.desc">Funciona em macOS 11 Big Sur ou superior. Universal binary.</p>
-        <a href="#" class="download-btn">
+        <a href="https://drive.google.com/file/d/1C-sKy7Rky6-XgjiqPCP4YdGvn3tH2IfD/view?usp=sharing" class="download-btn" target="_blank" rel="noopener noreferrer">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
           <span data-i18n="download.mac.btn">Baixar para macOS</span>
         </a>
@@ -458,7 +457,7 @@
         <h4>Windows</h4>
         <span class="ext" data-i18n="download.win.ext">instalador .msi · 64-bit</span>
         <p class="desc" data-i18n="download.win.desc">Windows 10 ou 11. Não pede permissão de administrador depois da instalação.</p>
-        <a href="#" class="download-btn">
+        <a href="https://drive.google.com/file/d/1nf7TyHFz4Na4Jl1qb1LKFHnl3yITIh5d/view?usp=sharing" class="download-btn" target="_blank" rel="noopener noreferrer">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
           <span data-i18n="download.win.btn">Baixar para Windows</span>
         </a>
@@ -471,7 +470,7 @@
         <h4>Linux</h4>
         <span class="ext" data-i18n="download.linux.ext">instalador .deb · x86_64</span>
         <p class="desc" data-i18n="download.linux.desc">Para distribuições baseadas em Debian: Ubuntu, Linux Mint, Pop!_OS e outros.</p>
-        <a href="#" class="download-btn">
+        <a href="https://drive.google.com/file/d/1QqkMetpWelPuop4VnVy0B_uDTlGVzD0s/view?usp=sharing" class="download-btn" target="_blank" rel="noopener noreferrer">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
           <span data-i18n="download.linux.btn">Baixar para Linux</span>
         </a>

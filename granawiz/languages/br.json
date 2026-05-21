@@ -17,7 +17,6 @@
     "ctaSecondary": "Ver o que faz",
     "meta1": "Sem cadastro",
     "meta2": "Sem assinatura",
-    "meta3": "Sem trial de 14 dias",
     "dashboardAlt": "Captura de tela do dashboard do GranaWiz mostrando saldo total, fluxo do período e despesas por categoria"
   },
   "principles": {
@@ -104,7 +103,7 @@
     "linux": { "ext": "instalador .deb · x86_64",                "desc": "Para distribuições baseadas em Debian: Ubuntu, Linux Mint, Pop!_OS e outros.",                                  "btn": "Baixar para Linux" },
     "step1": "Instale",
     "step2": "Abra",
-    "step3": "Começa a usar"
+    "step3": "Comece a usar"
   },
   "finalCta": {
     "title": "É assim que<br/>deveria ser.",

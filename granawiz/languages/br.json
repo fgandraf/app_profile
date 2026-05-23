@@ -50,7 +50,7 @@
       "scheduling":    { "title": "Agendamentos",            "desc": "Programe lançamentos fixos ou recorrentes pra nunca esquecer aquela conta de luz no dia 12." },
       "categories":    { "title": "Categorias & etiquetas",  "desc": "Organização do seu jeito. Categorize pelo que faz sentido pra sua vida, não pelo que o app impõe." },
       "payees":        { "title": "Pagadores & recebedores", "desc": "Histórico de quem te paga e pra quem você paga — com totais e padrões ao longo do tempo." },
-      "import":        { "title": "Importação de extratos",  "desc": "CSV e OFX — os formatos que os bancos brasileiros mais exportam. Importe, revise, categorize." },
+      "import":        { "title": "Importação de extratos",  "desc": "CSV e OFX — os formatos que os bancos mais exportam. Importe, revise, categorize." },
       "dashboard":     { "title": "Dashboard consolidado",   "desc": "Saldo total, fluxo do mês, ritmo de gastos, patrimônio líquido. O que importa, sem ruído." },
       "theme":         { "title": "Tema claro & escuro",     "desc": "Pra trabalhar com a luz que você prefere — de dia, de madrugada, ou na sala com a luz apagada." },
       "multiplatform": { "title": "Multi-plataforma",        "desc": "Um instalador pra cada sistema. macOS, Windows, Linux. Mesmo app, mesma experiência." }
@@ -84,7 +84,7 @@
     "noAds":    { "title": "Não tem anúncio",            "desc": "Nem plano premium escondido. Nem feature bloqueada esperando upgrade." },
     "offline":  { "title": "Funciona offline",           "desc": "No avião, no sítio do seu pai, no escritório com Wi-Fi caindo. Funciona igual." },
     "noCloud":  { "title": "Não sincroniza com nuvem",  "desc": "Seus dados ficam num arquivo no seu disco. Você decide o que fazer com ele." },
-    "imports":  { "title": "Importa CSV e OFX",          "desc": "Dos principais bancos brasileiros. Sem precisar conectar credenciais a lugar nenhum." }
+    "imports":  { "title": "Importa CSV e OFX",          "desc": "Dos principais bancos. Sem precisar conectar credenciais a lugar nenhum." }
   },
   "tech": {
     "label": "Construído com cuidado",

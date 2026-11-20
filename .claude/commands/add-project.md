@@ -1,151 +1,104 @@
-# Add New Portfolio Project
+---
+description: Adiciona um novo projeto ao portfólio (página, card, assets e textos em br/en/es)
+---
 
-Add a new project to the portfolio website. The project working directory is `/home/felipe/dev/app_profile`.
+# Adicionar projeto ao portfólio
 
-## Step 1 — Collect required information
+Antes de começar, siga as regras de `docs/SPECS.md` — em especial a §0 (somente HTML/CSS/JS puros; todo texto nos três idiomas) e a §4 (os quatro lugares de um projeto e o padrão de mídia). Responda ao usuário em português.
 
-Ask the user for the following. Gather everything before making any changes:
+## Passo 1 — Coletar informações
 
-1. **Project ID** (`id`): camelCase identifier, used as filename and DOM id (e.g. `vagalivre`, `fluxusApi`)
-2. **Display title**: shown in `<title>` and `<h2>` (e.g. `AEX30 WINDOWS APP`)
-3. **Tag**: category label shown on the card (e.g. `MOBILE`, `FRONT-END`, `BACK-END`, `FULL-STACK`, `DESKTOP`)
-4. **Tech stack**: comma-separated list (e.g. `Kotlin, Jetpack Compose, Google Maps SDK`)
-5. **Short description**: one sentence summary for the card
-6. **Long description**: full description for the detail page — can be multiple paragraphs (ask for all paragraphs)
-7. **Last update**: e.g. `Last update: April/2024`
-8. **Link type**: `source` (GitHub) or `deploy` (live URL)
-9. **Link URL**: the GitHub repo or live URL
+Pergunte tudo **numa única mensagem** e espere a resposta antes de qualquer edição:
 
-All texts will be provided in **Portuguese (br)**. You must automatically translate them to **English (en)** and **Spanish (es)** before writing the language files. Do not ask the user for translations — generate them yourself.
+1. **Local do código-fonte** (pasta local), se houver.
+2. **Local da imagem de thumb.**
+3. **Local do vídeo** de demonstração.
+4. **Data da última alteração** do projeto.
+5. **Links** (opcional): repositório público e/ou endereço publicado/download. Se o repositório for privado, não haverá link de código.
+6. **Posição no carrossel**: o padrão é o projeto entrar como **primeiro slide**, que é o que aparece **no centro, em destaque**, ao abrir o site. Pergunte se é isso que o usuário quer — para projetos mais antigos ele pode preferir menos destaque. Nesse caso, pergunte onde: no fim do carrossel ou depois de qual projeto (liste os projetos atuais na ordem do `index.html` para ele escolher).
 
-## Step 2 — Create the project page
+Se o usuário **não** tiver o código, pergunte em seguida:
+- quais **tecnologias** foram usadas;
+- uma **descrição** do que o projeto faz (o texto do portfólio vai partir dela).
 
-Create `pages/project/<id>.html` using this template:
+Não peça nada que dê para descobrir sozinho.
 
-**For `source` link type:**
-```html
-<!DOCTYPE html>
-<html lang="pt-br">
+## Passo 2 — Entender o projeto
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DISPLAY_TITLE</title>
+Com o código: leia README(s), arquivos de build/dependências (`build.gradle.kts`, `libs.versions.toml`, `package.json`, `*.csproj`, `pom.xml` etc.), a estrutura de pastas e o `git log` recente. Se houver remote git, verifique se o repositório é público ou privado (`gh repo view --json visibility,url`, se disponível); na dúvida, pergunte.
 
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../../styles/case.css">
+Defina:
+- **ID**: camelCase curto, sem acentos (ex.: `planob`, `fluxusApi`). Não pode colidir com um ID existente em `languages/br.json`.
+- **Nome**: padrão `"<Nome> <Tipo> App"` ou equivalente dos cards existentes (ex.: `Plano B Desktop App`).
+- **Título da página**: o nome em maiúsculas (ex.: `PLANO B DESKTOP APP`).
+- **Tag**: `DESKTOP`, `MOBILE`, `FRONT-END`, `BACK-END` ou `FULL-STACK`.
+- **Stacks**: 3 a 5 tecnologias principais.
 
-     <!-- GOOGLE FONTS -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" >
+## Passo 3 — Assets
 
-</head>
+Copie e converta a partir dos arquivos de origem (nunca mova nem altere os originais), seguindo o padrão de mídia da §4 do SPECS:
 
-<body>
-    <main>
-        <div class="esquerda">
-
-            <div class="stacks__container">
-                <ul class="stacks">##</ul>
-            </div>
-
-            <div class="video__container">
-                <video class="localVideo" width="426" height="240" autoplay loop muted playsinline
-                    controlslist="nodownload nofullscreen noremoteplayback">
-                    <source src="/assets/videos/ID.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-
-            <div class="links__container">
-                <a href="LINK_URL" target="_blank" class="button">
-                    <i class="material-symbols-outlined icone__repo">code</i>
-                    <span id="source-button">#</span>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="direita">
-            <h2>DISPLAY_TITLE</h2>
-            <div id="long-description">##</div>
-            <p class="data">##</p>
-        </div>
-    </main>
-
-    <script type="module" src="../../scripts/modules/load-project-page.js"></script>
-</body>
-
-</html>
+```bash
+ffmpeg -v error -i "<video>" -an -vf "scale=960:540:flags=lanczos,fps=30000/1001" \
+  -c:v libx264 -preset slow -crf 28 -profile:v high -pix_fmt yuv420p -movflags +faststart assets/videos/<ID>.mp4
+ffmpeg -v error -i "<thumb>" -vf "scale=500:331:flags=lanczos" -pix_fmt rgba assets/images/thumbs/<ID>.png
 ```
 
-**For `deploy` link type**, use `deployed_code` icon and `id="deploy-button"` instead:
-```html
-                <a href="LINK_URL" target="_blank" class="button">
-                    <i class="material-symbols-outlined icone__repo">deployed_code</i>
-                    <span id="deploy-button">#</span>
-                </a>
-```
+- Se a proporção da thumb de origem for diferente de ~1,51 (500×331), avise antes de distorcer e proponha recorte.
+- Confira o resultado com `ffprobe` e extraia alguns quadros do vídeo para verificar a legibilidade.
+- Informe a duração do vídeo; se for bem maior que os outros (18–45 s), apenas comente — não corte nem edite o conteúdo sem pedido.
 
-## Step 3 — Add swiper slide to index.html
+## Passo 4 — Código do site
 
-Read `index.html` first (needed to edit it). Insert the new slide **before** the closing `</div> <!-- swiper-wrapper -->` tag. Use this block:
+1. **Página** `pages/project/<ID>.html` — copie a estrutura de uma página existente (ex.: `pages/project/planob.html`), sem o link quebrado `../styles/styles.css`. Ajuste `<title>`, `<h2>` e o `<source>` do vídeo. Botões em `.links__container`:
+   - repositório público → `code` + `<span id="source-button">#</span>`;
+   - site publicado → `deployed_code` + `<span id="deploy-button">#</span>`;
+   - repositório privado e sem publicação → sem `.links__container`, com o comentário `<!-- Repositório privado: sem links de código-fonte ou publicação -->`.
+2. **Card** em `index.html` — insira o slide dentro de `.swiper-wrapper` **na posição escolhida no Passo 1** (padrão: primeiro slide = centro/destaque; a ordem do carrossel é a ordem do HTML), com `id="<ID>"`, `openModal('./pages/project/<ID>.html')` e a thumb `/assets/images/thumbs/<ID>.png`.
 
-```html
-                        <div class="swiper-slide">
-                            <div id="ID" class="card-container">
-                                <div class="card">
-                                    <div class="card__tag">##</div>
-                                    <div class="card__content" onclick="openModal('./pages/project/ID.html')">
-                                        <img src="/assets/images/thumbs/ID.png" class="card__cover">
-                                        <ul class="card__stacks">##</ul>
-                                        <h4 class="projeto__nome">##</h4>
-                                        <p class="projeto__descricao">##</p>
-                                        <span class="last_update">##</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-```
+Ainda **não** mexa nos arquivos de idioma.
 
-The last existing slide ends just before `</div>` that closes `swiper-wrapper`. Insert after the last `</div>` of the last slide.
+## Passo 5 — Texto em português (aprovação)
 
-## Step 4 — Add entries to all 3 language files
+Escreva o texto em português e **mostre ao usuário para aprovação**, sem gravar ainda:
 
-For each of `languages/en.json`, `languages/br.json`, `languages/es.json`:
+- **Nome**, **Tag**, **Stacks**
+- **Descrição curta** (`shortDescription`): uma frase.
+- **Descrição longa** (`longDescription`): 2 a 3 parágrafos — o que é e para quem; como funciona/principais recursos; diferenciais técnicos.
+- **Última atualização**: `Última atualização: <Mês>/<Ano>` (mês por extenso, inicial maiúscula).
 
-1. Read the file
-2. Add a new entry to the **beginning** of the `portfolio.projects` array (so the newest project appears first in the carousel)
+Regras do texto:
+- Tom e tamanho dos projetos existentes em `languages/br.json`.
+- Não cite nomes de clientes, empresas contratantes, pessoas, cidades específicas ou dados internos — o site é público.
+- Projeto privado: termine a descrição longa com uma frase informando que, por ser um projeto privado, o código-fonte não está disponível publicamente.
 
-Entry format:
+Ajuste e mostre de novo quantas vezes o usuário pedir. **Só siga após aprovação explícita.**
+
+## Passo 6 — Traduções e inserção
+
+Com o texto aprovado:
+1. Gere as versões em **inglês** e **espanhol** (fiéis ao aprovado; `Last update: <Month>/<Year>`, `Última actualización: <Mes>/<Año>`).
+2. Insira a entrada em `portfolio.projects` nos três arquivos **na mesma posição relativa do slide** (primeiro item, último item ou logo após o projeto escolhido — a ordem do JSON não afeta a exibição, mas manter as duas iguais facilita a leitura) (`languages/br.json`, `en.json`, `es.json`), com a mesma indentação dos existentes (edição textual, sem reformatar o arquivo):
+
 ```json
             {
-                "ID": {
-                    "img": "./images/thumbs/ID.png",
-                    "stacks": [
-                        "Stack1",
-                        "Stack2"
-                    ],
-                    "name": "Project Name",
-                    "shortDescription": "One-sentence summary.",
-                    "longDescription": [
-                        "Paragraph one.",
-                        "Paragraph two."
-                    ],
-                    "lastUpdate": "Last update: Month/Year",
-                    "tag": "TAG"
+                "<ID>": {
+                    "img": "./assets/images/thumbs/<ID>.png",
+                    "stacks": ["..."],
+                    "name": "...",
+                    "shortDescription": "...",
+                    "longDescription": ["...", "..."],
+                    "lastUpdate": "...",
+                    "tag": "..."
                 }
             },
 ```
 
-Insert this as the **first element** of the `"projects": [` array in each language file.
+3. Valide os três JSONs (ex.: `python3 -c "import json; json.load(open('languages/br.json'))"`).
 
-## Step 5 — Remind about manual assets
+## Passo 7 — Verificação e resumo
 
-After all edits, tell the user:
-
-> **Assets still needed (manual steps):**
-> - `assets/videos/ID.mp4` — demo video for the detail page
-> - `assets/images/thumbs/ID.png` — thumbnail image for the portfolio card (check existing thumbs for reference dimensions)
+- Suba um servidor local (`python3 -m http.server <porta>`) e confirme status 200 para `/`, `/pages/project/<ID>.html`, o vídeo e a thumb; encerre o servidor.
+- Confirme que o ID é idêntico nos quatro lugares (página, card, JSONs, assets).
+- Mostre as traduções inseridas e um resumo do que foi feito. Lembre que o navegador pode exigir Ctrl+Shift+R (e que o `sessionStorage` guarda traduções antigas até fechar a aba).
+- Não faça commit sem o usuário pedir.

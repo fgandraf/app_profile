@@ -74,6 +74,26 @@
         "sourceButton": "Código fonte",
         "projects": [
             {
+                "planob": {
+                    "img": "./assets/images/thumbs/planob.png",
+                    "stacks": [
+                        "Kotlin",
+                        "Compose Multiplatform",
+                        "XML Signature",
+                        "SOAP"
+                    ],
+                    "name": "Plano B Desktop App",
+                    "shortDescription": "Software desktop multiplataforma que gera, assina digitalmente e transmite RPS no Padrão Nacional da NFS-e a partir de uma planilha CSV.",
+                    "longDescription": [
+                        "Desenvolvido em Kotlin com Compose Multiplatform, o Plano B é um assistente desktop para Windows, macOS e Linux que automatiza a emissão em lote de RPS (Recibos Provisórios de Serviços) no Padrão Nacional da NFS-e, enviando-os diretamente ao webservice da prefeitura.",
+                        "Em um fluxo guiado de oito passos, o usuário informa a planilha CSV com as notas e o certificado digital eCNPJ A1. O sistema valida cada campo, recalcula todos os tributos (ISSQN, PIS/COFINS, retenções e o novo IBS/CBS da Reforma Tributária), gera o XML de cada nota, assina com XMLDSig, embrulha em envelope SOAP e transmite, registrando em um arquivo de retorno as notas aceitas.",
+                        "Os cálculos usam aritmética decimal exata e são confrontados em testes automatizados com notas reais aceitas pela prefeitura. Por se tratar de um projeto privado, o código-fonte não está disponível publicamente."
+                    ],
+                    "lastUpdate": "Última atualização: Setembro/2026",
+                    "tag": "DESKTOP"
+                }
+            },
+            {
                 "vagalivre": {
                     "img": "./images/thumbs/vagalivre.png",
                     "stacks": [
@@ -270,7 +290,7 @@
                     "longDescription": [
                         "Desenvolvido em linguagem Kotlin, utilizando o framework Compose Multiplatform, o GranaWiz é um software multi-plataforma de gestão de finanças pessoais que pretende ser uma alternativa de código-fonte aberto para os usuários dos sistemas operacionais Windows, MacOS e Linux.",
                         "Sob a licença OpenSource MIT e com uma interface limpa, intuitiva e sem publicidade, a aplicação ainda está em fase inicial de desenvolvimentos e deve receber muitos recursos e lapidações, de design e de código, nos próximos meses.",
-                        "Na página do repositório (link \"Código fonte\"), é possível baixar uma versão prévia (alpha) da aplicação para acompanhar a evolução do desenvolvimento."
+                        "No site do GranaWiz (link \"Publicação\"), é possível baixar gratuitamente os instaladores para Windows, macOS e Linux. O código-fonte completo está disponível no repositório (link \"Código fonte\")."
                     ],
                     "lastUpdate": "Última atualização: Janeiro/2025",
                     "tag": "DESKTOP"

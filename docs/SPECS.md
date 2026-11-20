@@ -132,8 +132,27 @@ Preenche: `.stacks` (de `stacks[]`), `#long-description` (um `<p>` por item de `
 
 Tipos de botão usados: `code` + `#source-button` (GitHub), `deployed_code` + `#deploy-button` (site publicado), ou `download` com texto fixo "Download" (app na loja, ex.: `ethor`).
 
+**Projeto de repositório privado** (ex.: `planob`): a página não tem `.links__container` nem botões — nenhum link para o código. A descrição longa informa, nos três idiomas, que o código-fonte não é público.
+
+### Padrão de mídia
+| Arquivo | Padrão |
+|---|---|
+| Vídeo `assets/videos/<ID>.mp4` | H.264, 960×540, 29,97 fps, sem áudio (toca mudo), `+faststart`, poucos MB |
+| Thumb `assets/images/thumbs/<nome>.png` | PNG RGBA 500×331 |
+
+Conversão a partir do original (requer `ffmpeg`; é ferramenta local, não dependência do site):
+```bash
+ffmpeg -i origem.mp4 -an -vf "scale=960:540:flags=lanczos,fps=30000/1001" \
+  -c:v libx264 -preset slow -crf 28 -pix_fmt yuv420p -movflags +faststart assets/videos/<ID>.mp4
+ffmpeg -i origem.png -vf "scale=500:331:flags=lanczos" -pix_fmt rgba assets/images/thumbs/<ID>.png
+```
+
 ### Comando `/add-project`
-`.claude/commands/add-project.md` automatiza a inclusão (página, slide, entradas nos 3 JSONs com tradução automática a partir do português). Ele insere o slide **no fim** do carrossel e a entrada **no início** do JSON — ou seja, o projeto novo aparece por último (ver regra de ordem acima).
+`.claude/commands/add-project.md` (comando exclusivo deste projeto) automatiza a inclusão:
+1. pede o local do código (se houver), da thumb e do vídeo, a data da última alteração, os links e a **posição no carrossel**; sem código, pede também as tecnologias e uma descrição;
+2. analisa o código, converte os assets para o padrão de mídia, cria a página e insere o card na posição escolhida — padrão: **primeiro** slide, que aparece no centro, em destaque (projetos antigos podem ir para o fim ou após outro projeto, com menos destaque);
+3. mostra o texto em português para **aprovação** antes de gravar;
+4. aprovado, gera inglês e espanhol e insere a entrada como primeiro item de `portfolio.projects` nos três JSONs.
 
 ---
 
@@ -209,7 +228,6 @@ Não compartilha código com o site principal.
 | Lista de cursos adicionais fixa em português (viola §0) | `#certificate_others` no `index.html` |
 | Títulos das páginas de projeto (`<title>`/`<h2>`) e botão "Download" fixos no HTML (viola §0) | `pages/project/*.html` |
 | `alt` das bandeiras e imagens só em inglês ou vazios (viola §0) | `index.html` || Idioma padrão diferente entre páginas (`en` × `br`) | `load-about-page.js` |
-| `/add-project` põe o projeto novo no fim do carrossel | `.claude/commands/add-project.md` |
 | `<title>` errado ("Alucar") | `pages/project/ethor.html` |
 | CSS inexistente `../styles/styles.css` | todas as `pages/project/*.html` |
 | Aspa a mais em `id="about-container""` | `index.html` |

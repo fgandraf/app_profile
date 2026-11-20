@@ -4,7 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal portfolio website — vanilla HTML/CSS/JavaScript with no build system or framework. Served as static files directly from the filesystem or a simple HTTP server.
+Personal portfolio website — vanilla HTML/CSS/JavaScript with no build system or framework. Served as static files from a simple HTTP server (not `file://`).
+
+Full logic specification (how pages, translations and projects connect, rules and known issues): @docs/SPECS.md
+Keep that spec updated whenever a change alters the logic it describes.
 
 ## Running Locally
 
